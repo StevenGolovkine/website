@@ -4,3 +4,6 @@
 # Hugo
 resources/
 public/
+
+# R files
+*.Rproj
