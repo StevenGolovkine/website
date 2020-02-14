@@ -3,8 +3,6 @@
 
 # Hugo
 resources/
-public/
-themes/
 
 # R files
 *.Rproj

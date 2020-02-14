@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Steven Golovkine | TwentyFourSecs</title>
+    <link>/authors/steven-golovkine/</link>
+      <atom:link href="/authors/steven-golovkine/index.xml" rel="self" type="application/rss+xml" />
+    <description>Steven Golovkine</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Steven Golovkine. All Rights Reserved</copyright><lastBuildDate>Mon, 03 Jun 2019 11:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/pic.jpg</url>
+      <title>Steven Golovkine</title>
+      <link>/authors/steven-golovkine/</link>
+    </image>
+    
+    <item>
+      <title>Données fonctionnelles avec erreur hétéroscédastique</title>
+      <link>/talk/sfds-2019/</link>
+      <pubDate>Mon, 03 Jun 2019 11:00:00 +0000</pubDate>
+      <guid>/talk/sfds-2019/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Clustering multivariate functional data defined on random domains: an application to vehicle trajectories analysis</title>
+      <link>/talk/mascot_num_2019/</link>
+      <pubDate>Mon, 18 Mar 2019 15:00:00 +0000</pubDate>
+      <guid>/talk/mascot_num_2019/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

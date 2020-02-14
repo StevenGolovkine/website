@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Software | TwentyFourSecs</title>
+    <link>/tags/software/</link>
+      <atom:link href="/tags/software/index.xml" rel="self" type="application/rss+xml" />
+    <description>Software</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Steven Golovkine. All Rights Reserved</copyright><lastBuildDate>Thu, 06 Dec 2018 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/pic.jpg</url>
+      <title>Software</title>
+      <link>/tags/software/</link>
+    </image>
+    
+    <item>
+      <title>Homebrew</title>
+      <link>/post/homebrew/</link>
+      <pubDate>Thu, 06 Dec 2018 00:00:00 +0000</pubDate>
+      <guid>/post/homebrew/</guid>
+      <description>&lt;p&gt;
+&lt;a href=&#34;https://brew.sh&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Homebrew&lt;/a&gt;
+ names itself as &lt;em&gt;the missing package manager for macOS&lt;/em&gt;. It simplifies the installation and the management of the different softwares you could have.&lt;/p&gt;
+&lt;h2 id=&#34;installation&#34;&gt;Installation&lt;/h2&gt;
+&lt;p&gt;First, you need to have the &lt;strong&gt;Command Line Tools&lt;/strong&gt; for &lt;strong&gt;Xcode&lt;/strong&gt;. The installation of &lt;strong&gt;Xcode&lt;/strong&gt; is made from the App Store. Once it is done, you can install the &lt;strong&gt;Command Line Tools&lt;/strong&gt; using the following command in the terminal:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;xcode-select --install
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Then, you should launch the following command to have &lt;strong&gt;Homebrew&lt;/strong&gt; installed:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;ruby -e &amp;quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;After, you should tell to the system to take into consideration programs installed by &lt;strong&gt;Homebrew&lt;/strong&gt; rather than the system default. By default, &lt;strong&gt;Homebrew&lt;/strong&gt; uses the &lt;code&gt;/usr/local/bin&lt;/code&gt; path. We do this by the adding this path to the &lt;code&gt;$PATH&lt;/code&gt; environment variable.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;echo &#39;export PATH=&amp;quot;/usr/local/bin/:$PATH&amp;quot;&#39; &amp;gt;&amp;gt; ~/.bash_profile
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;usage&#34;&gt;Usage&lt;/h2&gt;
+&lt;p&gt;We install and uninstall a formula by using the commands:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;brew install &amp;lt;formula&amp;gt;
+brew uninstall &amp;lt;formula&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;To upgrade all the formulae, run:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;brew update
+brew upgrade
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;To list all the formulae you have with their version, run:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;brew list --versions
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Finally, &lt;strong&gt;Homebrew&lt;/strong&gt; keeps a trace of the previous versions of each of the formula (if you want to get it back). If you want to delete it, run:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;brew cleanup
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;cask&#34;&gt;Cask&lt;/h2&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://caskroom.github.io&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Homebrew-Cask&lt;/a&gt;
+ extends &lt;strong&gt;Homebrew&lt;/strong&gt; and allows to install software using command-line tools.&lt;/p&gt;
+&lt;p&gt;To look for a software, run:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;brew cask search &amp;lt;formula&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;To install/uninstall a software, run:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;brew cask install &amp;lt;formula&amp;gt;
+brew cask uninstall &amp;lt;formula&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;To know the outdated formulae, run:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;brew cask outdated
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;And then, for update the package, run:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;brew cask reinstall &amp;lt;formula&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>MySQL</title>
+      <link>/post/mysql/</link>
+      <pubDate>Thu, 06 Dec 2018 00:00:00 +0000</pubDate>
+      <guid>/post/mysql/</guid>
+      <description>&lt;p&gt;
+&lt;a href=&#34;https://www.mysql.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;MySQL&lt;/a&gt;
+ is an open-source relational database management system.&lt;/p&gt;
+&lt;h2 id=&#34;installation-and-configurations&#34;&gt;Installation and configurations&lt;/h2&gt;
+&lt;p&gt;We simply use &lt;strong&gt;Homebrew&lt;/strong&gt; to install &lt;strong&gt;MySQL&lt;/strong&gt; under MacOS.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;brew install mysql
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Then, we can launch &lt;strong&gt;MySQL&lt;/strong&gt; by running the command:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;brew services start mysql
+# ==&amp;gt; Successfully started &#39;mysql&#39; (label: homebrew.mxcl.mysql)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;One can recommended to set a password for the &lt;em&gt;root&lt;/em&gt; user and only authorize the access from &lt;em&gt;localhost&lt;/em&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;mysql_secure_installation
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;And then, we re-launch &lt;strong&gt;MySQL&lt;/strong&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;brew services restart mysql
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;connection&#34;&gt;Connection&lt;/h2&gt;
+&lt;p&gt;We connect to &lt;strong&gt;MySQL&lt;/strong&gt; by running the commands:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;mysql --host=localhost --user=root -p
+# Enter password : ****
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;It is not recommended to work in &lt;em&gt;root&lt;/em&gt; on databases because this user has all privileges. One could create a restrictive user of the database.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sql&#34;&gt;GRANT ALL PRIVILEGES ON nom_base.* TO &#39;name&#39;@&#39;localhost&#39; IDENTIFIED BY &#39;password&#39;;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;One can save the database into a file using the command:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;mysqldump -u user -p --opt database_name &amp;gt; save.sql
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;configuration&#34;&gt;Configuration&lt;/h2&gt;
+&lt;p&gt;In order to use every possible characters into the string in the database, one should activate the UTF-8 encode.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;mysql --host=localhost --user=name -p --default_character-set=utf8
+# Enter password : ****
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;In order to insert data into the database using external files, one should activate this possibility.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;mysql -h localhost -u name -p --enable-local-infile
+# Enter password : ****
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

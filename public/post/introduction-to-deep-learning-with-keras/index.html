@@ -1,0 +1,1416 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.7.0">
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Steven Golovkine">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="An introduction to neural network with the high level framework `Keras` and the famous MNIST dataset.">
+
+  
+  <link rel="alternate" hreflang="en-us" href="/post/introduction-to-deep-learning-with-keras/">
+
+  
+
+
+  
+  
+  
+  <meta name="theme-color" content="#795548">
+  
+
+  
+  
+  
+  <script src="/js/mathjax-config.js"></script>
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css" integrity="sha256-4w9DunooKSr3MFXHXWyFER38WmPdm361bQS/2KUWZbU=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.css" integrity="sha256-SHMGCYmST46SoyGgo4YR/9AlK1vf3ff84Aq9yK4hdqM=" crossorigin="anonymous">
+    
+
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js" integrity="sha256-Md1qLToewPeKjfAHU1zyPwOutccPAm5tahnaw7Osw0A=" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cutive+Mono%7CLora:400,700%7CRoboto:400,700&display=swap">
+  
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/academic.css">
+
+  
+
+
+
+
+  
+
+
+  
+
+  <link rel="manifest" href="/index.webmanifest">
+  <link rel="icon" type="image/png" href="/images/icon_hu1d2d3b6ebbfe3e5882ce5725380dc208_3894_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu1d2d3b6ebbfe3e5882ce5725380dc208_3894_192x192_fill_lanczos_center_2.png">
+
+  <link rel="canonical" href="/post/introduction-to-deep-learning-with-keras/">
+
+  
+  
+  
+  
+  
+    
+  
+  
+  <meta property="twitter:card" content="summary_large_image">
+  
+  <meta property="twitter:site" content="@StevenGolovkine">
+  <meta property="twitter:creator" content="@StevenGolovkine">
+  
+  <meta property="og:site_name" content="TwentyFourSecs">
+  <meta property="og:url" content="/post/introduction-to-deep-learning-with-keras/">
+  <meta property="og:title" content="Introduction to Deep Learning with Keras | TwentyFourSecs">
+  <meta property="og:description" content="An introduction to neural network with the high level framework `Keras` and the famous MNIST dataset."><meta property="og:image" content="/post/introduction-to-deep-learning-with-keras/featured.jpg">
+  <meta property="twitter:image" content="/post/introduction-to-deep-learning-with-keras/featured.jpg"><meta property="og:locale" content="en-us">
+  
+    
+      <meta property="article:published_time" content="2019-08-05T00:00:00&#43;00:00">
+    
+    <meta property="article:modified_time" content="2019-08-05T00:00:00&#43;00:00">
+  
+
+  
+
+
+    
+
+
+
+
+
+
+  
+
+
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "/post/introduction-to-deep-learning-with-keras/"
+  },
+  "headline": "Introduction to Deep Learning with Keras",
+  
+  "image": [
+    "/post/introduction-to-deep-learning-with-keras/featured.jpg"
+  ],
+  
+  "datePublished": "2019-08-05T00:00:00Z",
+  "dateModified": "2019-08-05T00:00:00Z",
+  
+  "author": {
+    "@type": "Person",
+    "name": "Steven Golovkine"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "TwentyFourSecs",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "img//"
+    }
+  },
+  "description": "An introduction to neural network with the high level framework `Keras` and the famous MNIST dataset."
+}
+</script>
+
+  
+
+  
+
+
+  
+
+
+  
+
+
+
+
+
+  <title>Introduction to Deep Learning with Keras | TwentyFourSecs</title>
+
+</head>
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" >
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/">TwentyFourSecs</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/">TwentyFourSecs</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#about"><span>Home</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#posts"><span>Posts</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#projects"><span>Projects</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#featured"><span>Publications</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#contact"><span>Contact</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      <li class="nav-item">
+        <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+<div class="article-container pt-3">
+  <h1>Introduction to Deep Learning with Keras</h1>
+
+  
+
+  
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    Aug 5, 2019
+  </span>
+  
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    8 min read
+  </span>
+  
+
+  
+  
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fas fa-folder mr-1"></i><a href="/categories/deep-learning/">Deep Learning</a>, <a href="/categories/python/">Python</a></span>
+  
+
+</div>
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+<div class="article-header article-container featured-image-wrapper mt-4 mb-4" style="max-width: 640px; max-height: 487px;">
+  <div style="position: relative">
+    <img src="/post/introduction-to-deep-learning-with-keras/featured.jpg" alt="" class="featured-image">
+    <span class="article-header-caption">Image by Alina Grubnyak from Unsplash</span>
+  </div>
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      <p>This post is based on the Deep Learning course from the Master Datascience Paris Saclay. Materials of the course can be found 
+<a href="https://github.com/m2dsupsdlclass/lectures-labs" target="_blank" rel="noopener">here</a>
+. The complete code can be found on a Kaggle 
+<a href="https://www.kaggle.com/stevengolo/introduction-to-deep-learning-with-keras" target="_blank" rel="noopener">kernel</a>
+.</p>
+<p><strong>Goal of the post</strong></p>
+<ul>
+<li>Train a simple neural network (Multi-Layer Perceptron) with the high level framework <code>Keras</code>.</li>
+</ul>
+<p><strong>Dataset used</strong></p>
+<ul>
+<li>The MNIST dataset (
+<a href="https://www.kaggle.com/c/digit-recognizer/overview" target="_blank" rel="noopener">Kaggle link</a>
+).</li>
+</ul>
+<p><img src="output_6_0.png" alt="png"></p>
+<center>
+<p class="caption">
+Figure 1: An example of an image in the dataset.
+</p>
+</center>
+<h1 id="preprocessing">Preprocessing</h1>
+<ul>
+<li>During this step, we will do some normalization on both the training and testing dataset.</li>
+</ul>
+<pre><code class="language-python"># Extract and convert the pixel as numpy array with dtype='float32'
+train = np.asarray(digits_train.iloc[:, 1:], dtype='float32')
+test = np.asarray(digits_test, dtype='float32')
+
+train_target = np.asarray(digits_train.loc[:, 'label'], dtype='int32')
+</code></pre>
+<pre><code class="language-python"># Scale the data
+scaler = preprocessing.StandardScaler()
+train_scale = scaler.fit_transform(train)
+test_scale = scaler.transform(test)
+</code></pre>
+<p><img src="output_10_0.png" alt="png"></p>
+<center>
+<p class="caption">
+Figure 2: An example of a scaled image in the dataset.
+</p>
+</center>
+<h1 id="a-feed-forward-neural-network-with-keras">A Feed Forward Neural Network with Keras</h1>
+<h2 id="objectives">Objectives</h2>
+<ul>
+<li>Build and train a first feedforward network using Keras. Guide to 
+<a href="https://keras.io/getting-started/sequential-model-guide/" target="_blank" rel="noopener">Sequential model</a>
+ in Keras.</li>
+<li>Experiment with different optimizers, activations, size of layers or initializations.</li>
+</ul>
+<h2 id="how-keras-works">How Keras works?</h2>
+<ul>
+<li>In order to build a neural network, we need to turn the target variable into a &ldquo;one-hot-encoding&rdquo; vector representation. There are multiple to do so. One may use the function <code>OneHotEncoder</code> from <code>sklearn.preprocessing</code>, but as we want to work with Keras, we should use the utility function provided by him.</li>
+</ul>
+<pre><code class="language-python"># Encoded the target vector as one-hot-encoding vector.
+target = to_categorical(train_target)
+</code></pre>
+<ul>
+<li>
+<p>The high level API of Keras needs some objects to build a feed forward neural network:</p>
+<ol>
+<li>A model by stacking layers with the right dimensions;</li>
+<li>A loss function with an optimizer;</li>
+<li>Some training data.</li>
+</ol>
+</li>
+</ul>
+<p>Let&rsquo;s build a first model with only one hidden layer with a <code>tanh</code> activation function.</p>
+<pre><code class="language-python"># Define some parameters
+N = train.shape[1] # Length of one data
+H = 100 # Dimension of the hidden layer
+K = 10 # Dimension of the output layer (number of classes to predict)
+lr = 0.1 # Learning rate for the loss function
+epochs = 15 # Number of epochs for the NN
+batch_size = 32 # Size of the batch
+
+# Define the model
+model = Sequential()
+model.add(Dense(H, input_dim=N, activation='tanh'))
+model.add(Dense(K, activation='softmax'))
+
+# Print the model
+model.summary()
+</code></pre>
+<pre><code>_________________________________________________________________
+  Layer (type)                 Output Shape              Param #   
+=================================================================
+  dense_1 (Dense)              (None, 100)               78500     
+_________________________________________________________________
+  dense_2 (Dense)              (None, 10)                1010      
+=================================================================
+  Total params: 79,510
+  Trainable params: 79,510
+  Non-trainable params: 0
+_________________________________________________________________
+</code></pre>
+<pre><code class="language-python"># Define the loss function with the SGD optimizer
+model.compile(optimizer=optimizers.SGD(lr=lr),
+             loss='categorical_crossentropy',
+             metrics=['accuracy'])
+
+# Fit the model
+history = model.fit(train_scale, target, epochs=epochs, batch_size=batch_size, verbose=0)
+</code></pre>
+<p><img src="output_16_0.png" alt="png"></p>
+<center>
+<p class="caption">
+Figure 3: Accuracy and loss of the model through the epochs using the SGD optimizer.
+</p>
+</center>
+<h2 id="influence-of-the-learning-rate">Influence of the learning rate</h2>
+<ul>
+<li>Let&rsquo;s look at the influence of the learning rate on the training loss and accuracy. We consider a learning rate from 0.001 to 10.</li>
+</ul>
+<pre><code class="language-python">lrs = np.logspace(-3, 1, num=5)
+history = dict()
+for lr in lrs :
+  model = Sequential()
+  model.add(Dense(H, input_dim=N, activation='tanh'))
+  model.add(Dense(K, activation='softmax'))
+  model.compile(optimizer=optimizers.SGD(lr=lr), loss='categorical_crossentropy', metrics=['accuracy'])
+  history[lr] = model.fit(train_scale, target, epochs=epochs, batch_size=batch_size, verbose=0).history
+  
+</code></pre>
+<p><img src="output_19_0.png" alt="png"></p>
+<center>
+<p class="caption">
+Figure 4: Accuracy and loss of the model through the epochs for different learning rates.
+</p>
+</center>
+<p>As we see on the graphs, the learning rate has an influence of the speed of convergence and even on the possible divergence. So, for this dataset, when the learning rate is 10, the model does not converge. However, for the learning rate equals to 0.001, 0.01 and 1, the model still converges but it is slower than for the learning rate of 0.1.</p>
+<ul>
+<li>Let&rsquo;s modify the 
+<a href="https://www.jstor.org/stable/2236626?seq=1#page_scan_tab_contents" target="_blank" rel="noopener">SGD</a>
+ optimizer to enable a Nesterov momentum of 0.9. The momentum is used to mitigate the small learning rate or slow training problem a little. However, here, it seems that is not working.</li>
+</ul>
+<pre><code class="language-python">model = Sequential()
+model.add(Dense(H, input_dim=N, activation='tanh'))
+model.add(Dense(K, activation='softmax'))
+model.compile(optimizer=optimizers.SGD(lr=0.1, momentum=0.9, nesterov=True),
+             loss='categorical_crossentropy',
+             metrics=['accuracy'])
+history = model.fit(train_scale, target, epochs=epochs, batch_size=batch_size, verbose=0)
+</code></pre>
+<p><img src="output_22_0.png" alt="png"></p>
+<center>
+<p class="caption">
+Figure 5: Accuracy and loss of the model through the epochs using the Nesterov momentum.
+</p>
+</center>
+<h2 id="influence-of-the-optimizer">Influence of the optimizer</h2>
+<ul>
+<li>Now, let&rsquo;s try the 
+<a href="https://arxiv.org/abs/1412.6980" target="_blank" rel="noopener">Adam</a>
+ optimizer.</li>
+</ul>
+<pre><code class="language-python">model = Sequential()
+model.add(Dense(H, input_dim=N, activation='tanh'))
+model.add(Dense(K, activation='softmax'))
+model.compile(optimizer=optimizers.Adam(),
+             loss='categorical_crossentropy',
+             metrics=['accuracy'])
+history = model.fit(train_scale, target, epochs=epochs, batch_size=batch_size, verbose=0)
+</code></pre>
+<p><img src="output_25_0.png" alt="png"></p>
+<center>
+<p class="caption">
+Figure 6: Accuracy and loss of the model through the epochs using the Adam optimizer.
+</p>
+</center>
+<p>The Adam optimizer with default parameters performs quite well on this model. In fact, the results are comparable with the SGD optimizer with learning rate 0.1 whereas the default learning rate of the Adam optimizer is 0.001.</p>
+<ul>
+<li>Let&rsquo;s add another hidden layer to the model with the <code>relu</code> activation function.</li>
+</ul>
+<pre><code class="language-python">model = Sequential()
+model.add(Dense(H, input_dim=N, activation='relu'))
+model.add(Dense(H, activation='relu'))
+model.add(Dense(K, activation='softmax'))
+model.compile(optimizer=optimizers.Adam(),
+             loss='categorical_crossentropy',
+             metrics=['accuracy'])
+history = model.fit(train_scale, target, epochs=epochs, batch_size=batch_size, verbose=0)
+</code></pre>
+<p><img src="output_28_0.png" alt="png"></p>
+<center>
+<p class="caption">
+Figure 7: Accuracy and loss of the model through the epochs with another hidden layers.
+</p>
+</center>
+<p>When we add another hidden layer and change the activation function, the results with default parameters are in some sense less good than before. However, it does seem to be a problem to train the model with Adam default parameters.</p>
+<ul>
+<li>Let&rsquo;s try a last one optimizer, the 
+<a href="https://arxiv.org/abs/1212.5701" target="_blank" rel="noopener">Adadelta</a>
+ optimizer (no learning rate to set).</li>
+</ul>
+<pre><code class="language-python">model = Sequential()
+model.add(Dense(H, input_dim=N, activation='tanh'))
+model.add(Dense(K, activation='softmax'))
+model.compile(optimizer=optimizers.Adadelta(),
+             loss='categorical_crossentropy',
+             metrics=['accuracy'])
+history = model.fit(train_scale, target, epochs=epochs, batch_size=batch_size, verbose=0)
+</code></pre>
+<p><img src="output_31_0.png" alt="png"></p>
+<center>
+<p class="caption">
+Figure 8: Accuracy and loss of the model through the epochs using the Adadelta optimizer.
+</p>
+</center>
+<p>The Adadelta seems to give very good results on this dataset. No learning rate are required for this optimizer, in fact, it adapts the learning rate over time.</p>
+<h2 id="forward-pass-and-generalization">Forward pass and generalization</h2>
+<ul>
+<li>Now, we are gonna use the last model we fit to make prediction on the test set.</li>
+</ul>
+<pre><code class="language-python">prediction = model.predict_classes(test)
+</code></pre>
+<center>
+<p float="left">
+  <img src="output_35_0.png" width="200" />
+  <img src="output_35_1.png" width="200" /> 
+</p>
+<p class="caption">
+Figure 9: Examples of prediction.
+</p>
+</center>
+<p>Submitting this very simple model, with only one hidden layer, leads to a 88% accuracy.</p>
+<h2 id="impact-of-initialization">Impact of initialization</h2>
+<p>Let us now study the impact of initialization when training a deep feed forward network. By default, Keras dense layers use the <em>Glorot Uniform</em> initialization strategy to initialize the weigth matrices:</p>
+<ul>
+<li>each weight coefficient is randomly sampled from $[-scale, scale]$;</li>
+<li>scale is proportional to $1 / \sqrt{n_{in} + n_{out}}$.</li>
+</ul>
+<p>This strategy is known to work well to initialize deep neural networks with <code>tanh</code> or <code>relu</code> activation functions and then trained with standard SGD. To assess the impact of initialization, let us plug an alternative init scheme into a two hidden layers networks with <code>tanh</code> activation functions. For the sake of the example, let&rsquo;s use normal distributed weights with a manually adjustable scale (standard deviation) and see the impact of the scale value.</p>
+<pre><code class="language-python"># Define a random normal initializers.
+normal_init = initializers.RandomNormal(stddev=0.01)
+
+model = Sequential()
+model.add(Dense(H, input_dim=N, activation='tanh', kernel_initializer=normal_init))
+model.add(Dense(K, activation='tanh', kernel_initializer=normal_init))
+model.add(Dense(K, activation='softmax', kernel_initializer=normal_init))
+
+model.compile(optimizer=optimizers.SGD(lr=lr),
+             loss='categorical_crossentropy',
+             metrics=['accuracy'])
+
+model.summary()
+</code></pre>
+<pre><code>_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+dense_22 (Dense)             (None, 100)               78500     
+_________________________________________________________________
+dense_23 (Dense)             (None, 10)                1010      
+_________________________________________________________________
+dense_24 (Dense)             (None, 10)                110       
+=================================================================
+Total params: 79,620
+Trainable params: 79,620
+Non-trainable params: 0
+_________________________________________________________________
+</code></pre>
+<p>Let&rsquo;s have a look at the parameters of the first layer after initialization but before any training has happened.</p>
+<pre><code class="language-python">w = model.layers[0].weights[0].eval(keras.backend.get_session())
+</code></pre>
+<pre><code>Initialization weights: 
+     - mean = 0.0
+     - standard deviation = 0.009999999776482582
+</code></pre>
+<pre><code class="language-python">b = model.layers[0].weights[1].eval(keras.backend.get_session())
+</code></pre>
+<pre><code>Initialization bias: 
+     - mean = 0.0
+     - standard deviation = 0.0
+</code></pre>
+<pre><code class="language-python">history = model.fit(train_scale, target, epochs=epochs, batch_size=batch_size, verbose=0)
+</code></pre>
+<p><img src="output_46_0.png" alt="png"></p>
+<center>
+<p class="caption">
+Figure 10: Accuracy and loss of the model through the epochs with a Normal initialization for the weights.
+</p>
+</center>
+<p>We see that with this initialization the SGD algorithm can not train the network in 15 epochs.</p>
+<pre><code class="language-python"># Define different initializations
+init_list = [
+    ('Glorot Uniform Init', 'glorot_uniform'),
+    ('Small Scale Init', initializers.RandomNormal(stddev=1e-3)),
+    ('Large Scale Init', initializers.RandomNormal(stddev=1)),
+    ('Zero Weights Init', 'zero')
+]
+
+optimizer_list = [
+    ('SGD', optimizers.SGD(lr=lr)),
+    ('Adam', optimizers.Adam()),
+    ('SGD + Nesterov momentum', optimizers.SGD(lr=lr, momentum=0.9, nesterov=True))
+]
+
+history = dict()
+for optimizer_name, optimizer in optimizer_list:
+    for init_name, init in init_list:
+        model = Sequential()
+        model.add(Dense(H, input_dim=N, activation='tanh', kernel_initializer=init))
+        model.add(Dense(K, activation='tanh', kernel_initializer=init))
+        model.add(Dense(K, activation='softmax', kernel_initializer=init))
+        model.compile(optimizer=optimizer, loss='categorical_crossentropy', metrics=['accuracy'])
+        history[(optimizer_name, init_name)] = model.fit(train_scale, target, epochs=epochs, batch_size=batch_size, verbose=0)
+</code></pre>
+<h3 id="initialization-with-zero-weights">Initialization with zero weights</h3>
+<p><img src="output_49_3.png" alt="png"></p>
+<p><img src="output_49_7.png" alt="png"></p>
+<p><img src="output_49_11.png" alt="png"></p>
+<center>
+<p class="caption">
+Figure 11: Accuracy and loss of the models through the epochs with zero weights initialization.
+</p>
+</center>
+<p>If the network is initialized to zero weights, the activations of the hidden layers are always set to zero, whatever the value of the inputs. The gradient is always zero for all training samples and no learning can happen with any gradient-based optimizer (SGD, Adam, &hellip;): the loss stays constant.</p>
+<p>A network with null weigths has null gradients but this is not a local minimum (nor a local maximum): it is a saddle point at the center of a neighborhood with very low gradients.</p>
+<h3 id="initialization-with-small-scale">Initialization with small scale</h3>
+<p><img src="output_49_1.png" alt="png"></p>
+<p><img src="output_49_5.png" alt="png"></p>
+<p><img src="output_49_9.png" alt="png"></p>
+<center>
+<p class="caption">
+Figure 12: Accuracy and loss of the model through the epochs with small scale initialization.
+</p>
+</center>
+<p>Therefore when the scale of a random initializations of the weights is too small, SGD has a hard time evading that area of low gradients. Adding momentum can help but especially for deep networks it can take many epochs to evade the area.</p>
+<h3 id="initialization-with-large-scale">Initialization with large scale</h3>
+<p><img src="output_49_2.png" alt="png"></p>
+<p><img src="output_49_6.png" alt="png"></p>
+<p><img src="output_49_10.png" alt="png"></p>
+<center>
+<p class="caption">
+Figure 13: Accuracy and loss of the model through the epochs with large scale initialization.
+</p>
+</center>
+<p>Initializating the weights with large random values will make the ouput distribution (softmax) very peaky: the network is very &ldquo;confident&rdquo; of its predictions even if they are completely random. This leads to a very high initial loss value.</p>
+<p>The softmax function does not saturate (bad classification always have a non-zero gradient). However, the intermediate tanh layers can saturate, therefore squashing the gradient of the loss with respect to the parameters of the first &ldquo;Dense&rdquo; layer and making the network train much slower.</p>
+<h3 id="initialization-with-glorot-uniform">Initialization with Glorot Uniform</h3>
+<p><img src="output_49_0.png" alt="png"></p>
+<p><img src="output_49_4.png" alt="png"></p>
+<p><img src="output_49_8.png" alt="png"></p>
+<center>
+<p class="caption">
+Figure 13: Accuracy and loss of the model through the epochs with Glorot Uniform initialization.
+</p>
+</center>
+<p>The Glorot uniform init uses a scale that depends on the dimensions of the weight matrix so has to preserve the average norm of activations and flowing gradients so as to make learning possible. Keras provides alternatives that can be better in some cases. Look at this 
+<a href="http://proceedings.mlr.press/v9/glorot10a/glorot10a.pdf" target="_blank" rel="noopener">paper</a>
+ for more information.</p>
+<p>Adam tends to be more robust when it comes to bad initialization thanks to its per-weight learning rate adjustments but still benefits from a good initialization.</p>
+<p>Things to remember if your network fails to learn at all (the loss stays at its inital value):</p>
+<ul>
+<li>ensure that the weights are properly initialized;</li>
+<li>inspect the per-layer gradient norms to help identify the bad layer;</li>
+<li>use Adam instead of SGD as your default go to initializer.</li>
+</ul>
+
+    </div>
+
+    
+
+
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tags/deep-learning/">Deep Learning</a>
+  
+  <a class="badge badge-light" href="/tags/python/">Python</a>
+  
+  <a class="badge badge-light" href="/tags/keras/">Keras</a>
+  
+</div>
+
+
+
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=/post/introduction-to-deep-learning-with-keras/&amp;text=Introduction%20to%20Deep%20Learning%20with%20Keras" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=/post/introduction-to-deep-learning-with-keras/&amp;t=Introduction%20to%20Deep%20Learning%20with%20Keras" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=Introduction%20to%20Deep%20Learning%20with%20Keras&amp;body=/post/introduction-to-deep-learning-with-keras/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=/post/introduction-to-deep-learning-with-keras/&amp;title=Introduction%20to%20Deep%20Learning%20with%20Keras" target="_blank" rel="noopener" class="share-btn-linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://web.whatsapp.com/send?text=Introduction%20to%20Deep%20Learning%20with%20Keras%20/post/introduction-to-deep-learning-with-keras/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=/post/introduction-to-deep-learning-with-keras/&amp;title=Introduction%20to%20Deep%20Learning%20with%20Keras" target="_blank" rel="noopener" class="share-btn-weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <img class="avatar mr-3 avatar-circle" src="/authors/admin/avatar_hucbc2930ba76141ffd5ffb026ad90ced3_85341_270x270_fill_q90_lanczos_center.jpg" alt="Avatar">
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="/">Steven Golovkine</a></h5>
+      <h6 class="card-subtitle">PhD student</h6>
+      <p class="card-text">My research interests include functional data analysis, non-parametric statistics and machine learning.</p>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+    <li>
+      <a href="mailto:steven_golovkine@icloud.com" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.linkedin.com/in/steven-golovkine/" target="_blank" rel="noopener">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/StevenGolovkine" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+  
+  
+  <div class="article-widget content-widget-hr">
+    <h3>Related</h3>
+    <ul>
+      
+      <li><a href="/project/lower-back-pain/">Lower Back Pain</a></li>
+      
+      <li><a href="/post/jupyter-notebook/">Jupyter Notebook</a></li>
+      
+      <li><a href="/post/library-matplotlib/">Library Matplotlib</a></li>
+      
+      <li><a href="/post/set-up-python/">Set up Python</a></li>
+      
+    </ul>
+  </div>
+  
+
+
+
+  </div>
+</article>
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js" integrity="sha256-1zu+3BnLYV9LdiY85uXMzii3bdrkelyp37e0ZyTAQh0=" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/python.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/r.min.js"></script>
+        
+      
+
+    
+
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.js" integrity="sha256-EErZamuLefUnbMBQbsEqu1USa+btR2oIlCpBJbyD4/g=" crossorigin="anonymous"></script>
+    
+
+    
+    
+    <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    
+    
+    
+    
+    <script>
+      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"No results found","placeholder":"Search...","results":"results found"};
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks"
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academic.min.0630fec5958cb075a5a38f042b3ddde6.js"></script>
+
+    
+
+
+
+
+
+
+  
+  
+  <div class="container">
+    <footer class="site-footer">
+  
+  <p class="powered-by">
+    
+      <a href="/privacy/">Privacy Policy</a>
+    
+    
+       &middot; 
+      <a href="/terms/">Terms</a>
+    
+  </p>
+  
+
+  <p class="powered-by">
+    © 2020 Steven Golovkine. All Rights Reserved &middot; 
+
+    Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+    <span class="float-right" aria-hidden="true">
+      <a href="#" class="back-to-top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+    
+  </p>
+</footer>
+
+  </div>
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Package | TwentyFourSecs</title>
+    <link>/tags/package/</link>
+      <atom:link href="/tags/package/index.xml" rel="self" type="application/rss+xml" />
+    <description>Package</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Steven Golovkine. All Rights Reserved</copyright><lastBuildDate>Thu, 25 Jul 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/pic.jpg</url>
+      <title>Package</title>
+      <link>/tags/package/</link>
+    </image>
+    
+    <item>
+      <title>knitr</title>
+      <link>/post/knitr/</link>
+      <pubDate>Thu, 25 Jul 2019 00:00:00 +0000</pubDate>
+      <guid>/post/knitr/</guid>
+      <description>&lt;p&gt;The package &lt;code&gt;knitr&lt;/code&gt; has been created by Yihui Xie. It is disponible on the 
+&lt;a href=&#34;https://cran.r-project.org/web/packages/knitr/index.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CRAN&lt;/a&gt;
+. Check out the official 
+&lt;a href=&#34;https://yihui.name/knitr/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;website&lt;/a&gt;
+ for more information. It is designed to build and generate nice report in &lt;strong&gt;R&lt;/strong&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;questions&#34;&gt;Questions&lt;/h2&gt;
+&lt;h3 id=&#34;how-to-render-latex-formula-in-ggplot-graphs-in-a-report-in-html&#34;&gt;How to render Latex formula in ggplot graphs in a report in html?&lt;/h3&gt;
+&lt;p&gt;For a report in pdf, it is quite easy to render Latex formula in a ggplot graph. Just set the &lt;code&gt;dev&lt;/code&gt; variable to &lt;code&gt;&#39;tikz&#39;&lt;/code&gt; in a &lt;strong&gt;R&lt;/strong&gt; chunk. However, this method produces a pdf of the picture, and some browsers seem to have some trouble to show pdf files. So, the idea is to convert the pdf of the picture into a png file. For that, the &lt;strong&gt;R&lt;/strong&gt; chunk accept the option &lt;code&gt;fig.process&lt;/code&gt; and we will modify it to solve our problem.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-{r&#34;&gt;fig.process &amp;lt;- function(x) {
+    x &amp;lt;- paste0(&#39;./&#39;, x)
+    
+    if(stringr::str_detect(x, &#39;pdf&#39;)){
+      y &amp;lt;- stringr::str_replace(x, &#39;pdf&#39;, &#39;png&#39;)
+      png::writePNG(pdftools::pdf_render_page(x), target = y, dpi = 300)
+      return(y)
+    } else {
+      return(x)
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The function &lt;code&gt;fig.process&lt;/code&gt; takes a string as input (the path of the picture). If the picture is in pdf, it will convert it into png, otherwise, it will do nothing. And finally, the browser will render the picture correctly.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Package ggplot2</title>
+      <link>/post/package-ggplot2/</link>
+      <pubDate>Wed, 19 Dec 2018 00:00:00 +0000</pubDate>
+      <guid>/post/package-ggplot2/</guid>
+      <description>&lt;p&gt;The package &lt;code&gt;ggplot2&lt;/code&gt; has been created by Hadley Wickham among others. It is disponible on the 
+&lt;a href=&#34;https://cloud.r-project.org/web/packages/ggplot2/index.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CRAN&lt;/a&gt;
+. Check out the official 
+&lt;a href=&#34;https://cloud.r-project.org/web/packages/ggplot2/index.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;website&lt;/a&gt;
+ for more information. It is designed to provide nice graphics in an quite easy way.&lt;/p&gt;
+&lt;h2 id=&#34;use-custom-theme&#34;&gt;Use custom theme&lt;/h2&gt;
+&lt;p&gt;First, define a particular function that define a new theme based on another.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-{r&#34;&gt;theme_custom = function(base_family = &amp;quot;Times&amp;quot;){
+  theme_minimal(base_family = base_family) %+replace%
+    theme(
+      plot.title = element_text(size = 20),
+      plot.subtitle = element_text(size = 16, vjust = -1),
+      
+      axis.title = element_text(size = 18),
+      axis.text = element_text(size = 16),
+      
+      axis.title.y = element_text(margin = margin(t = 0, r = 20, b = 0, l = 0), angle = 90),
+      axis.title.x = element_text(margin = margin(t = 20, r = 0, b = 20, l = 0)),
+      
+      strip.text.x = element_text(size = 16),
+      strip.text.y = element_text(size = 16),
+      
+      legend.text = element_text(size = 18),
+      legend.text.align = 0
+    )
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Then, just use it as any other theme.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-{r&#34;&gt;ggplot(aes(x, y)) + theme_custom()
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Package xml2</title>
+      <link>/post/package-xml2/</link>
+      <pubDate>Thu, 06 Dec 2018 00:00:00 +0000</pubDate>
+      <guid>/post/package-xml2/</guid>
+      <description>&lt;p&gt;The package &lt;code&gt;xml2&lt;/code&gt; has been created by Hadley Wickham among others. It is disponible on the 
+&lt;a href=&#34;https://cran.r-project.org/web/packages/xml2/index.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CRAN&lt;/a&gt;
+. It is designed to work with XML files in &lt;strong&gt;R&lt;/strong&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;installation-issues&#34;&gt;Installation issues&lt;/h2&gt;
+&lt;h3 id=&#34;configuration-failed-because-libxml-20-was-not-found&#34;&gt;Configuration failed because libxml-2.0 was not found&lt;/h3&gt;
+&lt;p&gt;First, check that the folders given by the following commands exits:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;which xml2-config
+# /usr/bin/xml2-config
+
+xml2-config --libs
+# -L/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/usr/lib -lxml2 -lz -lpthread -licucore -lm
+
+xml2-config --cflags
+# -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/usr/include/libxml2
+
+which pkg-config
+# /usr/local/bin/pkg-config
+
+pkg-config --cflags libxml-2.0
+# -I/usr/include/libxml2
+
+pkg-config --libs libxml-2.0
+# -lxml2
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;In the case where, &lt;code&gt;/usr/include&lt;/code&gt; does not exists, run the command:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;xcode-select --install
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;And then, re-try to install the package &lt;code&gt;xml2&lt;/code&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

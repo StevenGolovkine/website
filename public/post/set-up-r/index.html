@@ -1,0 +1,1382 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.7.0">
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Steven Golovkine">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="R is a software for statistical computing and graphics. It is very easy to install on macOS.">
+
+  
+  <link rel="alternate" hreflang="en-us" href="/post/set-up-r/">
+
+  
+
+
+  
+  
+  
+  <meta name="theme-color" content="#795548">
+  
+
+  
+  
+  
+  <script src="/js/mathjax-config.js"></script>
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css" integrity="sha256-4w9DunooKSr3MFXHXWyFER38WmPdm361bQS/2KUWZbU=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.css" integrity="sha256-SHMGCYmST46SoyGgo4YR/9AlK1vf3ff84Aq9yK4hdqM=" crossorigin="anonymous">
+    
+
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js" integrity="sha256-Md1qLToewPeKjfAHU1zyPwOutccPAm5tahnaw7Osw0A=" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cutive+Mono%7CLora:400,700%7CRoboto:400,700&display=swap">
+  
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/academic.css">
+
+  
+
+
+
+
+  
+
+
+  
+
+  <link rel="manifest" href="/index.webmanifest">
+  <link rel="icon" type="image/png" href="/images/icon_hu1d2d3b6ebbfe3e5882ce5725380dc208_3894_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu1d2d3b6ebbfe3e5882ce5725380dc208_3894_192x192_fill_lanczos_center_2.png">
+
+  <link rel="canonical" href="/post/set-up-r/">
+
+  
+  
+  
+  
+  
+    
+  
+  
+  <meta property="twitter:card" content="summary_large_image">
+  
+  <meta property="twitter:site" content="@StevenGolovkine">
+  <meta property="twitter:creator" content="@StevenGolovkine">
+  
+  <meta property="og:site_name" content="TwentyFourSecs">
+  <meta property="og:url" content="/post/set-up-r/">
+  <meta property="og:title" content="Set up R | TwentyFourSecs">
+  <meta property="og:description" content="R is a software for statistical computing and graphics. It is very easy to install on macOS."><meta property="og:image" content="/post/set-up-r/featured.png">
+  <meta property="twitter:image" content="/post/set-up-r/featured.png"><meta property="og:locale" content="en-us">
+  
+    
+      <meta property="article:published_time" content="2018-12-05T00:00:00&#43;00:00">
+    
+    <meta property="article:modified_time" content="2018-12-05T00:00:00&#43;00:00">
+  
+
+  
+
+
+    
+
+
+
+
+
+
+  
+
+
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "/post/set-up-r/"
+  },
+  "headline": "Set up R",
+  
+  "image": [
+    "/post/set-up-r/featured.png"
+  ],
+  
+  "datePublished": "2018-12-05T00:00:00Z",
+  "dateModified": "2018-12-05T00:00:00Z",
+  
+  "author": {
+    "@type": "Person",
+    "name": "Steven Golovkine"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "TwentyFourSecs",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "img//"
+    }
+  },
+  "description": "R is a software for statistical computing and graphics. It is very easy to install on macOS."
+}
+</script>
+
+  
+
+  
+
+
+  
+
+
+  
+
+
+
+
+
+  <title>Set up R | TwentyFourSecs</title>
+
+</head>
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" >
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/">TwentyFourSecs</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/">TwentyFourSecs</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#about"><span>Home</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#posts"><span>Posts</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#projects"><span>Projects</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#featured"><span>Publications</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#contact"><span>Contact</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      <li class="nav-item">
+        <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1>Set up R</h1>
+
+  
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    Dec 5, 2018
+  </span>
+  
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    6 min read
+  </span>
+  
+
+  
+  
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fas fa-folder mr-1"></i><a href="/categories/r/">R</a></span>
+  
+
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      <h2 id="installation">Installation</h2>
+<p>
+<a href="https://cran.r-project.org" target="_blank" rel="noopener"><strong>R</strong></a>
+ is very easy to install on MacOS.</p>
+<p>The first thing to do is to add <strong>R</strong> to the available formulae in <strong>Homebrew</strong>. And then, install <strong>R</strong>.</p>
+<pre><code class="language-bash">brew tap homebrew/science
+brew install r
+</code></pre>
+<p>It could be necessary to install <strong>XQuartz</strong> to use <strong>R</strong> (but it is also possible that it is installed by default)</p>
+<pre><code class="language-bash">brew cask install xquartz
+</code></pre>
+<p>A nice GUI to use with <strong>R</strong> is <strong>Rstudio</strong>.</p>
+<pre><code class="language-bash">brew cask install rstudio
+</code></pre>
+<h2 id="jupyter-kernel">Jupyter kernel</h2>
+<p>The installation of the <strong>R</strong> kernel for Jupyter is straightforward following this 
+<a href="https://irkernel.github.io/installation/" target="_blank" rel="noopener">link</a>
+.</p>
+<p>On MacOS, from a Terminal, run <code>R</code> to launch a <strong>R</strong> session. Then, run the following commands:</p>
+<pre><code class="language-r">install.packages('IRKernel') # Install the package
+IRKernel::installspec() # Make Jupyter to see the R kernel
+</code></pre>
+<h2 id="configuration-of-the-proxies">Configuration of the proxies</h2>
+<p>How to install packages if you have to deal with proxies? First, you should know the repository where <strong>R</strong> is installed.</p>
+<pre><code class="language-r">R.home()
+</code></pre>
+<p>And then, you have to add to the file <code>${R_HOME}/etc/Renviron</code> the lines:</p>
+<pre><code class="language-bash">http_proxy=http://&lt;user_name&gt;:&lt;password&gt;@&lt;host&gt;:&lt;port&gt;/
+https_proxy=https://&lt;user_name&gt;:&lt;password&gt;@&lt;host&gt;:&lt;port&gt;/
+ftp_proxy=ftp://&lt;user_name&gt;:&lt;password&gt;@&lt;host&gt;:&lt;port&gt;/
+</code></pre>
+<h2 id="some-modification-to-functions">Some modification to functions</h2>
+<h3 id="summary-functions">Summary functions</h3>
+<details>
+<summary>Dataframe summary</summary>
+<p>
+```{r}
+summary_df <- function(df){
+  # Function that get a dataframe as input and return a list with two entries.
+  # One entry is for factor variables, which is a list that count the factors.
+  # The other entry is for numeric variables, which contains statistics on it.
+  result <- list()
+<p>if(any(sapply(df, class) == &lsquo;factor&rsquo;)){
+result$Factor &lt;- df %&gt;% select_if(is.factor) %&gt;% imap(summary_column)
+}
+if(any(sapply(df, class) == &lsquo;numeric&rsquo;)){
+result$Numeric &lt;- df %&gt;% select_if(is.numeric) %&gt;% imap_dfr(summary_column)
+}</p>
+<p>return(result)
+}</p>
+<pre><code>&lt;/p&gt;
+&lt;/details&gt;	
+
+&lt;details&gt;
+&lt;summary&gt;Column dataframe summary&lt;/summary&gt;
+&lt;p&gt;
+```{r}
+summary_column &lt;- function(df.column, name.column){
+  # Function that get a column from a dataframe and return statistics on it.
+  # Depending on the column class, the results will not be the same.
+  if(class(df.column) == 'factor'){
+    colName &lt;- name.column
+    df.column %&gt;% fct_count() %&gt;% rename(!!colName := f, Count = n)    
+  } else if(class(df.column) == 'numeric'){
+    tibble(
+      Name = name.column,
+      NA_num = sum(is.na(df.column)),
+      Unique = length(unique(df.column)),
+      Range = max(df.column, na.rm = TRUE) - min(df.column, na.rm = TRUE),
+      Mean = round(mean(df.column, na.rm = TRUE), digits = 2),
+      Variance = round(var(df.column, na.rm = TRUE), digits = 2),
+      Minimum = min(df.column, na.rm = TRUE),
+      Q05 = quantile(df.column, probs = .05, na.rm = TRUE),
+      Q10 = quantile(df.column, probs = .10, na.rm = TRUE),
+      Q25 = quantile(df.column, probs = .25, na.rm = TRUE),
+      Q50 = quantile(df.column, probs = .50, na.rm = TRUE),
+      Q75 = quantile(df.column, probs = .75, na.rm = TRUE),
+      Q90 = quantile(df.column, probs = .90, na.rm = TRUE),
+      Q95 = quantile(df.column, probs = .95, na.rm = TRUE),
+      Maximum = max(df.column, na.rm = TRUE)
+    )
+  }
+}
+</code></pre>
+</p>
+</details>
+<h3 id="print-functions">Print functions</h3>
+<details>
+<summary>Print summary dataframe</summary>
+<p>
+```{r}
+print_summary_df <- function(l){
+  # Print function for the summary of dataframe to be rendered in html.
+  for(i in seq_along(l)){
+    cat(glue::glue("<ul>"))
+    cat(glue::glue("<li> **{names(l)[i]} variables** </li>\n\n"))
+    if(class(l[[i]]) == 'list'){
+      for(j in seq_along(l[[i]])){
+        cat(glue::glue("<ul>"))
+        cat(glue::glue("<li> {names(l[[i]][j])} </li>\n\n"))
+        cat('<div style="overflow-x:auto;">\n')
+        l[[i]][j] %>%
+          kable(format = 'html') %>%
+          kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive"), position = "center") %>%
+          print()
+        cat('</div></ul>\n\n')
+      }
+    } else{
+      cat('<div style="overflow-x:auto;">\n')
+      l[[i]] %>%
+        kable(format = 'html') %>%
+        kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive"), position = "center") %>%
+        print()  
+       cat('</div>\n')
+    }
+    cat(glue::glue("</ul>\n"))
+  }
+}
+<pre><code>&lt;/p&gt;
+&lt;/details&gt;
+
+&lt;details&gt;
+&lt;summary&gt;Print dataframe&lt;/summary&gt;
+&lt;p&gt;
+```{r}
+print_df &lt;- function(l){
+  # Print function for dataframe to be renderer in html.
+  cat('&lt;div style=&quot;overflow-x:auto;&quot;&gt;\n')
+  l %&gt;% 
+    kable(format = 'html') %&gt;%
+    kable_styling(bootstrap_options = c(&quot;striped&quot;, &quot;hover&quot;, &quot;condensed&quot;, &quot;responsive&quot;), position = &quot;center&quot;) %&gt;%
+    print()
+  cat('&lt;/div&gt;&lt;/ul&gt;\n\n')
+}
+</code></pre>
+</p>
+</details>
+<details>
+<summary>Print summary lm</summary>
+<p>
+```{r}
+print_summary_lm <- function(lm_summary){
+  # Print function for lm summary to be renderer in html.
+  cat(glue::glue("Results of the linear model on the **{lm_summary$call$data}** dataset.\n"))
+<p>cat(glue::glue(&ldquo;<ul>&rdquo;))</p>
+<h1 id="print-the-formula">Print the formula</h1>
+<p>cat(glue::glue(&ldquo;<li> <em>Formula</em>: &ldquo;,
+&ldquo;{deparse(lm_summary$call$formula)} </li>&rdquo;))</p>
+<h1 id="treat-the-residuals">Treat the residuals</h1>
+<p>cat(glue::glue(&ldquo;<li> <em>Residuals</em> </li>\n&rdquo;))
+cat(&lsquo;<div style="overflow-x:auto;">\n&rsquo;)
+lm_summary$residuals %&gt;% summary_column(name.column = &lsquo;Residuals&rsquo;) %&gt;%
+kable(format = &lsquo;html&rsquo;, digits = 2) %&gt;%
+kable_styling(bootstrap_options = c(&ldquo;striped&rdquo;, &ldquo;hover&rdquo;, &ldquo;condensed&rdquo;, &ldquo;responsive&rdquo;), position = &ldquo;center&rdquo;) %&gt;%
+print()
+cat(&lsquo;</div>\n\n&rsquo;)</p>
+<h1 id="treat-the-regression-coefficient">Treat the regression coefficient</h1>
+<p>cat(glue::glue(&ldquo;<li> <em>Coefficients</em> </li>\n&rdquo;))
+cat(&lsquo;<div style="overflow-x:auto;">\n&rsquo;)
+coef &lt;- lm_summary$coefficients
+coef[, &lsquo;Pr(&gt;|t|)'] &lt;- format.pval(coef[, &lsquo;Pr(&gt;|t|)'])
+coef &lt;- coef %&gt;% as.data.frame(stringsAsFactors = FALSE) %&gt;%
+rownames_to_column(&lsquo;Variable&rsquo;) %&gt;%
+as.tibble() %&gt;%
+map_at(c(&ldquo;Estimate&rdquo;, &ldquo;Std. Error&rdquo;, &ldquo;t value&rdquo;), as.numeric)
+coef %&gt;% as.tibble() %&gt;%
+kable(format = &lsquo;html&rsquo;, digits = 5) %&gt;%
+kable_styling(bootstrap_options = c(&ldquo;striped&rdquo;, &ldquo;hover&rdquo;, &ldquo;condensed&rdquo;, &ldquo;responsive&rdquo;), position = &ldquo;center&rdquo;) %&gt;%
+print()
+cat(&lsquo;</div>\n\n&rsquo;)</p>
+<h1 id="treat-other-stats">Treat other stats</h1>
+<p>pval &lt;- format.pval(pf(lm_summary$fstatistic[1L], lm_summary$fstatistic[2L],
+lm_summary$fstatistic[3L], lower.tail = FALSE), digits = 3)
+cat(glue::glue(&ldquo;<li> <em>Residual standard error</em>: &ldquo;,
+&ldquo;{round(lm_summary$sigma, 3)} on {lm_summary$df[2]} degrees of freedom. </li>&rdquo;))
+cat(glue::glue(&ldquo;<li> <em>Multiple $R^2$</em>: {round(lm_summary$r.squared, 3)}.</li>&rdquo;))
+cat(glue::glue(&ldquo;<li> <em>Adjusted $R^2$</em>: {round(lm_summary$adj.r.squared, 3)}.</li>&rdquo;))
+cat(glue::glue(&ldquo;<li> <em>F-statistic</em>: &ldquo;,
+&ldquo;{round(lm_summary$fstatistic[1L], 3)} on {lm_summary$fstatistic[2L]} and {lm_summary$fstatistic[3L]}, &ldquo;,
+&ldquo;p-value: {pval}. </li>&rdquo;))</p>
+<p>cat(glue::glue(&ldquo;</ul>&rdquo;))
+}</p>
+<pre><code>&lt;/p&gt;
+&lt;/details&gt;
+
+&lt;details&gt;
+&lt;summary&gt;Print summary glm&lt;/summary&gt;
+&lt;p&gt;
+```{r}
+print_summary_glm &lt;- function(glm_summary){
+  cat(glue::glue(&quot;Results of the model on the **{glm_summary$call$data}** dataset.\n&quot;))
+  
+  cat(glue::glue(&quot;&lt;ul&gt;&quot;))
+  # Print the formula
+  cat(glue::glue(&quot;&lt;li&gt; *Formula*: &quot;, 
+                 &quot;{deparse(glm_summary$call$formula)} &lt;/li&gt;&quot;))
+  
+  # Treat the residuals
+  cat(glue::glue(&quot;&lt;li&gt; *Residuals* &lt;/li&gt;\n&quot;))
+  cat('&lt;div style=&quot;overflow-x:auto;&quot;&gt;\n')
+  glm_summary$deviance.resid %&gt;% summary_column(name.column = 'Residuals') %&gt;%
+    kable(format = 'html', digits = 2) %&gt;%
+    kable_styling(bootstrap_options = c(&quot;striped&quot;, &quot;hover&quot;, &quot;condensed&quot;, &quot;responsive&quot;), position = &quot;center&quot;) %&gt;%
+    print()
+  cat('&lt;/div&gt;\n\n')
+  
+  # Treat the regression coefficient
+  cat(glue::glue(&quot;&lt;li&gt; *Coefficients* &lt;/li&gt;\n&quot;))
+  cat('&lt;div style=&quot;overflow-x:auto;&quot;&gt;\n')
+  coef &lt;- glm_summary$coefficients
+  coef[, 'Pr(&gt;|z|)'] &lt;- format.pval(coef[, 'Pr(&gt;|z|)'])
+  coef &lt;- coef %&gt;% as.data.frame(stringsAsFactors = FALSE) %&gt;% 
+    rownames_to_column('Variable') %&gt;% 
+    as.tibble() %&gt;% 
+    map_at(c(&quot;Estimate&quot;, &quot;Std. Error&quot;, &quot;z value&quot;), as.numeric)
+  coef %&gt;% as.tibble() %&gt;%
+    kable(format = 'html', digits = 5) %&gt;%
+    kable_styling(bootstrap_options = c(&quot;striped&quot;, &quot;hover&quot;, &quot;condensed&quot;, &quot;responsive&quot;), position = &quot;center&quot;) %&gt;%
+    print()
+  cat('&lt;/div&gt;\n\n')
+  
+  # Treat other stats
+  cat(glue::glue(&quot;&lt;li&gt; *Null deviance*: &quot;, 
+                 &quot;{round(glm_summary$null.deviance, 3)} on {glm_summary$df.null} degrees of freedom. &lt;/li&gt;&quot;))
+  cat(glue::glue(&quot;&lt;li&gt; *Residual deviance*: &quot;, 
+                 &quot;{round(glm_summary$deviance, 3)} on {glm_summary$df.residual} degrees of freedom. &lt;/li&gt;&quot;))
+  cat(glue::glue(&quot;&lt;li&gt; *AIC*: &quot;, 
+                 &quot;{round(glm_summary$aic, 3)}&lt;/li&gt;&quot;))
+  
+  cat(glue::glue(&quot;&lt;/ul&gt;\n&quot;))
+}
+
+</code></pre>
+</p>
+</details>
+<h3 id="plot-functions">Plot functions</h3>
+<details>
+<summary>Plot confusion matrix</summary>
+<p>
+```{r}
+plot_confusion_matrix <- function(confusion_matrix){
+  confusion_matrix %>%
+    as.data.frame(optional = TRUE) %>% 
+    rownames_to_column() %>%
+    rename('Var1' = '.') %>%
+    ggplot() +
+    geom_text(aes(x = Var1, y = Var2, label = Freq), size = 4) +
+    xlab('Prediction') +
+    ylab('True') +
+    geom_hline(aes(yintercept = 1.5), size = 0.2) +
+    geom_vline(aes(xintercept = 1.5), size = 0.2) +
+    theme_bw() +
+    scale_x_discrete(position = "top") +
+    theme(panel.grid = element_blank(),
+          axis.ticks = element_blank())
+}
+```
+</p>
+</details>
+<details>
+<summary>Plot regsubset summary</summary>
+<p>
+```{r}
+ggregsubsets <- function(x, criterion = c("rsq", "rss", "adjr2", "cp", "bic")){
+  # https://gist.github.com/dkahle/7942a7eba8aaa026d0bab6a1e9d88580
+  require(dplyr); require(ggplot2); require(tidyr)
+  if(inherits(x, "regsubsets")) x <- summary(x)
+  if(!inherits(x, "summary.regsubsets"))
+    stop("The input to ggregsubsets() should be the result of regsubsets().")
+  df <- bind_cols(
+    as.data.frame(x$which), 
+    as.data.frame(x[criterion]),
+    data.frame(nvars = 1:nrow(x$which))
+  )
+  names(df)[1] <- "Int"
+  if("rsq" %in% criterion) df <- df %>% mutate(rsq = 100*rsq)
+  if("adjr2" %in% criterion) df <- df %>% mutate(adjr2 = 100*adjr2)
+<p>df &lt;- df %&gt;%
+gather(variable, is_in, -criterion, -nvars) %&gt;%
+gather(measure, value, -nvars, -variable, -is_in)</p>
+<p>if(&ldquo;rsq&rdquo; %in% criterion) df[df[&lsquo;measure&rsquo;] == &lsquo;rsq&rsquo;, &lsquo;measure&rsquo;] &lt;- &lsquo;$R^2$&rsquo;
+if(&ldquo;rss&rdquo; %in% criterion) df[df[&lsquo;measure&rsquo;] == &lsquo;rss&rsquo;, &lsquo;measure&rsquo;] &lt;- &lsquo;$RSS$&rsquo;
+if(&ldquo;adjr2&rdquo; %in% criterion) df[df[&lsquo;measure&rsquo;] == &lsquo;adjr2&rsquo;, &lsquo;measure&rsquo;] &lt;- &lsquo;Adjusted $R^2$&rsquo;
+if(&ldquo;cp&rdquo; %in% criterion) df[df[&lsquo;measure&rsquo;] == &lsquo;cp&rsquo;, &lsquo;measure&rsquo;] &lt;- &lsquo;$C_p$&rsquo;
+if(&ldquo;bic&rdquo; %in% criterion) df[df[&lsquo;measure&rsquo;] == &lsquo;bic&rsquo;, &lsquo;measure&rsquo;] &lt;- &lsquo;$BIC$&rsquo;</p>
+<p>p &lt;- ggplot(df, aes(variable, factor(round(value)))) +
+geom_tile(aes(fill = is_in)) +
+facet_wrap(~ measure, scales = &ldquo;free&rdquo;) +
+scale_fill_manual(&quot;&quot;, values = c(&ldquo;TRUE&rdquo; = &ldquo;black&rdquo;, &ldquo;FALSE&rdquo; = &ldquo;white&rdquo;), guide = FALSE) +
+labs(x = &ldquo;&quot;, y = &ldquo;&quot;)
+return(p)
+}</p>
+<pre><code>&lt;/p&gt;
+&lt;/details&gt;
+
+&lt;details&gt;
+&lt;summary&gt;Plot criteria for model selection&lt;/summary&gt;
+&lt;p&gt;
+```{r}
+ggcriteria &lt;- function(x, criterion = &quot;bic&quot;){
+  require(dplyr); require(ggplot2); require(tidyr)
+  if(inherits(x, &quot;regsubsets&quot;)) x &lt;- summary(x)
+  if(!inherits(x, &quot;summary.regsubsets&quot;))
+    stop(&quot;The input to ggregsubsets() should be the result of regsubsets().&quot;)
+  
+  if(&quot;rsq&quot; == criterion) crit &lt;- '$R^2$'
+  if(&quot;rss&quot; == criterion) crit &lt;- '$RSS$'
+  if(&quot;adjr2&quot; == criterion) crit &lt;- 'Adjusted $R^2$'
+  if(&quot;cp&quot; == criterion) crit &lt;- '$C_p$'
+  if(&quot;bic&quot; == criterion) crit &lt;- '$BIC$'
+  
+  if((criterion == &quot;adjr2&quot;) | (criterion == &quot;rsq&quot;)) m &lt;- which.max(x[[criterion]])
+  else m &lt;- which.min(x[[criterion]])
+  
+  p &lt;- ggplot() +
+    geom_line(aes(x = seq(1, length(x[[criterion]])), y = x[[criterion]])) + 
+    geom_point(aes(x = m, y = x[[criterion]][m]), col = 'red', size = 3) +
+    xlab('Number of variables') +
+    scale_x_continuous(breaks = seq(1, length(x[[criterion]])), minor_breaks = NULL) +
+    ylab(crit)
+  return(p)
+}
+</code></pre>
+</p>
+</details>
+<details>
+<summary>Plot cross-validation error from `cv.glmnet` function</summary>
+<p>
+```{r}
+ggcv.glmnet <- function(x){
+  require(dplyr); require(ggplot2); require(glmnet)
+  if(!inherits(x, "cv.glmnet"))
+    stop("The input of ggcv.glmnet() should be the result og cv.glmnet().")
+<p>df &lt;- tibble(lambda = log(x$lambda), cvm = x$cvm, cvsd = x$cvsd)
+p &lt;- ggplot(df, aes(lambda, cvm, ymin = cvm - cvsd, ymax = cvm + cvsd)) +
+geom_point(col = &lsquo;red&rsquo;) +
+geom_errorbar() +
+geom_vline(aes(xintercept = df$lambda[which.min(df$cvm)]), col = &lsquo;blue&rsquo;, linetype = 2) +
+xlab(&lsquo;$\log(\lambda)$&rsquo;) +
+ylab(&lsquo;Mean-Squared Error&rsquo;)
+return(p)
+}</p>
+<pre><code>&lt;/p&gt;
+&lt;/details&gt;
+</code></pre>
+
+    </div>
+
+    
+
+
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tags/r/">R</a>
+  
+  <a class="badge badge-light" href="/tags/set-up/">Set up</a>
+  
+</div>
+
+
+
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=/post/set-up-r/&amp;text=Set%20up%20R" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=/post/set-up-r/&amp;t=Set%20up%20R" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=Set%20up%20R&amp;body=/post/set-up-r/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=/post/set-up-r/&amp;title=Set%20up%20R" target="_blank" rel="noopener" class="share-btn-linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://web.whatsapp.com/send?text=Set%20up%20R%20/post/set-up-r/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=/post/set-up-r/&amp;title=Set%20up%20R" target="_blank" rel="noopener" class="share-btn-weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <img class="avatar mr-3 avatar-circle" src="/authors/admin/avatar_hucbc2930ba76141ffd5ffb026ad90ced3_85341_270x270_fill_q90_lanczos_center.jpg" alt="Avatar">
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="/">Steven Golovkine</a></h5>
+      <h6 class="card-subtitle">PhD student</h6>
+      <p class="card-text">My research interests include functional data analysis, non-parametric statistics and machine learning.</p>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+    <li>
+      <a href="mailto:steven_golovkine@icloud.com" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.linkedin.com/in/steven-golovkine/" target="_blank" rel="noopener">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/StevenGolovkine" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+  
+  
+  <div class="article-widget content-widget-hr">
+    <h3>Related</h3>
+    <ul>
+      
+      <li><a href="/project/titanic/">Titanic: Machine Learning from Disaster</a></li>
+      
+    </ul>
+  </div>
+  
+
+
+
+  </div>
+</article>
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js" integrity="sha256-1zu+3BnLYV9LdiY85uXMzii3bdrkelyp37e0ZyTAQh0=" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/python.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/r.min.js"></script>
+        
+      
+
+    
+
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.js" integrity="sha256-EErZamuLefUnbMBQbsEqu1USa+btR2oIlCpBJbyD4/g=" crossorigin="anonymous"></script>
+    
+
+    
+    
+    <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    
+    
+    
+    
+    <script>
+      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"No results found","placeholder":"Search...","results":"results found"};
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks"
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academic.min.0630fec5958cb075a5a38f042b3ddde6.js"></script>
+
+    
+
+
+
+
+
+
+  
+  
+  <div class="container">
+    <footer class="site-footer">
+  
+  <p class="powered-by">
+    
+      <a href="/privacy/">Privacy Policy</a>
+    
+    
+       &middot; 
+      <a href="/terms/">Terms</a>
+    
+  </p>
+  
+
+  <p class="powered-by">
+    © 2020 Steven Golovkine. All Rights Reserved &middot; 
+
+    Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+    <span class="float-right" aria-hidden="true">
+      <a href="#" class="back-to-top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+    
+  </p>
+</footer>
+
+  </div>
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

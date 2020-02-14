@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Library | TwentyFourSecs</title>
+    <link>/tags/library/</link>
+      <atom:link href="/tags/library/index.xml" rel="self" type="application/rss+xml" />
+    <description>Library</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Steven Golovkine. All Rights Reserved</copyright><lastBuildDate>Thu, 06 Dec 2018 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/pic.jpg</url>
+      <title>Library</title>
+      <link>/tags/library/</link>
+    </image>
+    
+    <item>
+      <title>Library Matplotlib</title>
+      <link>/post/library-matplotlib/</link>
+      <pubDate>Thu, 06 Dec 2018 00:00:00 +0000</pubDate>
+      <guid>/post/library-matplotlib/</guid>
+      <description>&lt;p&gt;
+&lt;a href=&#34;http://matplotlib.org&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Matplotlib&lt;/a&gt;
+ is a Python 2D plotting library.&lt;/p&gt;
+&lt;h2 id=&#34;use-another-font&#34;&gt;Use another font&lt;/h2&gt;
+&lt;p&gt;First, you need to download/get back the font in the &lt;code&gt;ttf&lt;/code&gt; format. Once it is done, you have to find out the location of the matplotlib library.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;python -c &amp;quot;import matplotlib; print(matplotlib.matplotlib_fname())&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This folder will be different for everyone depending on the installation but it should ended by &lt;code&gt;/matplotlib/mpl-data/matplotlibrc&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Then, you copy the font into the folder &lt;code&gt;/matplotlib/mpl-data/fonts/ttf/&lt;/code&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;cp font.ttf ./matplotlib/mpl-data/fonts/ttf/
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Finally, remove the font cache:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;rm ~/.matplotlib/fontList.py3k.cache
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Now, you can use the new font:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;import matplotlib.pyplot as plt
+plt.rc(&#39;font&#39;, family=&#39;font_name&#39;)
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Spark | TwentyFourSecs</title>
+    <link>/tags/spark/</link>
+      <atom:link href="/tags/spark/index.xml" rel="self" type="application/rss+xml" />
+    <description>Spark</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Steven Golovkine. All Rights Reserved</copyright><lastBuildDate>Sun, 09 Dec 2018 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/pic.jpg</url>
+      <title>Spark</title>
+      <link>/tags/spark/</link>
+    </image>
+    
+    <item>
+      <title>Set up Spark</title>
+      <link>/post/set-up-spark/</link>
+      <pubDate>Sun, 09 Dec 2018 00:00:00 +0000</pubDate>
+      <guid>/post/set-up-spark/</guid>
+      <description>&lt;h2 id=&#34;set-up-on-macos&#34;&gt;Set up on MacOs&lt;/h2&gt;
+&lt;p&gt;Let&amp;rsquo;s install &lt;strong&gt;Spark&lt;/strong&gt; with &lt;strong&gt;Homebrew.&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;brew install apache-spark
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The &lt;strong&gt;Spark&lt;/strong&gt;&amp;lsquo;s files are in the folder &lt;code&gt;/usr/local/Cellar/apache-spark/*&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Same as &lt;strong&gt;Hadoop&lt;/strong&gt;, add some environment variables to the &lt;code&gt;.bashrc&lt;/code&gt;file.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;# Spark environment
+export SPARK_HOME=/usr/local/Cellar/apache-spark/*/libexec
+PATH=$SPARK_HOME/bin:$PATH
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;configure-spark-to-run-with-yarn&#34;&gt;Configure Spark to run with YARN&lt;/h2&gt;
+&lt;p&gt;Edit the file &lt;code&gt;$SPARK_HOME/conf/spark-env.sh.template&lt;/code&gt; by adding the following line:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;HADOOP_CONF_DIR=$HADOOP_HOME/etc/hadoop
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;And then rename it as &lt;code&gt;spark-env.sh&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Finally, you can run the Spark command lines on YARN with the command:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;spark-shell --master yarn --deploy-mode client
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Authors | TwentyFourSecs</title>
+    <link>/authors/</link>
+      <atom:link href="/authors/index.xml" rel="self" type="application/rss+xml" />
+    <description>Authors</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Steven Golovkine. All Rights Reserved</copyright><lastBuildDate>Mon, 03 Jun 2019 11:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/pic.jpg</url>
+      <title>Authors</title>
+      <link>/authors/</link>
+    </image>
+    
+    <item>
+      <title>Nicolas Klutchnikoff</title>
+      <link>/authors/nicolas-klutchnikoff/</link>
+      <pubDate>Mon, 03 Jun 2019 11:00:00 +0000</pubDate>
+      <guid>/authors/nicolas-klutchnikoff/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Steven Golovkine</title>
+      <link>/authors/steven-golovkine/</link>
+      <pubDate>Mon, 03 Jun 2019 11:00:00 +0000</pubDate>
+      <guid>/authors/steven-golovkine/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Valentin Patilea</title>
+      <link>/authors/valentin-patilea/</link>
+      <pubDate>Mon, 03 Jun 2019 11:00:00 +0000</pubDate>
+      <guid>/authors/valentin-patilea/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/authors/admin/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/authors/admin/</guid>
+      <description>&lt;p&gt;Steven Golovkine is a PhD student of statistics at Groupe Renault. He depends on the ENSAI lab. His research interests include functional data analysis, non-parametric statistics and machine learning. His thesis supervisors are Mr Valentin Patilea (CREST, 
+&lt;a href=&#34;http://ensai.fr/equipe/valentin-patilea/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;link&lt;/a&gt;
+) and Mr Nicolas Klutchnikoff (IRMAR, 
+&lt;a href=&#34;https://klutchnikoff.github.io&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;link&lt;/a&gt;
+).&lt;/p&gt;
+&lt;p&gt;He also loves playing basketball.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

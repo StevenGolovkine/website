@@ -1,0 +1,1158 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.7.0">
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Steven Golovkine">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Python is a programming language. It is used by a lot of people doing data science.">
+
+  
+  <link rel="alternate" hreflang="en-us" href="/post/set-up-python/">
+
+  
+
+
+  
+  
+  
+  <meta name="theme-color" content="#795548">
+  
+
+  
+  
+  
+  <script src="/js/mathjax-config.js"></script>
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css" integrity="sha256-4w9DunooKSr3MFXHXWyFER38WmPdm361bQS/2KUWZbU=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.css" integrity="sha256-SHMGCYmST46SoyGgo4YR/9AlK1vf3ff84Aq9yK4hdqM=" crossorigin="anonymous">
+    
+
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js" integrity="sha256-Md1qLToewPeKjfAHU1zyPwOutccPAm5tahnaw7Osw0A=" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cutive+Mono%7CLora:400,700%7CRoboto:400,700&display=swap">
+  
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/academic.css">
+
+  
+
+
+
+
+  
+
+
+  
+
+  <link rel="manifest" href="/index.webmanifest">
+  <link rel="icon" type="image/png" href="/images/icon_hu1d2d3b6ebbfe3e5882ce5725380dc208_3894_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu1d2d3b6ebbfe3e5882ce5725380dc208_3894_192x192_fill_lanczos_center_2.png">
+
+  <link rel="canonical" href="/post/set-up-python/">
+
+  
+  
+  
+  
+  
+    
+  
+  
+  <meta property="twitter:card" content="summary_large_image">
+  
+  <meta property="twitter:site" content="@StevenGolovkine">
+  <meta property="twitter:creator" content="@StevenGolovkine">
+  
+  <meta property="og:site_name" content="TwentyFourSecs">
+  <meta property="og:url" content="/post/set-up-python/">
+  <meta property="og:title" content="Set up Python | TwentyFourSecs">
+  <meta property="og:description" content="Python is a programming language. It is used by a lot of people doing data science."><meta property="og:image" content="/post/set-up-python/featured.png">
+  <meta property="twitter:image" content="/post/set-up-python/featured.png"><meta property="og:locale" content="en-us">
+  
+    
+      <meta property="article:published_time" content="2018-12-06T00:00:00&#43;00:00">
+    
+    <meta property="article:modified_time" content="2018-12-06T00:00:00&#43;00:00">
+  
+
+  
+
+
+    
+
+
+
+
+
+
+  
+
+
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "/post/set-up-python/"
+  },
+  "headline": "Set up Python",
+  
+  "image": [
+    "/post/set-up-python/featured.png"
+  ],
+  
+  "datePublished": "2018-12-06T00:00:00Z",
+  "dateModified": "2018-12-06T00:00:00Z",
+  
+  "author": {
+    "@type": "Person",
+    "name": "Steven Golovkine"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "TwentyFourSecs",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "img//"
+    }
+  },
+  "description": "Python is a programming language. It is used by a lot of people doing data science."
+}
+</script>
+
+  
+
+  
+
+
+  
+
+
+  
+
+
+
+
+
+  <title>Set up Python | TwentyFourSecs</title>
+
+</head>
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" >
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/">TwentyFourSecs</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/">TwentyFourSecs</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#about"><span>Home</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#posts"><span>Posts</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#projects"><span>Projects</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#featured"><span>Publications</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#contact"><span>Contact</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      <li class="nav-item">
+        <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1>Set up Python</h1>
+
+  
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    Dec 6, 2018
+  </span>
+  
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    5 min read
+  </span>
+  
+
+  
+  
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fas fa-folder mr-1"></i><a href="/categories/python/">Python</a></span>
+  
+
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      <p>
+<a href="https://www.python.org" target="_blank" rel="noopener">Python</a>
+ is already installed on macOS. But as we do not want to mess with it, and have more flexibility, we will install our own version of <strong>Python</strong>. This post is based on this 
+<a href="https://medium.com/@henriquebastos/the-definitive-guide-to-setup-my-python-workspace-628d68552e14" target="_blank" rel="noopener">post</a>
+ by Henrique Bastos on Medium.</p>
+<h2 id="wanted-configurations">Wanted configurations</h2>
+<ul>
+<li><strong>CPython 2.7</strong> and <strong>CPython 3.7</strong>, but it is possible to install other implementations like <strong>PyPy</strong> or <strong>Anaconda</strong>.</li>
+<li><strong>Python3</strong> as a default version for everything, but it must easily change to <strong>Python2</strong>.</li>
+<li>A <em>unique</em> <strong>Jupyter Notebook/Lab</strong> working with both <strong>Python2</strong> and <strong>Python3</strong>, and being able to detect the active virtual environment.</li>
+<li>A console <em>iPython</em> for <strong>Python3</strong> and one for <strong>Python2</strong>, so no need to install it in every virtual environment of the projects.</li>
+<li><em>virtualenvwrapper</em> to develop the different projects and change the context in one command.</li>
+</ul>
+<h2 id="installation">Installation</h2>
+<p><em>pyenv</em> is probably the best way to install <strong>Python</strong> on macOS. Everything should be installed in the common directory without interfering with the rest of the system. Moreover, it handles with a lot of <strong>Python</strong> implementation such as <strong>CPython</strong>, <strong>PyPy</strong>, <strong>Anaconda</strong>, etc. And all of that with only one command. Firstly, one should install <em>pyenv</em> and two add-ons:</p>
+<ul>
+<li><em>pyenv</em> to install <strong>Python</strong> implementations;</li>
+<li><em>pyenv-virtualenv</em> to configure global environment;</li>
+<li><em>pyenv-virtualenvwrapper</em> to work on projects.</li>
+</ul>
+<pre><code class="language-bash">brew install pyenv
+brew install pyenv-virtualenv
+brew install pyenv-virtualenvwrapper
+</code></pre>
+<p>With <em>virtualenvwrapper</em>, every <em>virtualenv</em> will be kept in the same repository and every projects codes in an other.</p>
+<pre><code class="language-bash"># Every virtual environment will be in ...
+mkdir ~/.ve
+# Every projects will be in ...
+mkdir ~/Documents/Python/workspace
+</code></pre>
+<p>We have to configure the <em>shell</em> to initialise <em>pyenv</em> at the opening of the terminal. Thus, we have to add the following lines into the file <code>~/.bashrc</code>.</p>
+<pre><code class="language-bash">export WORKON_HOME=~/.ve
+export PROJECT_HOME=~/Documents/Python/workspace
+eval &quot;$(pyenv init -)&quot;
+</code></pre>
+<p>Reload the terminal to take the changes into account.</p>
+<p>Next step is to install <strong>CPython 3.7.1</strong> and <strong>CPython 2.7.15</strong>.</p>
+<pre><code class="language-bash">pyenv install 3.7.1
+pyenv install 2.7.15
+</code></pre>
+<h2 id="configure-the-global-python-installation">Configure the global Python installation</h2>
+<p>It is nice to use <strong>Python</strong> written programs without using a virtual environment. Moreover, it is easier if we only have one <em>Jupyter Notebook/Lab</em>, one <em>iPython console</em> for <strong>Python 2</strong>, one <em>iPython console</em> for <strong>Python 3</strong> and other tools.</p>
+<p>So, we use <em>pyenv-virtualenv</em> to do that:</p>
+<pre><code class="language-bash">pyenv virtualenv 3.7.1 jupyter3
+pyenv virtualenv 3.7.1 tools3
+pyenv virtualenv 2.7.15 ipython2
+pyenv virtualenv 2.7.15 tools2
+</code></pre>
+<p><em>Jupyter</em> can handle with many kernels like <strong>Python 2</strong>, <strong>Python 3</strong>, <strong>R</strong>, <strong>bash</strong>, and some other. It allows only one <em>Jupyter</em> installation.</p>
+<blockquote>
+<p>Here, we just want to use <strong>Python2</strong> and <strong>Python3</strong>.</p>
+</blockquote>
+<p>Let&rsquo;s start with <strong>Python3</strong>:</p>
+<pre><code class="language-bash">pyenv activate jupyter3
+pip install jupyter
+pip install jupyterlab
+python -m ipykernel install --user
+pyenv deactivate
+</code></pre>
+<p>Let&rsquo;s continue with <strong>Python2</strong>:</p>
+<pre><code class="language-bash">pyenv activate ipython2
+pip install ipykernel
+python -m ipykernel install --user
+pyenv deactivate
+</code></pre>
+<blockquote>
+<p>Note that when we install <em>Jupyter</em> for <strong>Python3</strong>, we install by default <em>iPython</em> and the <em>kernel</em>. For <strong>Python2</strong>, we only need to install <em>iPython</em> and the <em>kernel</em>.</p>
+</blockquote>
+<p>Now, let&rsquo;s install tools using <strong>Python3</strong>:</p>
+<pre><code class="language-bash">pyenv activate tools3
+pip install youtube-dl rows
+pyenv deactivate
+</code></pre>
+<p>Let&rsquo;s install tools which do not work with <strong>Python3</strong> but only with <strong>Python2</strong>:</p>
+<pre><code class="language-bash">pyenv activate tools2
+pip install rename
+pyenv deactivate
+</code></pre>
+<p>Finally, it is time to let all the <strong>Python</strong> versions and the special virtual environments working together.</p>
+<pre><code class="language-bash">pyenv global 3.7.1 2.7.15 jupyter3 ipython2 tools3 tools2
+</code></pre>
+<blockquote>
+<p>Note that this command put priority in the <code>$PATH</code> environment variable. Thus, it is possible to reach the scripts without activating virtual environments.</p>
+</blockquote>
+<h2 id="using-virtual-environment">Using virtual environment</h2>
+<p>We use <em>pyenv-virtualenvwrapper</em> to create the virtual environment for each project. Now, he have to add the line <code>pyenv virtualenvwrapper_lazy</code> in the file <code>~/.bashrc</code> and then reload the terminal. When we start a new session, <em>pyenv-virtualenvwrapper</em> will install the necessary dependencies of <em>virtualenvwrapper</em> if they are not here. It is possible to use commands from <em>virtualenvwrapper</em> and every virtual environment will be created by using <strong>Python</strong> implementations installed from <em>pyenv</em>.</p>
+<p>Some examples:</p>
+<ol>
+<li>
+<p>Let&rsquo;s say I want a new project <em>proj3</em> using <strong>Python3</strong>. The command <code>mkproject proj3</code> will create a new virtual environment using <strong>Python3</strong> (by default) in the repository <code>~/.ve/proj3</code> and a project repository <code>~/Documents/Python/workspace/proj3</code>.</p>
+</li>
+<li>
+<p>Let&rsquo;s imagine I want to work on my project <em>proj3</em>. Run the command <code>workon proj3</code> will activate the virtual environment <code>~/.ve/proj3</code> and change the working directory to <code>~/Documents/Python/workspace/proj3</code>.</p>
+</li>
+<li>
+<p>Let&rsquo;s clone a project names <em>proj2</em> in the directory <code>~/Documents/Python/workspace/proj2</code>. So, I need a virtual environment for this project. Run the command <code>mkvirtualenv -a ~/Documents/Python/workspace/proj2 -p python2 proj2</code> will create a virtual environment using <strong>Python2</strong> in the directory <code>~/.ve/proj2</code> linked to the project. Then, run <code>workon proj2</code> will activate the virtual environment and change the working directory.</p>
+</li>
+</ol>
+<h2 id="using-jupyter-and-ipython-with-the-projects">Using Jupyter and iPython with the projects</h2>
+<blockquote>
+<p>At the beginning, <em>Jupyter</em> and <em>Console</em> were parts of <em>iPython</em> project which was only about <strong>Python</strong>. But the evolution of the <em>Notebook</em> allows to use more languages than just <strong>Python</strong>. So, the developers decide to split the project: <em>Jupyter</em> and <em>iPython</em>. Now, <em>Notebook</em> is part of <em>Jupyter</em> and <em>Console</em> is part of <em>iPython</em> and the <em>Python kernel</em> used by <em>Jupyter</em> to launch <strong>Python</strong> code.</p>
+</blockquote>
+<p>So, <em>Jupyter</em> do not detect the active virtual environment: it is the <em>iPython</em> instance that <em>Jupyter</em> initialize. The problem is that the <em>iPython</em> virtual environment launches itself only in <em>interactive shell</em> mode and not in <em>kernel</em> mode. Otherwise, the code detection works correctly only if the <strong>Python</strong> version of the active virtual environment and the <strong>Python</strong> version launches by <em>iPython</em> are the same.</p>
+<p>The solution is to customize the process of the <em>iPython</em> start-up. To do that, we need a <em>iPython profile</em> et launch a 
+<a href="https://gist.github.com/henriquebastos/270cff100cb303f3d74370489022446b" target="_blank" rel="noopener">script</a>
+:</p>
+<pre><code class="language-bash">ipython profile create
+curl -L http://hbn.link/hb-ipython-startup-script &gt; ~/.ipython/profile_default/startup/00-venv-sitepackages.py
+</code></pre>
+<p>So, no matter the mode in which <em>iPython</em> is launched, the <em>site-packages</em> of the virtual environment will be available in the <code>PYTHONPATH</code>.</p>
+<p>Back to <em>proj3</em>, after run <code>workon proj3</code>, it is possible to execute <code>iPython</code> to be in the interactive mode, or <code>jupyter-notebook</code> to use the notebook.</p>
+<h2 id="updating-the-package-with-pip">Updating the package with pip</h2>
+<p>In order to update the different <strong>Python</strong> packages, run the following command:</p>
+<pre><code class="language-bash">pip list --outdated | cut -d &quot; &quot; -f 1 | xargs -n1 pip install -U
+</code></pre>
+
+    </div>
+
+    
+
+
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tags/python/">Python</a>
+  
+  <a class="badge badge-light" href="/tags/set-up/">Set up</a>
+  
+</div>
+
+
+
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=/post/set-up-python/&amp;text=Set%20up%20Python" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=/post/set-up-python/&amp;t=Set%20up%20Python" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=Set%20up%20Python&amp;body=/post/set-up-python/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=/post/set-up-python/&amp;title=Set%20up%20Python" target="_blank" rel="noopener" class="share-btn-linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://web.whatsapp.com/send?text=Set%20up%20Python%20/post/set-up-python/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=/post/set-up-python/&amp;title=Set%20up%20Python" target="_blank" rel="noopener" class="share-btn-weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <img class="avatar mr-3 avatar-circle" src="/authors/admin/avatar_hucbc2930ba76141ffd5ffb026ad90ced3_85341_270x270_fill_q90_lanczos_center.jpg" alt="Avatar">
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="/">Steven Golovkine</a></h5>
+      <h6 class="card-subtitle">PhD student</h6>
+      <p class="card-text">My research interests include functional data analysis, non-parametric statistics and machine learning.</p>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+    <li>
+      <a href="mailto:steven_golovkine@icloud.com" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.linkedin.com/in/steven-golovkine/" target="_blank" rel="noopener">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/StevenGolovkine" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+  
+  
+  <div class="article-widget content-widget-hr">
+    <h3>Related</h3>
+    <ul>
+      
+      <li><a href="/post/homebrew/">Homebrew</a></li>
+      
+      <li><a href="/post/library-matplotlib/">Library Matplotlib</a></li>
+      
+      <li><a href="/post/mysql/">MySQL</a></li>
+      
+      <li><a href="/post/set-up-r/">Set up R</a></li>
+      
+    </ul>
+  </div>
+  
+
+
+
+  </div>
+</article>
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js" integrity="sha256-1zu+3BnLYV9LdiY85uXMzii3bdrkelyp37e0ZyTAQh0=" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/python.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/r.min.js"></script>
+        
+      
+
+    
+
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.js" integrity="sha256-EErZamuLefUnbMBQbsEqu1USa+btR2oIlCpBJbyD4/g=" crossorigin="anonymous"></script>
+    
+
+    
+    
+    <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    
+    
+    
+    
+    <script>
+      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"No results found","placeholder":"Search...","results":"results found"};
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks"
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academic.min.0630fec5958cb075a5a38f042b3ddde6.js"></script>
+
+    
+
+
+
+
+
+
+  
+  
+  <div class="container">
+    <footer class="site-footer">
+  
+  <p class="powered-by">
+    
+      <a href="/privacy/">Privacy Policy</a>
+    
+    
+       &middot; 
+      <a href="/terms/">Terms</a>
+    
+  </p>
+  
+
+  <p class="powered-by">
+    © 2020 Steven Golovkine. All Rights Reserved &middot; 
+
+    Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+    <span class="float-right" aria-hidden="true">
+      <a href="#" class="back-to-top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+    
+  </p>
+</footer>
+
+  </div>
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
