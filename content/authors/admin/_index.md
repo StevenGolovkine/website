@@ -69,6 +69,6 @@ email: ""
 user_groups: []
 ---
 
-Steven Golovkine is a PhD student of statistics at Groupe Renault. He depends on the ENSAI lab. His research interests include functional data analysis, non-parametric statistics and machine learning. His thesis supervisors are Mr Valentin Patilea (CREST, [link](http://ensai.fr/equipe/valentin-patilea/)) and Mr Nicolas Klutchnikoff (IRMAR, [link](https://klutchnikoff.github.io)).
+I am a PhD student of statistics at Groupe Renault. I depend on the ENSAI lab. My research interests include functional data analysis, non-parametric statistics and machine learning. My thesis supervisors are Mr Valentin Patilea (CREST, [link](http://ensai.fr/equipe/valentin-patilea/)) and Mr Nicolas Klutchnikoff (IRMAR, [link](https://klutchnikoff.github.io)).
 
-He also loves playing basketball.
+I also love playing basketball.
