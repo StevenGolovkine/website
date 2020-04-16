@@ -60,6 +60,8 @@ test_scale = scaler.transform(test)
 
 # Implementation using Numpy
 
+Misc functions can be found [here](https://gist.githubusercontent.com/StevenGolovkine/c037b8f57529fe2c8b0724ded97e7b4d/raw/7d150a29e058dec46b85a07e810c6a1aa705c4a6/misc.py).
+
 ## The Logistic Regression
 
 In this section, we will implement a logistic regression model trainable with Stochastic Gradient Descent (SGD) using `Numpy`. Here are the objectives:
@@ -92,7 +94,7 @@ $$\log l(y_{pred}, y_{true}) = \frac{1}{n}\sum_n (\log(y_{pred}) * y_{true})$$
     
 **Logistic regression with SGD**
 
-Let us now study the following linear model trainable by SGD, **one sample at a time**.
+Let us now study the following linear model trainable by SGD, **one sample at a time**. Code [here](https://gist.githubusercontent.com/StevenGolovkine/c037b8f57529fe2c8b0724ded97e7b4d/raw/7fec9eebac71eadc84f316966e4db33083e7d656/logistic_regression.py).
 
 ```python
 # Split the train set into train and validation set.
@@ -200,6 +202,7 @@ Figure 6: The relu function
 
 **The feedforward neural network with one hidden layer**
 
+Code [here](https://gist.githubusercontent.com/StevenGolovkine/c037b8f57529fe2c8b0724ded97e7b4d/raw/7fec9eebac71eadc84f316966e4db33083e7d656/neuralnet.py). 
 
 ```python
 # Build a NeuralNet model and test its forward inference
@@ -397,7 +400,7 @@ Figure 14: Training losses and accuracy with `relu` as activation function
 </center>
 
 The last hyper-parameter to tune is the number of hidden layers. So, we implemented the support for a second hidden layer and re-run the model with the `sigmoid` activation function and the same other hyper-parameters as before.
-
+Code [here](https://gist.githubusercontent.com/StevenGolovkine/c037b8f57529fe2c8b0724ded97e7b4d/raw/7fec9eebac71eadc84f316966e4db33083e7d656/neuralnet_hidden.py).
 
 ```python
 # Build a NeuralNet model and test its forward inference with 2 hidden layers
@@ -435,7 +438,7 @@ Figure 15: Training losses and accuracy with two hidden layers
 
 **Mini-batches**
 
-The current implementations of the functions `train` and `grad_loss` in the class `NeuralNet` only accept a single sample at a time. So, we will implement the support for training with a mini-batche of given size sample at a time instead of one.
+The current implementations of the functions `train` and `grad_loss` in the class `NeuralNet` only accept a single sample at a time. So, we will implement the support for training with a mini-batche of given size sample at a time instead of one. Code [here](https://gist.githubusercontent.com/StevenGolovkine/c037b8f57529fe2c8b0724ded97e7b4d/raw/7fec9eebac71eadc84f316966e4db33083e7d656/neuralnet_batches.py).
 
 
 
