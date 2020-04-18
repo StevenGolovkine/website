@@ -69,7 +69,7 @@ date_format = "Jan 2006"
   date_start = "2016-06-15"
   date_end = "2016-08-15"
   description = """
-  Internship. The aim of the internship was a comparison of survey estimators for the *National Survey of College Graduation.
+  Internship. The aim of the internship was a comparison of survey estimators for the *National Survey of College Graduation*.
   
   Software: **R**
   """

@@ -43,7 +43,6 @@ It builds on nodes where nodes may be:
 ```python
 # Define a constant tensor
 a = tf.constant(3)
-a
 ```
 
     <tf.Tensor: shape=(), dtype=int32, numpy=3>
@@ -56,7 +55,6 @@ b = tf.constant(2)
 
 # Sum of two tensors
 c = a + b
-c
 ```
 
     <tf.Tensor: shape=(), dtype=int32, numpy=5>
@@ -64,7 +62,6 @@ c
 ```python
 # Define a constant tensor in 2 dimensions
 A = tf.constant([[0, 1], [2, 3]], dtype=tf.float32)
-A
 ```
 
     <tf.Tensor: shape=(2, 2), dtype=float32, numpy=
@@ -82,7 +79,6 @@ A.numpy()
 ```python
 # Define a Variable tensor
 b = tf.Variable([1, 2], dtype=tf.float32)
-b
 ```
 
     <tf.Variable 'Variable:0' shape=(2,) dtype=float32, numpy=array([1., 2.], dtype=float32)>
@@ -118,7 +114,6 @@ def squared_norm(x):
 
 ```python
 x = tf.Variable([1, -4], dtype=tf.float32)
-x
 ```
 
     <tf.Variable 'Variable:0' shape=(2,) dtype=float32, numpy=array([ 1., -4.], dtype=float32)>
@@ -144,7 +139,6 @@ with tf.GradientTape() as tape:
     
 variables = [x]
 gradients = tape.gradient(result, variables)
-gradients
 ```
 
     [<tf.Tensor: shape=(2,), dtype=float32, numpy=array([ 2., -8.], dtype=float32)>]
@@ -167,8 +161,6 @@ with tf.GradientTape() as tape:
     objective = squared_norm(x)
 
 x.assign_sub(0.1 * tape.gradient(objective, [x])[0])
-print(f"Objective = {objective.numpy():e}")
-print(f"x = {x.numpy()}")
 ```
 
     Objective = 1.088000e+01
@@ -265,7 +257,6 @@ def gen_dataset(x, y, batch_size=128):
 ```python
 # Create the dataset
 dataset = gen_dataset(X_train, y_train)
-dataset
 ```
 
     <BatchDataset shapes: ((None, 784), (None,)), types: (tf.float32, tf.int32)>
@@ -274,7 +265,6 @@ dataset
 ```python
 # Get the first batch
 batch_x, batch_y = next(iter(dataset))
-print(f"Size batch_x: {batch_x.shape} / Size batch_y: {batch_y.shape}")
 ```
 
     Size batch_x: (128, 784) / Size batch_y: (128,)
@@ -341,7 +331,7 @@ model = MyModel(INPUT_SIZE, HIDDEN_SIZE, OUTPUT_SIZE)
 
 ```python
 # Run the model on the validation set
-print(f"Accuracy on the validation set on the untrained model: {test_model(model, X_val, y_val)}")
+test_model(model, X_val, y_val)
 ```
 
     Accuracy on the validation set on the untrained model: 0.09984126984126984
@@ -380,7 +370,6 @@ for e in range(NUM_EPOCHS):
     test_acc_e = test_model(model, X_val, y_val)
     train_acc.append(train_acc_e)
     test_acc.append(test_acc_e)
-    print(f"Epoch {e}: train accuracy = {round(train_acc_e, 4)}, test accuracy = {round(test_acc_e, 4)}")
 ```
 
     Epoch 0: train accuracy = 0.9229, test accuracy = 0.9059
@@ -426,7 +415,7 @@ model = MyModel(INPUT_SIZE, HIDDEN_SIZE, OUTPUT_SIZE)
 
 ```python
 # Run the model on the validation set
-print(f"Accuracy on the validation set on the untrained model: {test_model(model, X_val, y_val)}")
+test_model(model, X_val, y_val)
 ```
 
     Accuracy on the validation set on the untrained model: 0.10793650793650794
@@ -464,7 +453,6 @@ for e in range(NUM_EPOCHS):
     test_acc_e = test_model(model, X_val, y_val)
     train_acc.append(train_acc_e)
     test_acc.append(test_acc_e)
-    print(f"Epoch {e}: train accuracy = {round(train_acc_e, 4)}, test accuracy = {round(test_acc_e, 4)}")
 ```
 
     Epoch 0: train accuracy = 0.9165, test accuracy = 0.9022
@@ -512,7 +500,7 @@ model = MyModel(INPUT_SIZE, HIDDEN_SIZE, OUTPUT_SIZE)
 
 ```python
 # Run the model on the validation set
-print(f"Accuracy on the validation set on the untrained model: {test_model(model, X_val, y_val)}")
+test_model(model, X_val, y_val)
 ```
 
     Accuracy on the validation set on the untrained model: 0.10571428571428572
@@ -558,7 +546,6 @@ for e in range(NUM_EPOCHS):
     test_acc_e = test_model(model, X_val, y_val)
     train_acc.append(train_acc_e)
     test_acc.append(test_acc_e)
-    print(f"Epoch {e}: train accuracy = {round(train_acc_e, 4)}, test accuracy = {round(test_acc_e, 4)}")
 ```
 
     Epoch 0: train accuracy = 0.8293, test accuracy = 0.8129
