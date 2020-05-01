@@ -16,7 +16,7 @@ image:
   caption: Photo by Startaê Team on Unsplash
   focal_point: Smart
 
-Summary: An introduction to categorical embeddings using `Keras`.
+Summary: An introduction to recommender data and recsys architecture using `Keras`.
 ---
 
 
