@@ -16,7 +16,7 @@ image:
   caption: Photo by Volodymyr Hryshchenko on Unsplash
   focal_point: Smart
 
-Summary: An introduction to recommender data and recsys architecture using `Keras`.
+Summary: An introduction to convolutions with `Keras`.
 ---
 
 
