@@ -13,7 +13,7 @@ output:
     number_sections: false
 
 image:
-  caption: Photo by Volodymyr Hryshchenko on Unsplash
+  caption: Photo by Olav Ahrens Røtne on Unsplash
   focal_point: Smart
 
 Summary: How to fine-tuned the pre-trained ResNet50 model to do classification of images?  
