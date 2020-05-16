@@ -13,7 +13,7 @@ output:
     number_sections: false
 
 image:
-  caption: Photo by Volodymyr Hryshchenko on Unsplash
+  caption: Photo by Michelen Studios on Unsplash
   focal_point: Smart
 
 Summary: An introduction to convolutions with `Keras`.

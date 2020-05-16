@@ -8,3 +8,4 @@ public/
 # R files
 *.Rproj
 .Rproj.user
+.Rhistory

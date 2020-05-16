@@ -34,8 +34,8 @@ image:
 links: []
 url_code: ""
 url_poster: ""
-url_pdf: ""
-url_slides: ""
+url_pdf: "http://jds2019.sfds.asso.fr/program/Soumissions/subm187.pdf"
+url_slides: "/files/presentation_jds_2019.pdf"
 url_video: ""
 
 # Markdown Slides (optional).
