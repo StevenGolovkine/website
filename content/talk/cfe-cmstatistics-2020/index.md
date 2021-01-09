@@ -1,6 +1,6 @@
 ---
 title: 'CFE-CMStat'
-event: Statistical Modeling with Applications
+event: 13th International Conference of the ERCIM WG on Computational and Methodological Statistics
 event_url: http://www.cmstatistics.org/CMStatistics2020/
 
 location: Virtual Conference
