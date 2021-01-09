@@ -55,7 +55,7 @@ social:
 - icon: github
   icon_pack: fab
   link: https://github.com/StevenGolovkine
-- icon: researchgate
+- icon: zotero
   icon-pack: ai
   link: https://www.researchgate.net/profile/Steven_Golovkine
 # Link to a PDF of your resume/CV from the About widget.
