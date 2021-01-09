@@ -10,7 +10,7 @@ authors:
 superuser: true
 
 # Role/position
-role: PhD student
+role: PhD candidate
 
 # Organizations/Affiliations
 organizations:
@@ -49,13 +49,15 @@ social:
 - icon: linkedin
   icon_pack: fab
   link: https://www.linkedin.com/in/steven-golovkine/
-#- icon: google-scholar
-#  icon_pack: ai
-#  link: https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ
 - icon: github
   icon_pack: fab
   link: https://github.com/StevenGolovkine
-
+- icon: researchgate
+  icon_pack: ai
+  link: https://www.researchgate.net/profile/Steven_Golovkine
+- icon: arxiv
+  icon_pack: ai
+  link: https://arxiv.org/search/?query=golovkine&searchtype=all&source=header
 # Link to a PDF of your resume/CV from the About widget.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
 - icon: cv
@@ -70,6 +72,8 @@ email: ""
 user_groups: []
 ---
 
-I am a PhD student of statistics at Groupe Renault. I depend on the ENSAI lab. My research interests include functional data analysis, non-parametric statistics and machine learning. My thesis supervisors are Mr Valentin Patilea (CREST, [link](http://ensai.fr/equipe/valentin-patilea/)) and Mr Nicolas Klutchnikoff (IRMAR, [link](https://klutchnikoff.github.io)).
+<div style="text-align:justify;">
+I'm currently working as a research engineer at Group Renault, and I will soon complete a thesis in Statistics, Applied Mathematics about some methods on multivariate functional data. My lab is the CREST (Center for Research in Economics and Statistics). This work is supervised by Valentin Patilea (CREST, <a href="http://ensai.fr/equipe/valentin-patilea/">link</a>) and Nicolas Klutchnikoff (IRMAR, <a href="https://klutchnikoff.github.io">link</a>) and is realized part at Renault and part at ENSAI.
+</div>
 
-I also love playing basketball.
+**Complete Resume** = [CV.pdf](files/resume.pdf)
