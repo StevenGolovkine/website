@@ -1,5 +1,5 @@
 ---
-title: 'Données fonctionnelles avec erreur hétéroscédastique'
+title: '51èmes Journées de Statistique 2019, SFDS'
 event: Journées de Statistique 2019, SFDS
 event_url: http://jds2019.sfds.asso.fr/index.html
 

@@ -1,5 +1,5 @@
 ---
-title: 'Clustering multivariate functional data defined on random domains: an application to vehicle trajectories analysis'
+title: 'MASCOT-NUM 2019'
 event: MASCOT-NUM 2019
 event_url: http://www.mascotnum2019.com/Projet/jcms/c_3296784/fr/home
 
