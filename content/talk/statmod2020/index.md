@@ -3,11 +3,11 @@ title: 'StatMod2020'
 event: Statistical Modeling with Applications
 event_url: https://ismma.ro/?page_id=645
 
-location: “Gheorghe Mihoc-Caius Iacob” Institute
+location: Virtual Conference
 address:
-  city: Bucharest
-  postcode: '010011–062397'
-  country: Romania
+  city: 
+  postcode: 
+  country: 
 
 summary: Multivariate functional data clustering using unsupervised binary trees.
 

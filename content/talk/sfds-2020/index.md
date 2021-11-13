@@ -3,11 +3,11 @@ title: '52èmes Journées de Statistique 2020, SFDS'
 event: Journées de Statistique 2020, SFDS
 event_url: https://jds2020.sciencesconf.org
 
-location: Université Côte d'Azur
+location: Conference Proceedings
 address:
-  city: Nice
-  postcode: '06000'
-  country: France
+  city: 
+  postcode: 
+  country: 
 
 summary: Lissage de donneés fonctionnelles par estimation de leur régularité locale.
 

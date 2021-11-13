@@ -19,13 +19,13 @@ publication_types: ["0"]
 publication: ""
 publication_short: ""
 
-abstract: "`denoisr` is a **R** package which permits to smooth (remove the noise from) functional data by, first, estimate the Hurst coefficient of the underlying generating
+abstract: "`denoisr` is an **R**-package which permits to smooth (remove the noise from) functional data by, first, estimate the Hurst coefficient of the underlying generating
 process. 
 
 Functional data to smooth should be defined on a univariate compact, but can be irregularly sampled. `denoisr` can also be used only for Hurst parameter estimation."
 
 # Summary. An optional shortened abstract.
-summary: "`denoisr` is a **R** package which permits to smooth (remove the noise from) functional data by, first, estimate the Hurst coefficient of the underlying generating
+summary: "`denoisr` is an **R**-package which permits to smooth (remove the noise from) functional data by, first, estimate the Hurst coefficient of the underlying generating
 process. 
 
 Functional data to smooth should be defined on a univariate compact, but can be irregularly sampled. `denoisr` can also be used only for Hurst parameter estimation."
@@ -74,6 +74,6 @@ projects: []
 slides: ""
 ---
 
-`denoisr` is a **R** package which permits to smooth (remove the noise from) functional data by, first, estimate the Hurst coefficient of the underlying generating process. 
+`denoisr` is an **R**-package which permits to smooth (remove the noise from) functional data by, first, estimate the Hurst coefficient of the underlying generating process. 
 
 Functional data to smooth should be defined on a univariate compact, but can be irregularly sampled. `denoisr` can also be used only for Hurst parameter estimation.
