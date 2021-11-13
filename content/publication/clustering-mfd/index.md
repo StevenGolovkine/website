@@ -3,7 +3,7 @@
 
 title: "Clustering multivariate functional data using unsupervised binary trees"
 authors: ['Steven Golovkine', 'Nicolas Klutchnikoff', 'Valentin Patilea']
-date: 2020-12-20
+date: 2021-10-28
 doi: ""
 
 # Schedule page publish date (NOT publication's date).
@@ -13,16 +13,16 @@ publishDate: 2020-12-20
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
 # 3 = Preprint / Working Paper; 4 = Report; 5 = Book; 6 = Book section;
 # 7 = Thesis; 8 = Patent
-publication_types: ["3"]
+publication_types: ["2"]
 
 # Publication name and optional abbreviated publication name.
-publication: "*arXiv stat:ML*"
-publication_short: ""
+publication: "Computational Statistics & Data Analysis"
+publication_short: "CSDA"
 
-abstract: "We propose a model-based clustering algorithm for a general class of functional data for which the components could be curves or images. The random functional data realizations could be measured with error at discrete, and possibly random, points in the definition domain. The idea is to build a set of binary trees by recursive splitting of the observations. The number of groups are determined in a data-driven way. The new algorithm provides easily interpretable results and fast predictions for online data sets. Results on simulated datasets reveal good performance in various complex settings. The methodology is applied to the analysis of vehicle trajectories on a German roundabout."
+abstract: "A model-based clustering algorithm is proposed for a general class of functional data for which the components could be curves or images. The random functional data realizations could be measured with errors at discrete, and possibly random, points in the definition domain. The idea is to build a set of binary trees by recursive splitting of the observations. The number of groups are determined in a data-driven way. The new algorithm provides easily interpretable results and fast predictions for online data sets. Results on simulated datasets reveal good performance in various complex settings. The methodology is applied to the analysis of vehicle trajectories on a German roundabout."
 
 # Summary. An optional shortened abstract.
-summary: "We propose a model-based clustering algorithm for a general class of functional data for which the components could be curves or images. The random functional data realizations could be measured with error at discrete, and possibly random, points in the definition domain. The idea is to build a set of binary trees by recursive splitting of the observations. The number of groups are determined in a data-driven way. The new algorithm provides easily interpretable results and fast predictions for online data sets. Results on simulated datasets reveal good performance in various complex settings. The methodology is applied to the analysis of vehicle trajectories on a German roundabout."
+summary: "A model-based clustering algorithm is proposed for a general class of functional data for which the components could be curves or images. The random functional data realizations could be measured with errors at discrete, and possibly random, points in the definition domain. The idea is to build a set of binary trees by recursive splitting of the observations. The number of groups are determined in a data-driven way. The new algorithm provides easily interpretable results and fast predictions for online data sets. Results on simulated datasets reveal good performance in various complex settings. The methodology is applied to the analysis of vehicle trajectories on a German roundabout."
 
 tags: []
 categories: []
@@ -36,7 +36,8 @@ featured: false
 #   icon_pack: fab
 #   icon: twitter
 
-url_pdf: "https://arxiv.org/abs/2012.05973"
+url_pdf: "https://www.sciencedirect.com/science/article/abs/pii/S0167947321002103"
+url_preprint: "https://arxiv.org/abs/2012.05973"
 url_code: "https://github.com/StevenGolovkine/FDApy"
 url_dataset:
 url_poster:

@@ -36,7 +36,8 @@ featured: false
 #   icon_pack: fab
 #   icon: twitter
 
-url_pdf: "https://arxiv.org/abs/2009.03652"
+url_preprint: "https://arxiv.org/abs/2009.03652"
+url_pdf: ""
 url_code: "https://github.com/StevenGolovkine/denoisr"
 url_dataset:
 url_poster:
