@@ -19,10 +19,10 @@ publication_types: ["0"]
 publication: ""
 publication_short: ""
 
-abstract: "We introduce the **Python** package, `FDApy`, as an implementation of functional data. This package provide modules for the analysis of such data. It includes classes for different dimensional data as well as irregularly sampled functional data. Moreover, a simulation toolbox is provided. It might be used to simulate different clusters of functional data. Some methodologies to handle these data are implemented, such as dimension reduction and clustering ones. New methods can easily be added. The package is publicly available on the Python Package Index and Github."
+abstract: "`FDApy` is an implementation of functional data as **Python** package. This package provide modules for the analysis of such data. It includes classes for different dimensional data as well as irregularly sampled functional data. Moreover, a simulation toolbox is provided. It might be used to simulate different clusters of functional data. Some methodologies to handle these data are implemented, such as dimension reduction and clustering ones. New methods can easily be added. The package is publicly available on the Python Package Index and Github."
 
 # Summary. An optional shortened abstract.
-summary: "We introduce the **Python** package, `FDApy`, as an implementation of functional data. This package provide modules for the analysis of such data. It includes classes for different dimensional data as well as irregularly sampled functional data. Moreover, a simulation toolbox is provided. It might be used to simulate different clusters of functional data. Some methodologies to handle these data are implemented, such as dimension reduction and clustering ones. New methods can easily be added. The package is publicly available on the Python Package Index and Github."
+summary: "`FDApy` is an implementation of functional data as **Python** package. This package provide modules for the analysis of such data. It includes classes for different dimensional data as well as irregularly sampled functional data. Moreover, a simulation toolbox is provided. It might be used to simulate different clusters of functional data. Some methodologies to handle these data are implemented, such as dimension reduction and clustering ones. New methods can easily be added. The package is publicly available on the Python Package Index and Github."
 
 tags: []
 categories: []
@@ -68,4 +68,4 @@ projects: []
 slides: ""
 ---
 
-We introduce the **Python** package, `FDApy`, as an implementation of functional data. This package provide modules for the analysis of such data. It includes classes for different dimensional data as well as irregularly sampled functional data. Moreover, a simulation toolbox is provided. It might be used to simulate different clusters of functional data. Some methodologies to handle these data are implemented, such as dimension reduction and clustering ones. New methods can easily be added. The package is publicly available on the Python Package Index and Github.
+`FDApy` is an implementation of functional data as **Python** package. This package provide modules for the analysis of such data. It includes classes for different dimensional data as well as irregularly sampled functional data. Moreover, a simulation toolbox is provided. It might be used to simulate different clusters of functional data. Some methodologies to handle these data are implemented, such as dimension reduction and clustering ones. New methods can easily be added. The package is publicly available on the Python Package Index and Github.

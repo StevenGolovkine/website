@@ -1,13 +1,13 @@
 ---
 # Documentation: https://sourcethemes.com/academic/docs/managing-content/
 
-title: "denoisr"
+title: "funestim"
 authors: ['Steven Golovkine']
-date: 2021-01-10
+date: 2021-11-13
 doi: ""
 
 # Schedule page publish date (NOT publication's date).
-publishDate: 2020-12-20
+publishDate: 2021-11-13
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
@@ -19,16 +19,14 @@ publication_types: ["0"]
 publication: ""
 publication_short: ""
 
-abstract: "`denoisr` is a **R** package which permits to smooth (remove the noise from) functional data by, first, estimate the Hurst coefficient of the underlying generating
-process. 
-
-Functional data to smooth should be defined on a univariate compact, but can be irregularly sampled. `denoisr` can also be used only for Hurst parameter estimation."
+abstract: "`funestim` is an **R**-package that allows users to estimate the mean and
+the covariance of a functional dataset using an estimation of the
+regularity of the curves. The curves can be irregularly sampled."
 
 # Summary. An optional shortened abstract.
-summary: "`denoisr` is a **R** package which permits to smooth (remove the noise from) functional data by, first, estimate the Hurst coefficient of the underlying generating
-process. 
-
-Functional data to smooth should be defined on a univariate compact, but can be irregularly sampled. `denoisr` can also be used only for Hurst parameter estimation."
+summary: "`funestim` is an **R**-package that allows users to estimate the mean and
+the covariance of a functional dataset using an estimation of the
+regularity of the curves. The curves can be irregularly sampled."
 
 tags: []
 categories: []
@@ -43,7 +41,7 @@ featured: false
 #   icon: twitter
 
 url_pdf: ""
-url_code: "https://github.com/StevenGolovkine/denoisr"
+url_code: "https://github.com/StevenGolovkine/funestim"
 url_dataset:
 url_poster:
 url_project:
@@ -74,6 +72,6 @@ projects: []
 slides: ""
 ---
 
-`denoisr` is a **R** package which permits to smooth (remove the noise from) functional data by, first, estimate the Hurst coefficient of the underlying generating process. 
-
-Functional data to smooth should be defined on a univariate compact, but can be irregularly sampled. `denoisr` can also be used only for Hurst parameter estimation.
+`funestim` is an **R**-package that allows users to estimate the mean and
+the covariance of a functional dataset using an estimation of the
+regularity of the curves. The curves can be irregularly sampled.
