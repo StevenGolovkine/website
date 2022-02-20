@@ -10,12 +10,12 @@ authors:
 superuser: true
 
 # Role/position
-role: PhD candidate
+role: Postdoctoral Researcher
 
 # Organizations/Affiliations
 organizations:
-- name: ENSAI
-  url: "http://www.ensai.fr"
+- name: University of Limerick
+  url: "https://www.ul.ie"
 
 # Short bio (displayed in user profile at end of posts)
 bio: My research interests include functional data analysis, non-parametric statistics and machine learning.
@@ -45,7 +45,7 @@ education:
 social:
 - icon: envelope
   icon_pack: fas
-  link: 'mailto:steven_golovkine@icloud.com'  # For a direct email link, use "mailto:test@example.org".
+  link: 'mailto:steven.golovkine@ul.ie'  # For a direct email link, use "mailto:test@example.org".
 - icon: linkedin
   icon_pack: fab
   link: https://www.linkedin.com/in/steven-golovkine/
@@ -55,6 +55,9 @@ social:
 - icon: researchgate
   icon_pack: ai
   link: https://www.researchgate.net/profile/Steven_Golovkine
+- icon: google-scholar
+  icon_pack: ai
+  link: https://scholar.google.com/citations?user=-SgLpb8AAAAJ&hl=fr
 - icon: arxiv
   icon_pack: ai
   link: https://arxiv.org/search/?query=golovkine&searchtype=all&source=header
@@ -73,7 +76,16 @@ user_groups: []
 ---
 
 <div style="text-align:justify;">
-I'm currently working as a research engineer at Group Renault, and I will soon complete a thesis in Statistics, Applied Mathematics about some methods on multivariate functional data. My lab is the CREST (Center for Research in Economics and Statistics). This work is supervised by Valentin Patilea (CREST, <a href="http://ensai.fr/equipe/valentin-patilea/">link</a>) and Nicolas Klutchnikoff (IRMAR, <a href="https://klutchnikoff.github.io">link</a>) and is realized part at Renault and part at ENSAI.
+I am a Postdoctoral Researcher at the University of Limerick, Ireland, working on the Functional data Analysis for Sensor Technologies (FAST, <a href="https://www.insight-centre.org/harnessing-the-data-deluge-dr-norma-bargary-awarded-sfi-frontiers-for-the-future-grant/">link</a>) project. The aim of the project is to develop novel, computationally efficient statistical models and algorithms for the modelling of multivariate sensor data, while allowing for novel, individualised prediction and adaptive reference ranges. Examples of application include functional magnetic resonance imaging (fMRI), accelerometer data in sports science, electrocardiogram (ECG) monitors in cardiology and IoT for e-health. This work is supervised by Norma Bargary (UL, <a href="https://www.ul.ie/research/dr-norma-bargary">link</a>) and Andrew Simpkin (NUI Galway, <a href="https://www.nuigalway.ie/our-research/people/andrewsimpkin/">link</a>).
 </div>
 
 **Complete Resume** = [CV.pdf](files/resume.pdf)
+
+## The PhD project
+<div style="text-align:justify;">
+I completed a thesis in Statistics, Applied Mathematics, entitled "Statistical methods for multivariate functional data". This work was supervised by Valentin Patilea (CREST, <a href="http://ensai.fr/equipe/valentin-patilea/">link</a>) and Nicolas Klutchnikoff (IRMAR, <a href="https://klutchnikoff.github.io">link</a>) and was realized part at Renault and part at ENSAI.
+
+**Manuscript** = [link](https://tel.archives-ouvertes.fr/tel-03540827)  
+**Defense slides** = [defense.pdf](files/presentation_defense.pdf)
+</div>
+
