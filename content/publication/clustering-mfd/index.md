@@ -16,7 +16,7 @@ publishDate: 2020-12-20
 publication_types: ["2"]
 
 # Publication name and optional abbreviated publication name.
-publication: "Computational Statistics & Data Analysis"
+publication: "*Computational Statistics & Data Analysis*"
 publication_short: "CSDA"
 
 abstract: "A model-based clustering algorithm is proposed for a general class of functional data for which the components could be curves or images. The random functional data realizations could be measured with errors at discrete, and possibly random, points in the definition domain. The idea is to build a set of binary trees by recursive splitting of the observations. The number of groups are determined in a data-driven way. The new algorithm provides easily interpretable results and fast predictions for online data sets. Results on simulated datasets reveal good performance in various complex settings. The methodology is applied to the analysis of vehicle trajectories on a German roundabout."
