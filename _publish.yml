@@ -1,0 +1,4 @@
+- source: project
+  netlify:
+    - id: 2f2136bb-a59e-497c-85cb-222bd36b3bc5
+      url: 'https://stevengolovkine.netlify.app'
