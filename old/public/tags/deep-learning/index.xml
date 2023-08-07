@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Deep Learning on Steven Golovkine</title>
+    <link>https://stevengolovkine.netlify.com/tags/deep-learning/</link>
+    <description>Recent content in Deep Learning on Steven Golovkine</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; {year} Steven Golovkine. All Rights Reserved</copyright>
+    <lastBuildDate>Sun, 07 Jun 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://stevengolovkine.netlify.com/tags/deep-learning/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Joint Intent Classification and Slot Filling with Transformers</title>
+      <link>https://stevengolovkine.netlify.com/post/joint-intent-classification-slot-filling-with-transformers/</link>
+      <pubDate>Sun, 07 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://stevengolovkine.netlify.com/post/joint-intent-classification-slot-filling-with-transformers/</guid>
+      <description>An implementation of Transformers for user query comprehension expressed in English in Keras.</description>
+    </item>
+    
+    <item>
+      <title>Character-level Language Modeling with LSTMs</title>
+      <link>https://stevengolovkine.netlify.com/post/character-level-language-modeling-with-lstms/</link>
+      <pubDate>Mon, 01 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://stevengolovkine.netlify.com/post/character-level-language-modeling-with-lstms/</guid>
+      <description>An implementation of LSTM network to create a character level language model using Keras.</description>
+    </item>
+    
+    <item>
+      <title>Text classification using Neural Networks</title>
+      <link>https://stevengolovkine.netlify.com/post/text-classification-usin-neural-network/</link>
+      <pubDate>Mon, 01 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://stevengolovkine.netlify.com/post/text-classification-usin-neural-network/</guid>
+      <description>An implementation of neural networks for text classification using Keras based on embeddings.</description>
+    </item>
+    
+    <item>
+      <title>Classification and Localization model</title>
+      <link>https://stevengolovkine.netlify.com/post/classification-localization-model/</link>
+      <pubDate>Fri, 22 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://stevengolovkine.netlify.com/post/classification-localization-model/</guid>
+      <description>An implementation of a classification and localisation network with Keras with several, heterogenous outputs.</description>
+    </item>
+    
+    <item>
+      <title>Fully Convolutional Neural Networks</title>
+      <link>https://stevengolovkine.netlify.com/post/fully-convolutional-neural-network/</link>
+      <pubDate>Fri, 22 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://stevengolovkine.netlify.com/post/fully-convolutional-neural-network/</guid>
+      <description>Implementation of a Fully Convolutional Network with Keras for weak segmentations on images.</description>
+    </item>
+    
+    <item>
+      <title>ConvNet design</title>
+      <link>https://stevengolovkine.netlify.com/post/convnet-design/</link>
+      <pubDate>Sat, 16 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://stevengolovkine.netlify.com/post/convnet-design/</guid>
+      <description>A comparison of different ConvNet design with &lt;code&gt;Keras&lt;/code&gt;.</description>
+    </item>
+    
+    <item>
+      <title>Fine Tuning a Pre-trained Deep CNN on a GPU Machine</title>
+      <link>https://stevengolovkine.netlify.com/post/fine-tuning-pre-trained-deep-cnn-on-gpu-machine/</link>
+      <pubDate>Sun, 10 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://stevengolovkine.netlify.com/post/fine-tuning-pre-trained-deep-cnn-on-gpu-machine/</guid>
+      <description>How to fine-tuned the pre-trained ResNet50 model to do classification of images?</description>
+    </item>
+    
+    <item>
+      <title>Convolutions</title>
+      <link>https://stevengolovkine.netlify.com/post/convolutions/</link>
+      <pubDate>Sun, 03 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://stevengolovkine.netlify.com/post/convolutions/</guid>
+      <description>An introduction to convolutions with &lt;code&gt;Keras&lt;/code&gt;.</description>
+    </item>
+    
+    <item>
+      <title>Pretrained ConvNets with Keras</title>
+      <link>https://stevengolovkine.netlify.com/post/pretrained-convnets-with-keras/</link>
+      <pubDate>Sun, 03 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://stevengolovkine.netlify.com/post/pretrained-convnets-with-keras/</guid>
+      <description>An introduction on image predictions and representations using ResNet50 on &lt;code&gt;Keras&lt;/code&gt;.</description>
+    </item>
+    
+    <item>
+      <title>Triplet Loss for Implicit Feedback Neural Recommender Systems</title>
+      <link>https://stevengolovkine.netlify.com/post/triplet-loss-for-implicit-feedback-neural-recommender-systems/</link>
+      <pubDate>Fri, 01 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://stevengolovkine.netlify.com/post/triplet-loss-for-implicit-feedback-neural-recommender-systems/</guid>
+      <description>An introduction to bi-linear recsys using positive feedback data with &lt;code&gt;Keras&lt;/code&gt;.</description>
+    </item>
+    
+    <item>
+      <title>Explicit Feedback Neural Recommender Systems</title>
+      <link>https://stevengolovkine.netlify.com/post/explicit-feedback-neural-recommender-systems/</link>
+      <pubDate>Mon, 27 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://stevengolovkine.netlify.com/post/explicit-feedback-neural-recommender-systems/</guid>
+      <description>An introduction to recommender data and recsys architecture using &lt;code&gt;Keras&lt;/code&gt;.</description>
+    </item>
+    
+    <item>
+      <title>Categorical Embeddings</title>
+      <link>https://stevengolovkine.netlify.com/post/categorical-embeddings/</link>
+      <pubDate>Mon, 20 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://stevengolovkine.netlify.com/post/categorical-embeddings/</guid>
+      <description>An introduction to categorical embeddings using &lt;code&gt;Keras&lt;/code&gt;.</description>
+    </item>
+    
+    <item>
+      <title>Multilayer Neural Network in Tensorflow</title>
+      <link>https://stevengolovkine.netlify.com/post/multilayer-neural-network-in-tensorflow/</link>
+      <pubDate>Fri, 17 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://stevengolovkine.netlify.com/post/multilayer-neural-network-in-tensorflow/</guid>
+      <description>An introduction to &lt;code&gt;Tensorflow&lt;/code&gt; with the implementation of a digit classifier.</description>
+    </item>
+    
+    <item>
+      <title>Backpropagation in Multilayer Perceptron with Numpy</title>
+      <link>https://stevengolovkine.netlify.com/post/backpropagation-in-multilayer-perceptron-with-numpy/</link>
+      <pubDate>Wed, 15 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://stevengolovkine.netlify.com/post/backpropagation-in-multilayer-perceptron-with-numpy/</guid>
+      <description>An implementation of a real gradient descent and a multilayer perceptron using &lt;code&gt;Numpy&lt;/code&gt;.</description>
+    </item>
+    
+    <item>
+      <title>Introduction to Pretrained Models for Computer Vision</title>
+      <link>https://stevengolovkine.netlify.com/post/introduction-to-pretrained-models-for-computer-vision/</link>
+      <pubDate>Wed, 14 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://stevengolovkine.netlify.com/post/introduction-to-pretrained-models-for-computer-vision/</guid>
+      <description>In particular, we are going to use the ResNet50, MobileNet and InceptionResNetV2 models for Image Classification and Mask-RCNN models for Instance Detection and Segmentation.</description>
+    </item>
+    
+    <item>
+      <title>Introduction to Deep Learning with Keras</title>
+      <link>https://stevengolovkine.netlify.com/post/introduction-to-deep-learning-with-keras/</link>
+      <pubDate>Mon, 05 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://stevengolovkine.netlify.com/post/introduction-to-deep-learning-with-keras/</guid>
+      <description>An introduction to neural network with the high level framework &lt;code&gt;Keras&lt;/code&gt; and the famous MNIST dataset.</description>
+    </item>
+    
+  </channel>
+</rss>

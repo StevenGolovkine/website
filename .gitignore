@@ -2,10 +2,22 @@
 .idea/
 
 # Hugo
-resources/
-public/
+/resources/
+/public/
+
+# VSCode
+*.code-workspace
 
 # R files
 *.Rproj
 .Rproj.user
 .Rhistory
+
+# MacOS files
+.DS_Store
+Thumbs.db
+.hugo_build.lock
+
+/.quarto/
+/_site/
+/_book/

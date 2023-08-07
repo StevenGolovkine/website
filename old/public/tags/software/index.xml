@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Software on Steven Golovkine</title>
+    <link>https://stevengolovkine.netlify.com/tags/software/</link>
+    <description>Recent content in Software on Steven Golovkine</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; {year} Steven Golovkine. All Rights Reserved</copyright>
+    <lastBuildDate>Thu, 06 Dec 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://stevengolovkine.netlify.com/tags/software/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Homebrew</title>
+      <link>https://stevengolovkine.netlify.com/post/homebrew/</link>
+      <pubDate>Thu, 06 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://stevengolovkine.netlify.com/post/homebrew/</guid>
+      <description>Hombrew is a package manager for macOS. This software is a must to have for macOS users.</description>
+    </item>
+    
+    <item>
+      <title>MySQL</title>
+      <link>https://stevengolovkine.netlify.com/post/mysql/</link>
+      <pubDate>Thu, 06 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://stevengolovkine.netlify.com/post/mysql/</guid>
+      <description>MySQL is an open-source relational database management system.</description>
+    </item>
+    
+  </channel>
+</rss>

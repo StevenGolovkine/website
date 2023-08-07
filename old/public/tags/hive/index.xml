@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hive on Steven Golovkine</title>
+    <link>https://stevengolovkine.netlify.com/tags/hive/</link>
+    <description>Recent content in Hive on Steven Golovkine</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; {year} Steven Golovkine. All Rights Reserved</copyright>
+    <lastBuildDate>Sun, 09 Dec 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://stevengolovkine.netlify.com/tags/hive/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Set up Hive</title>
+      <link>https://stevengolovkine.netlify.com/post/set-up-hive/</link>
+      <pubDate>Sun, 09 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://stevengolovkine.netlify.com/post/set-up-hive/</guid>
+      <description>Apache Hive is a data warehouse software that facilitates the manipulation of large distributed datasets using SQL.</description>
+    </item>
+    
+  </channel>
+</rss>

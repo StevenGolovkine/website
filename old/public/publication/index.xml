@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Publications on Steven Golovkine</title>
+    <link>https://stevengolovkine.netlify.com/publication/</link>
+    <description>Recent content in Publications on Steven Golovkine</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; {year} Steven Golovkine. All Rights Reserved</copyright>
+    <lastBuildDate>Mon, 07 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://stevengolovkine.netlify.com/publication/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Learning the smoothness of noisy curves with application to online curve estimation</title>
+      <link>https://stevengolovkine.netlify.com/publication/learning-smoothness/</link>
+      <pubDate>Mon, 07 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://stevengolovkine.netlify.com/publication/learning-smoothness/</guid>
+      <description>Combining information both within and across trajectories, we propose a simple estimator for the local regularity of the trajectories of a stochastic process. Independent trajectories are measured with errors at randomly sampled time points. Non-asymptotic bounds for the concentration of the estimator are derived. Given the estimate of the local regularity, we build a nearly optimal local polynomial smoother from the curves from a new, possibly very large sample of noisy trajectories. We derive non-asymptotic pointwise risk bounds uniformly over the new set of curves. Our estimates perform well in simulations. Real data sets illustrate the effectiveness of the new approaches.</description>
+    </item>
+    
+    <item>
+      <title>Clustering multivariate functional data using unsupervised binary trees</title>
+      <link>https://stevengolovkine.netlify.com/publication/clustering-mfd/</link>
+      <pubDate>Thu, 28 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://stevengolovkine.netlify.com/publication/clustering-mfd/</guid>
+      <description>A model-based clustering algorithm is proposed for a general class of functional data for which the components could be curves or images. The random functional data realizations could be measured with errors at discrete, and possibly random, points in the definition domain. The idea is to build a set of binary trees by recursive splitting of the observations. The number of groups are determined in a data-driven way. The new algorithm provides easily interpretable results and fast predictions for online data sets. Results on simulated datasets reveal good performance in various complex settings. The methodology is applied to the analysis of vehicle trajectories on a German roundabout.</description>
+    </item>
+    
+    <item>
+      <title>Adaptive optimal estimation of irregular mean and covariance functions</title>
+      <link>https://stevengolovkine.netlify.com/publication/adaptive-optimal-estim/</link>
+      <pubDate>Sat, 14 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://stevengolovkine.netlify.com/publication/adaptive-optimal-estim/</guid>
+      <description>We propose straightforward nonparametric estimators for the mean and the covariance functions of functional data. Our setup covers a wide range of practical situations. The random trajectories are, not necessarily differentiable, have unknown regularity, and are measured with error at discrete design points. The measurement error could be heteroscedastic. The design points could be either randomly drawn or common for all curves. The definition of our nonparametric estimators depends on the local regularity of the stochastic process generating the functional data. We first propose a simple estimator of this local regularity which takes strength from the replication and regularization features of functional data. Next, we use the &amp;lsquo;smoothing first, then estimate&amp;rsquo; approach for the mean and the covariance functions. The new nonparametric estimators achieve optimal rates of convergence. They can be applied with both sparsely or densely sampled curves, are easy to calculate and to update, and perform well in simulations. Simulations built upon a real data example on household power consumption illustrate the effectiveness of the new approach.</description>
+    </item>
+    
+    <item>
+      <title>FDApy: a Python package for functional data</title>
+      <link>https://stevengolovkine.netlify.com/publication/fdapy/</link>
+      <pubDate>Tue, 26 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://stevengolovkine.netlify.com/publication/fdapy/</guid>
+      <description>We introduce the Python package, FDApy, as an implementation of functional data. This package provide modules for the analysis of such data. It includes classes for different dimensional data as well as irregularly sampled functional data. A simulation toolbox is also provided. It might be used to simulate different clusters of functional data. Some methodologies to handle these data are implemented, such as dimension reduction and clustering. New methods can be easily added. The package is publicly available on the Python Package Index and Github.</description>
+    </item>
+    
+  </channel>
+</rss>
