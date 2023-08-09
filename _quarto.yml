@@ -1,9 +1,16 @@
 project:
   type: website
 
+execute: 
+  freeze: auto
+
 website:
   title: "Steven Golovkine"
+  site-url: https://stevengolovkine.netlify.app
+  description: Personal website
+  repo-url: https://github.com/StevenGolovkine/website
   navbar:
+    title: "> SG"
     left:
       - href: index.qmd
         text: Home
@@ -11,9 +18,8 @@ website:
 
 format:
   html:
-    theme: cosmo
-    css: styles.css
-    toc: true
-
-execute: 
-  freeze: auto
+    theme:
+      light: themes/light_theme.scss
+      dark: themes/dark_themes.scss
+    smooth-scroll: true
+    link-external-newwindow: true
