@@ -14,15 +14,15 @@
  // Color system
  //
  
- $white: #fff !default;
- $primary: black !default;
- $secondary: darkgrey !default;
- $success: blue !default;
- $info: red !default;
- $warning: red !default;
- $danger: red !default;
- $light: red !default;
- $dark: blue !default;
+ $white: #ffffff !default;
+ $primary: #000000 !default;
+ $secondary: #a9a9a9 !default;
+ $success: #0000ff !default;
+ $info: #ff0000 !default;
+ $warning: #ff0000 !default;
+ $danger: #ff0000 !default;
+ $light: #ff0000 !default;
+ $dark: #0000ff !default;
  
  $navbar-bg: transparent !default;
  
@@ -165,10 +165,23 @@
   color: $primary !important; 
  }
  
- // blink navbar brand 
- .navbar-brand:hover .blink {
-   animation: blinker 1.3s step-start infinite;
- }
+ // icon
+ .vl {
+  border-left: 2px solid $primary;
+  height: 100%;
+  display:table
+}
+
+ .hl {
+  display: block;
+  background: $primary;
+  width: 100%;
+  height: 2px;
+  margin: auto;
+  display: table;
+  margin-top: -6px;
+  margin-bottom: -6px;
+}
  
  @keyframes blinker {
    50% {

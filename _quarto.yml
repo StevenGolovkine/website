@@ -10,7 +10,7 @@ website:
   description: Personal website
   repo-url: https://github.com/StevenGolovkine/website
   navbar:
-    title: "> SG"
+    title: "<span class='vl'>Steven<span class='hl'></span>Golovkine</span>"
     left:
       - href: index.qmd
         text: Home
