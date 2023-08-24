@@ -11,10 +11,20 @@ website:
   repo-url: https://github.com/StevenGolovkine/website
   navbar:
     title: "<span class='vl'>Steven<span class='hl'></span>Golovkine</span>"
-    left:
-      - href: index.qmd
-        text: Home
-      - about.qmd
+    right:
+      - href: contents/about.qmd
+        text: About
+      - href: contents/research.qmd
+        text: Research
+      - href: contents/talks.qmd
+        text: Talks
+      - href: contents/code.qmd
+        text: Code
+      - href: contents/posts.qmd
+        text: Posts
+      - href: contents/contact.qmd
+        text: Contact
+      
 
 format:
   html:
