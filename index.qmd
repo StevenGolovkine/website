@@ -7,6 +7,13 @@ execute:
 page-layout: full
 ---
 
+```{r}
+#| echo: false
+#| warning: false
+library(htmltools)
+source("code/functions.R")
+```
+
 ::: {.grid}
 
 ::: {.g-col-12 .g-col-md-12}
