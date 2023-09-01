@@ -212,8 +212,8 @@ body_package <- function(img_path,
 }
 
 
-# box function
-box_publi <- function(data) {
+# Box function
+box_publication <- function(data) {
   tagList(
     tags$span(
       class = "text-primary",
@@ -234,29 +234,13 @@ box_publi <- function(data) {
           role = "button",
           fa("globe")
         )
-      ),
-      div(
-        if (data$tag_infectious[1] == 1) {
-          fontawesome::fa("virus")
-        },
-        if (data$tag_child[1] == 1) {
-          fontawesome::fa("child")
-        },
-        if (data$tag_women[1] == 1) {
-          fontawesome::fa("female")
-        },
-        if (data$tag_method[1] == 1) {
-          fontawesome::fa("wrench")
-        }
       )
     )
   )
 }
 
 
-
-
-
+# Select publication
 selected_year_item <- function(data, selected_year, id, collapse) {
   data_selected_year <- data[data$year == selected_year, ]
   tag_year <- NULL
@@ -279,7 +263,7 @@ selected_year_item <- function(data, selected_year, id, collapse) {
       ),
       div(
         class = "accordion-body border-top border-primary",
-        box_publi(data_selected_year[i, ])
+        box_publication(data_selected_year[i, ])
       )
     )
     tag_year <- tagList(tag_year, tag)
@@ -287,10 +271,9 @@ selected_year_item <- function(data, selected_year, id, collapse) {
   return(tag_year)
 }
 
-# accordeon function
-accordeon_mult_code <- function(data,
-                                id,
-                                show = TRUE) {
+
+# Accordion function
+accordeon_mult_code <- function(data, id, show = TRUE) {
   if (show == TRUE) {
     collapse <- "show"
     button_collapse <- ""
@@ -302,7 +285,7 @@ accordeon_mult_code <- function(data,
   final_tag <- NULL
   unique_year <- unique(data$year)
 
-  for (selected_year in unique_year) {
+  for (selected_year in sort(unique_year, decreasing = TRUE)) {
     tag <-
       div(
         class = "g-col-12 align-self-center g-start-1",
@@ -332,21 +315,10 @@ accordeon_mult_code <- function(data,
   final_tag
 }
 
-
 js_anim <- function(){
   js_dep <- tagList(
     tags$script(src = "https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.min.js"),
     tags$script(src = "https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.trunk.min.js")
   )
   return(js_dep)
-}
-
-footer_code <- function(){
-  tags$footer(
-    " 2023 | ",
-    tags$strong("Steven Golovkine"),
-    " | ",
-    tags$a("MIT License",href = "https://opensource.org/license/mit-0/"),
-    class="text-center w-100 p-2", style = "position: absolute; left:0; bottom:0; background-color: transparent !important"
-    )
 }

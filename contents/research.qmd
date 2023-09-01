@@ -1,1 +1,40 @@
-# Research outputs
+
+```{r}
+#| echo: false
+#| warning: false
+
+library(htmltools)
+library(fontawesome)
+
+source("../code/functions.R")
+
+# bibliography loading
+bibliography <- read.csv("../data/bibliography.csv")
+
+# Summary body
+research <-
+  tagList(
+    div("My research areas in ",tags$strong("Epidemiology & Public Health"), " revolve around:"),
+    div("> Statistics & Data Science", fa("wrench")),
+    div("> Infectious Diseases", fa("virus")),
+    div("> Pediatrics", fa("child")),
+    div("> Women Health", fa("female"))
+  )
+
+tagList(
+  # anim js dependencies
+  js_anim(),
+
+  # grid
+  div(
+    class = "grid",
+
+    # Publications
+    accordeon_mult_code(
+       data = bibliography,
+       id = "accordeon", 
+       show = FALSE
+    )
+  ),
+)
+```
