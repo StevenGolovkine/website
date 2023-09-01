@@ -1,5 +1,6 @@
 /*-- scss:defaults --*/
 
+// Fonts
 @font-face {
   font-family: 'font-title';
   src: url("fonts/SourceCodePro-Black.ttf") format("truetype");
@@ -10,6 +11,8 @@
   src: url("fonts/SourceCodePro-Light.ttf") format("truetype");
 }
 
+$headings-font-family: font-title !default;
+
 // Color system
 $white: #ffffff !default;
 $primary: #000000 !default;
@@ -19,9 +22,9 @@ $info: #ff0000 !default;
 $warning: #ff0000 !default;
 $danger: #ff0000 !default;
 $light: #ffffff !default;
-$dark: #0000ff !default;
+$dark: #000000 !default;
  
-// colour tweaks to theme
+// Color tweaks to theme
 $body-bg: $light;
 $body-color: $dark;
 $navbar-bg: $body-bg;
@@ -30,12 +33,9 @@ $code-bg: $white;
 $code-color: $secondary;
 $card-bg: $body-bg;
 $card-border-color: $gray-300;
-
 $navbar-bg: transparent !default;
  
-$headings-font-family: font-title !default;
- 
-// font sizes;
+// Font sizes
 $font-size-base: 1rem !default;
 $h1-font-size: $font-size-base * 2.5 !default;
 $h2-font-size: $font-size-base * 2 !default;
@@ -43,45 +43,56 @@ $h3-font-size: $font-size-base * 1.75 !default;
 $h4-font-size: $font-size-base * 1.5 !default;
 $h5-font-size: $font-size-base * 1.25 !default;
 $h6-font-size: $font-size-base !default;
-
-$btn-active-box-shadow: inset 0 3px 5px rgba($white, .125) !default;
  
-// progress bar
+// Progress bar
 $progress-border-radius: 0 !default;
  
-// accordeon
+// Accordeon
 $accordion-button-active-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' class='bi bi-plus-lg' fill = 'black' width='16' height='16' viewBox='0 0 16 16'><path d='M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z'/></svg>");
- 
+
 $accordion-button-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' class='bi bi-dash-lg' fill = 'black' width='16' height='16' viewBox='0 0 16 16'><path d='M2 8a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11A.5.5 0 0 1 2 8Z'/></svg>");
- 
- /*-- scss:rules --*/
- 
- html, body {
-     overflow-x: hidden;
- }
- 
- body {
-   color : $primary !important;
-   font-family : font-base !important;
-   font-size: 0.8rem !important;
- }
- 
- 
-// navbar
-.navbar{
-  font-size: 1rem !important;
+
+.accordion-button{
+  box-shadow: none !important;
+  color: $primary !important;
+}
+
+// Rules 
+html, body {
+  overflow-x: hidden;
 }
  
+body {
+  color : $primary !important;
+  font-family : font-base !important;
+  font-size: $font-size-base !important;
+}
+
+// Toggle theme
+.navbar .quarto-color-scheme-toggle.alternate .bi::before {
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='white' class='bi bi-toggle-on' viewBox='0 0 16 16'><path d='M5 3a5 5 0 0 0 0 10h6a5 5 0 0 0 0-10H5zm6 9a4 4 0 1 1 0-8 4 4 0 0 1 0 8z'/></svg>") !important;
+}
+
+// Navigation bar
+.navbar{
+  font-size: $font-size-base !important;
+}
+
 .nav-item, .quarto-toggle-container, #quarto-search {
   background-color: $white !important;
 }
- 
-// hover on navbar
+
+// Hover on navbar
 .navbar-expand-lg .navbar-nav .nav-link:hover {
   color: $primary;
 }
+
 .navbar-expand-lg .navbar-nav .nav-link.active {
   color: $primary;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link, .aa-SubmitIcon {
+  color: $primary !important;
 }
 
 @media screen and (min-width: 992px) {
@@ -105,34 +116,12 @@ $accordion-button-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/20
     height: 2px;
     transition: all 0.3s;
   }
-  
-  .navbar .navbar-nav .nav-item:nth-child(2)::after, 
-  .navbar .navbar-nav .nav-item:nth-child(4)::after {
-    background-color: $primary;
-  }
-  
-  .navbar .navbar-nav .nav-item:nth-child(3)::after, 
-  .navbar .navbar-nav .nav-item:nth-child(5)::after {
-    background-color: $primary;
-  }
-  
+
   .navbar .navbar-nav .nav-item:hover::after {
     width: 90%;
   }
 }
 
- 
-// accordeon
-.accordion-button{
-  box-shadow: none !important;
-  color: $primary !important;
-}
- 
-// hover on navbar
-.navbar-expand-lg .navbar-nav .nav-link, .aa-SubmitIcon {
-  color: $primary !important;
-}
- 
 .navbar-expand-lg .navbar-nav .nav-link:hover, .aa-SubmitIcon:hover {
   color: $primary !important;
   font-weight: bold !important;
@@ -147,7 +136,7 @@ $accordion-button-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/20
   border-color: transparent !important;
 }
  
-// navbar-brand
+// Navbar-brand
 .navbar-brand {
   color: $primary !important;
   border-color: transparent !important;  
@@ -155,7 +144,7 @@ $accordion-button-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/20
   font-weight: bold !important;
 }
  
- // change color of burger menu in navbar
+// Change color of burger menu in navbar
 .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
 }
@@ -164,67 +153,63 @@ $accordion-button-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/20
   box-shadow: 0 0 0 0 !important;
 }
  
-// search bar
- 
+// Search bar
 .aa-DetachedCancelButton:hover {
   color: $primary !important;
   opacity: 1 !important;
 }
  
- //// text default
+// Text default
+.search-result-container, .search-result-text-container,
+.search-result-title-container, .search-result-text, .search-result-icon,
+.search-result-icon-container {
+  background-color: $white !important;
+}
  
- .search-result-container, .search-result-text-container, 
- .search-result-title-container, .search-result-text, .search-result-icon, .search-result-icon-container {
-   background-color: $white !important;
- }
- 
- .search-result-container .search-result-text {
-   color: $primary !important;
-   opacity: 1 !important;
- }
- 
- .search-result-container .search-result-title {
-   color: $primary !important;
-   opacity: 1 !important;
- }
- 
- .search-result-container .search-result-icon {
-   color: $primary !important;
-   opacity: 1 !important;
- }
- 
- ////hover
- 
- .search-result-container:hover .search-result-text {
-   font-weight: bold !important;
- }
- 
- .search-result-container:hover .search-result-title {
-  font-weight: bold !important;
- }
- 
-// input
-.aa-Input {
+.search-result-container .search-result-text {
   color: $primary !important;
   opacity: 1 !important;
 }
  
+.search-result-container .search-result-title {
+  color: $primary !important;
+  opacity: 1 !important;
+}
+ 
+.search-result-container .search-result-icon {
+  color: $primary !important;
+  opacity: 1 !important;
+}
+
+.search-result-container:hover .search-result-text {
+  font-weight: bold !important;
+}
+
+.search-result-container:hover .search-result-title {
+  font-weight: bold !important;
+}
+ 
+// Input
+.aa-Input {
+  color: $primary !important;
+  opacity: 1 !important;
+}
+
 .aa-SubmitButton .aa-SubmitIcon{
   fill: $primary !important;
   opacity: 1 !important;
 }
  
- // title
- 
+// Title
 h1 {
   color: $primary !important; 
 }
- 
+
 h2, h3 {
   color: $primary !important; 
 }
 
-// icon
+// Icon
 .vl {
   display: block;
   border-left: 2px solid $primary;
