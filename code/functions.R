@@ -22,8 +22,7 @@
 #' )
 #' @importFrom htmltools div tags
 #' @export
-#
-accordeon_code <- function(title, body, id, show = TRUE) {
+accordeon_code <- function(title, body, id, show=TRUE) {
   if (show == TRUE) {
     collapse <- "show"
     button_collapse <- ""
@@ -31,7 +30,7 @@ accordeon_code <- function(title, body, id, show = TRUE) {
     collapse <- "hide"
     button_collapse <- "collapsed"
   }
-  div(
+  div(  
     class = "accordion bg-white text-primary border-primary border border-1 accordion-flush",
     id = sprintf("accordeon-adapt-%s", id),
     div(
@@ -345,7 +344,7 @@ js_anim <- function(){
 footer_code <- function(){
   tags$footer(
     " 2023 | ",
-    tags$strong("Matthieu Hanf"),
+    tags$strong("Steven Golovkine"),
     " | ",
     tags$a("MIT License",href = "https://opensource.org/license/mit-0/"),
     class="text-center w-100 p-2", style = "position: absolute; left:0; bottom:0; background-color: transparent !important"

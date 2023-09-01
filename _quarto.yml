@@ -9,9 +9,10 @@ website:
   site-url: https://stevengolovkine.netlify.app
   description: Personal website
   repo-url: https://github.com/StevenGolovkine/website
+  favicon: images/icon.png
   navbar:
     title: "<span class='vl'>Steven<span class='hl'></span>Golovkine</span>"
-    right:
+    left:
       - href: contents/about.qmd
         text: About
       - href: contents/research.qmd
@@ -24,7 +25,12 @@ website:
         text: Posts
       - href: contents/contact.qmd
         text: Contact
-      
+    right: 
+      - href: https://github.com/StevenGolovkine
+        icon: github
+  page-footer:
+    center:
+      - text: "2023 | <strong>Steven Golovkine</strong> | <a class='link-footer' href='https://opensource.org/license/mit-0/'>MIT License</a>"
 
 format:
   html:
@@ -34,3 +40,7 @@ format:
     css: themes/theme.css
     smooth-scroll: true
     link-external-newwindow: true
+    grid: 
+      sidebar-width: 250px
+      body-width: 900px
+      margin-width: 300px
