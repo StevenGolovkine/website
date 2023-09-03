@@ -6,7 +6,7 @@
 library(htmltools)
 library(fontawesome)
 
-source("../code/functions.R")
+source("../code/functions_research.R")
 
 # bibliography loading
 bibliography <- read.csv("../data/bibliography.csv")

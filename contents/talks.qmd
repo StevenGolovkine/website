@@ -1,1 +1,31 @@
-# Talks
+
+```{r}
+#| echo: false
+#| warning: false
+
+library(htmltools)
+library(fontawesome)
+
+source("../code/functions_talks.R")
+
+# bibliography loading
+bibliography <- read.csv("../data/talks.csv")
+
+# Summary body
+tagList(
+  # anim js dependencies
+  js_anim(),
+
+  # grid
+  div(
+    class = "grid",
+
+    # Publications
+    accordeon_mult_code(
+       data = bibliography,
+       id = "accordeon", 
+       show = FALSE
+    )
+  ),
+)
+```
