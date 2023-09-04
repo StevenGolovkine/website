@@ -15,15 +15,18 @@ format:
 ::: {.g-col-12 .g-col-md-12}
 <div class="card h-100">
 <div class="card-body d-flex flex-column">
-<p class="card-text">About me, my interests and experience.<br><br>
-<a href="mailto:steven.golovkine@ul.ie">{{< fa battery-half size=2xl >}}</a>
-<a href="mailto:steven.golovkine@ul.ie"><i class="fa-solid fa-envelope ai-2x"></i></a>
-<a href="https://github.com/StevenGolovkine"><i class="fa-brands fa-github ai-2x"></i></a>
-<a href="https://www.linkedin.com/in/steven-golovkine/"><i class="fa-brands fa-linkedin ai-2x"></i></a>
-<a href="https://scholar.google.com/citations?user=-SgLpb8AAAAJ"><i class="ai ai-google-scholar-square ai-2x"></i></a>
-<a href="https://www.researchgate.net/profile/Steven-Golovkine"><i class="ai ai-researchgate-square ai-2x"></i></a>
-<img src="images/avatar.jpg" alt="Avatar" style="float:right;width:256px;height:279px"></p>
-<div style="margin-top: auto;"><a href="contents/about.qmd" class="card-link heading-font">ABOUT</a></div>
+<div class="container">
+  <div class="flex-left"><p class="card-text">About me, my interests and experience.<br><br>
+  <a href="mailto:steven.golovkine@ul.ie">{{< fa envelope size=2x >}}</a>
+  <a href="https://github.com/StevenGolovkine"><i class="fa-brands fa-github ai-2x"></i></a>
+  <a href="https://www.linkedin.com/in/steven-golovkine/"><i class="fa-brands fa-linkedin ai-2x"></i></a>
+  <a href="https://scholar.google.com/citations?user=-SgLpb8AAAAJ"><i class="ai ai-google-scholar-square ai-2x"></i></a>
+  <a href="https://www.researchgate.net/profile/Steven-Golovkine"><i class="ai ai-researchgate-square ai-2x"></i></a>
+  <a href="https://arxiv.org/search/?query=golovkine&searchtype=all&abstracts=show&order=-announced_date_first&size=50"><i class="ai ai-arxiv-square ai-2x"></i></a>
+  </p><div style="margin-top: auto;"><a href="contents/about.qmd" class="card-link heading-font">ABOUT</a></div>
+  </div>
+  <div class="flex-right"><img src="images/avatar.jpg" alt="Avatar" style="width:256px;height:279px"></div>
+</div>
 </div>
 </div>
 :::

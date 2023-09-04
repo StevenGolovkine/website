@@ -22,3 +22,17 @@
         width: 100%;
     }
 }
+
+/* Cards container */
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+  
+.flex-left {
+    width: 75%;
+}
+
+.flex-right {
+    width: 25%;
+}
