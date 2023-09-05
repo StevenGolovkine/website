@@ -31,6 +31,8 @@
   
 .flex-left {
     width: 75%;
+    display: flex;
+    flex-direction: column;
 }
 
 .flex-right {
