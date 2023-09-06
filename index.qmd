@@ -17,7 +17,8 @@ format:
 <div class="card-body d-flex flex-column">
 <div class="container">
   <div class="flex-left">
-  <p class="card-text">About me, my interests and experience.<br><br>
+  <p class="card-text">Hello, I'm Steven Golovkine.<br><br>
+  I am a Postdoctoral Researcher at the University of Limerick, Ireland, working on Functional Data Analysis.<br><br>
     <a href="mailto:steven.golovkine@ul.ie">{{< fa envelope-square size=2x >}}</a>
     <a href="https://github.com/StevenGolovkine"><i class="fa-brands fa-github-square ai-2x"></i></a>
     <a href="https://www.linkedin.com/in/steven-golovkine/"><i class="fa-brands fa-linkedin ai-2x"></i></a>
@@ -41,7 +42,7 @@ format:
 ::: {.g-col-12 .g-col-md-6}
 <div class="card h-100">
 <div class="card-body d-flex flex-column">
-<p class="card-text">Research.</p>
+<p class="card-text">My research mostly concerns statistical models for functional data. Here are the references of my published and working papers.</p>
 <div style="margin-top: auto;"><a href="contents/research.qmd" class="card-link third-color-link heading-font">RESEARCH</a></div>
 </div>
 </div>
@@ -50,7 +51,7 @@ format:
 ::: {.g-col-12 .g-col-md-6}
 <div class="card h-100">
 <div class="card-body d-flex flex-column">
-<p class="card-text">Talks. </p>
+<p class="card-text">Slides and resources from talks I’ve given at conferences.</p>
 <div style="margin-top: auto;"><a href="contents/talks.qmd" class="card-link second-color-link heading-font">TALKS</a></div>
 </div>
 </div>
@@ -59,7 +60,7 @@ format:
 ::: {.g-col-12 .g-col-md-6}
 <div class="card h-100">
 <div class="card-body d-flex flex-column">
-<p class="card-text">Packages.</p>
+<p class="card-text">Part of my work is writing code. Here are links to their repos, websites and any other resources.</p>
 <div style="margin-top: auto;"><a href="/contents/code.qmd" class="card-link third-color-link heading-font">CODE</a></div>
 </div>
 </div>
@@ -68,7 +69,7 @@ format:
 ::: {.g-col-12 .g-col-md-6}
 <div class="card h-100">
 <div class="card-body d-flex flex-column">
-<p class="card-text">I sometimes write about what I'm doing and learning, mostly about <i class="fa-brands fa-r-project" aria-label="R project"></i> and building websites.</p>
+<p class="card-text">I sometimes write about what I'm doing and learning, mostly about random stuff.</p>
 <div style="margin-top: auto;"><a href="contents/posts.qmd" class="card-link second-color-link heading-font">POSTS</a></div>
 </div>
 </div>
