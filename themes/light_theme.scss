@@ -227,3 +227,8 @@ a.link-footer{
   text-decoration: none;  
   font-size: $h5-font-size;
 }
+
+.card-link:hover {
+  background-color: $body-bg;
+  color: $primary;
+}
