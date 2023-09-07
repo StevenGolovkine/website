@@ -1,3 +1,13 @@
+---
+knitr:
+  opts_chunk: 
+    collapse: true
+execute: 
+  echo: false
+format: 
+  html: 
+    css: https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css
+---
 
 ```{r}
 #| echo: false

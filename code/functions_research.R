@@ -76,17 +76,27 @@ box_publication <- function(data) {
     ),
     tags$span(
       class = "text-primary",
-      data$journal[1]
+      tags$i(
+        data$journal[1]
+      )
     ),
     div(
       class = "d-flex justify-content-between mt-2",
       div(
         class = "text-primary",
         data$author,
+        br(), br(),
         tags$a(
           href = data$url[1],
           role = "button",
           fa("globe")
+        ),
+        tags$a(
+          href = data$arxiv_url[1],
+          role = "button",
+          tags$i(
+            class='ai ai-arxiv'
+          )
         )
       )
     )
