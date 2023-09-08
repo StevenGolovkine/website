@@ -112,7 +112,7 @@ selected_year_item <- function(data, selected_year, id, collapse) {
       id = sprintf(
         "%s-collapse%s",
         id,
-        data_selected_year$year[i]
+        data_year$year[i]
       ),
       class = sprintf(
         "accordion-collapse collapse %s",
@@ -121,7 +121,7 @@ selected_year_item <- function(data, selected_year, id, collapse) {
       "aria-labelledby" = sprintf(
         "%s-heading%s",
         id,
-        data_selected_year$year[i]
+        data_year$year[i]
       ),
       div(
         class = "accordion-body border-top border-primary",
