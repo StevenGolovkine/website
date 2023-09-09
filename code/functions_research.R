@@ -17,7 +17,7 @@ format_author <- function(authors) {
 }
 
 # Box publication function
-box_publication <- function(data) {
+box_publication <- function(data, bibtex_file) {
   tagList(
     tags$span(
       class = "text-primary",
@@ -35,22 +35,30 @@ box_publication <- function(data) {
       class = "d-flex justify-content-between mt-2",
       format_author(data$author)
     ),
+    br(),
     div(
-      class = "d-flex justify-content-between mt-2",
+      class = "d-flex justify-content-between",
       div(
-        div(
-          tags$a(
-            href = data$url[1],
-            role = "button",
-            fa("globe")
+        tags$a(
+          href = data$url[1],
+          role = "button",
+          fa("globe")
+        ),
+        tags$a(
+          href = data$arxiv_url[1],
+          role = "button",
+          tags$i(
+            class='ai ai-arxiv'
           ),
-          tags$a(
-            href = data$arxiv_url[1],
-            role = "button",
-            tags$i(
-              class='ai ai-arxiv'
-            )
-          )
+          .noWS = c('after-begin', 'before-end')
+        ),
+        tags$a(
+          href = bibtex_file,
+          role = "button",
+          tags$i(
+            class='ai ai-zotero'
+          ),
+          .noWS = c('after-begin', 'before-end')
         )
       ),
       div(
@@ -63,7 +71,7 @@ box_publication <- function(data) {
 
 
 # Box preprint function
-box_preprint <- function(data) {
+box_preprint <- function(data, bibtex_file) {
   tagList(
     tags$span(
       class = "text-primary",
@@ -74,17 +82,25 @@ box_preprint <- function(data) {
       class = "d-flex justify-content-between mt-2",
       format_author(data$author)
     ),
+    br(),
     div(
-      class = "d-flex justify-content-between mt-2",
+      class = "d-flex justify-content-between",
       div(
-        div(
-          tags$a(
-            href = data$arxiv_url[1],
-            role = "button",
-            tags$i(
-              class='ai ai-arxiv'
-            )
-          )
+        tags$a(
+          href = data$arxiv_url,
+          role = "button",
+          tags$i(
+            class='ai ai-arxiv'
+          ),
+          .noWS = c('after-begin', 'before-end')
+        ),
+        tags$a(
+          href = bibtex_file,
+          role = "button",
+          tags$i(
+            class='ai ai-zotero'
+          ),
+          .noWS = c('after-begin', 'before-end')
         )
       ),
       div(
@@ -102,10 +118,13 @@ selected_year_item <- function(data, selected_year, id, collapse) {
 
   data_year  <- data_selected_year |> arrange(factor(month, levels = MONTHS))
   for (i in 1:dim(data_year)[1]) {
+    bibtex_file <- paste0(
+      '../data/bibtex/', data_year[i, ]$abbrev, '.bib'
+    )
     if (data_year[i, ]$journal == "") {
-      div_article <- box_preprint(data_year[i, ])
+      div_article <- box_preprint(data_year[i, ], bibtex_file)
     } else {
-      div_article <- box_publication(data_year[i, ])
+      div_article <- box_publication(data_year[i, ], bibtex_file)
     }
 
     tag <- div(
