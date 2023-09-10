@@ -1,9 +1,123 @@
----
-title: "About"
----
+## About
 
-About this site
 
 ```{r}
-1 + 1
+#| echo: false
+#| warning: false
+library(htmltools)
+library(fontawesome)
+
+source("../code/functions_about.R")
+
+
+# Education
+body_education <- tagList(
+    resume_code(
+        title = "ENSAI", 
+        subtitle = "> PhD in Applied Mathematics, Statistics",
+        place = "Rennes, France", 
+        date = "Jan. 2018 - Jun. 2021"
+    ),
+    resume_code(
+        title = "ENSAI", 
+        subtitle = "> MSc in Big Data",
+        place = "Rennes, France", 
+        date = "Sep. 2016 - Oct. 2017"
+    ),
+    resume_code(
+        title = "ENSAI", 
+        subtitle = "> M.S. in Statistics (Diplôme d'ingénieur)",
+        place = "Rennes, France", 
+        date = "Sep. 2014 - Oct. 2017"
+    )
+)
+
+# Professional
+body_pro <- tagList(
+    resume_code(
+        title = "Postdoctoral Researcher", 
+        subtitle = "> University of Limerick",
+        place = "Limerick, Ireland", 
+        date = "Feb. 2022 - Present"
+    ),
+    resume_code(
+        title = "Data Scientist", 
+        subtitle = "> IRMES (INSEP)",
+        place = "Paris, France", 
+        date = "Jun. 2021 - Jan. 2022"
+    ),
+    resume_code(
+        title = "Research Engineer", 
+        subtitle = "> Groupe Renault",
+        place = "Guyancourt, France", 
+        date = "Jan. 2018 - Mar. 2021"
+    )
+)
+
+# Teaching 
+body_teaching <- tagList(
+  resume_code(
+    title = "R for Statistical Data Science", 
+    subtitle = "> MS6071",
+    place = "University of Limerick", 
+    date = "Sep. 2023 - Dec. 2023"
+  ),
+  resume_code(
+    title = "Engineering maths 5", 
+    subtitle = "> MA4006",
+    place = "University of Limerick", 
+    date = "Feb. 2023"
+  ),
+  resume_code(
+    title = "Duration models", 
+    subtitle = "> M.S. in Statistics",
+    place = "ENSAI", 
+    date = "Apr. 2021 - Jun. 2021"
+  ),
+  resume_code(
+    title = "Linear regression", 
+    subtitle = "> M.S. in Statistics",
+    place = "ENSAI", 
+    date = "Sep. 2019 - Nov. 2021"
+  )
+)
+
+tagList(
+    # grid layout
+    div(
+        class="grid",
+        # Education
+        div(
+            class = "g-col-12 g-col-md-12 align-self-center",
+            accordeon_code(
+                title = "> EDUCATION",
+                body = body_education,
+                id = "education",
+                show = FALSE
+            )
+        ),
+        
+        # Academic Experience
+        div(
+            class = "g-col-12 g-col-md-12 align-self-center",
+            accordeon_code(
+                title = "> PROFESSIONAL EXPERIENCE",
+                body = body_pro,
+                id = "academic",
+                show = FALSE
+            )
+        ),
+    
+        # Teaching Experience
+        div(
+            class = "g-col-12 g-col-md-12 align-self-center",
+            accordeon_code(
+                title = "> TEACHING EXPERIENCE",
+                body = body_teaching,
+                id = "professional",
+                show = FALSE
+            )
+        )
+    ),
+)
 ```
