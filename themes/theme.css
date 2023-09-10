@@ -38,3 +38,8 @@
 .flex-right {
     width: 25%;
 }
+
+/* List ressources */
+ul.list-ressources {
+    list-style-type: "> ";
+  }

@@ -26,6 +26,9 @@ website:
       - href: contents/contact.qmd
         text: Contact
     right: 
+      - href: contents/ressources.qmd
+        icon: lightbulb
+        text: " "
       - href: https://github.com/StevenGolovkine
         icon: github
   page-footer:

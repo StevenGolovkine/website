@@ -1,0 +1,12 @@
+## Ressources
+
+Here are the technical and design ressources I used to build this website.
+
+<ul class="list-ressources">
+    <li>The Quarto [documentation](https://quarto.org/).</li>
+    <li>The Bootstrap 5 [documentation](https://getbootstrap.com/).</li>
+    <li>The [website](https://ellakaye.co.uk/) of Ella Kaye.</li>
+    <li>The [website](https://mhanf.netlify.app) of Matthieu Hanf.</li>
+    <li>The Academicons [website](https://jpswalsh.github.io/academicons/).</li>
+    <li>The Source Code Pro fonts Github [repository](https://github.com/adobe-fonts/source-code-pro).</li>
+</ul>
