@@ -1,1 +1,13 @@
-# Contact
+---
+format: 
+  html: 
+    css: https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css
+---
+
+## I'd love to hear from you!
+
+You can drop me an e-mail or find me on elsewhere online:
+
+<a href="mailto:steven.golovkine@ul.ie" class="card-link heading-font">{{< fa envelope-square >}} E-Mail</a>
+<a href="https://github.com/StevenGolovkine" class="card-link heading-font"><i class="fa-brands fa-github-square"></i> Github</a>
+<a href="https://www.linkedin.com/in/steven-golovkine/" class="card-link heading-font"><i class="fa-brands fa-linkedin"></i> Linkedin</a>

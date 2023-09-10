@@ -1,0 +1,16 @@
+{
+  "hash": "289da6575fec81df76357ca39df15787",
+  "result": {
+    "markdown": "---\nknitr:\n  opts_chunk: \n    collapse: true\nexecute: \n  echo: false\nformat: \n  html: \n    css: https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css\n---\n\n\n## Contact\n\n<a href=\"https://github.com/StevenGolovkine\" class=\"card-link heading-font\"><i class=\"fa-brands fa-github-square\"></i>Github</a>",
+    "supporting": [
+      "contact_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
