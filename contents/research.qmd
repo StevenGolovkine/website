@@ -9,6 +9,20 @@ format:
     css: https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css
 ---
 
+## Publications
+
+My research focuses on the development of methodologies for the analysis of functional data. I am also interested to apply these methodologies to diverse areas, such as sport science and ecology. Here are a list of my publications.
+
+The emojis along the publications refer to:
+
+`r library(fontawesome); fa("globe")`: link to the journal publication.
+
+<i class="ai ai-arxiv"></i>: link to the arxiv publication.
+
+<i class="ai ai-zotero"></i>: download the bibtex entry for this publication.
+
+<br>
+
 ```{r}
 #| echo: false
 #| warning: false
