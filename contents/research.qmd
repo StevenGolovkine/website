@@ -15,11 +15,11 @@ My research focuses on the development of methodologies for the analysis of func
 
 The emojis along the publications refer to:
 
-`r library(fontawesome); fa("globe")`: link to the journal publication.
+`r library(fontawesome); fa("globe")` - link to the journal publication.
 
-<i class="ai ai-arxiv"></i>: link to the arxiv publication.
+<i class="ai ai-arxiv"></i> - link to the arxiv publication.
 
-<i class="ai ai-zotero"></i>: download the bibtex entry for this publication.
+<i class="ai ai-zotero"></i> - download the bibtex entry for this publication.
 
 <br>
 
