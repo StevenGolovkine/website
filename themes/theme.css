@@ -28,15 +28,27 @@
     display: flex;
     justify-content: space-between;
 }
-  
+
+@media (min-width:576px) {
 .flex-left {
+    flex: 0 0 auto;
     width: 75%;
-    display: flex;
-    flex-direction: column;
 }
 
 .flex-right {
+    flex: 0 0 auto;
     width: 25%;
+}
+}
+
+.row{
+    --bs-gutter-x:1.5rem;
+    --bs-gutter-y:0;
+    display:flex;
+    flex-wrap:wrap;
+    margin-top:calc(-1 * var(--bs-gutter-y));
+    margin-right:calc(-.5 * var(--bs-gutter-x));
+    margin-left:calc(-.5 * var(--bs-gutter-x))
 }
 
 /* List ressources */

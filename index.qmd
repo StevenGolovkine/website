@@ -16,6 +16,7 @@ format:
 <div class="card h-100">
 <div class="card-body d-flex flex-column">
 <div class="container">
+<div class="row">
   <div class="flex-left">
   <p class="card-text">Hello, I'm Steven Golovkine.<br><br>
   I am a Postdoctoral Researcher at the University of Limerick, Ireland, working on Functional Data Analysis.<br><br>
@@ -35,6 +36,7 @@ format:
   <div class="flex-right">
   <img src="images/avatar.jpg" alt="Avatar" style="width:256px;height:279px">
   </div>
+</div>
 </div>
 </div>
 </div>
