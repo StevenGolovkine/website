@@ -29,15 +29,6 @@
     justify-content: space-between;
 }
 
-.row{
-    --bs-gutter-x:1.5rem;
-    --bs-gutter-y:0;
-    display:flex;
-    flex-wrap:wrap;
-    margin-top:calc(-1 * var(--bs-gutter-y));
-    margin-right:calc(-.5 * var(--bs-gutter-x));
-    margin-left:calc(-.5 * var(--bs-gutter-x))
-}
 
 @media (max-width: 1100px) {
     .flex-right {
@@ -46,7 +37,7 @@
         margin-left: auto;
         margin-right: auto;
     }
-
+    
     .row{
         --bs-gutter-x:1.5rem;
         --bs-gutter-y:0;
@@ -69,6 +60,10 @@
         margin-left:auto
     }
     
+    .button-about {
+        margin-top: auto;
+    }
+
     .flex-left {
         flex: 0 0 auto;
         width: 75%;
@@ -80,6 +75,16 @@
         width: 25%;
         margin-left: auto;
         margin-right: auto;
+    }
+
+    .row{
+        --bs-gutter-x:1.5rem;
+        --bs-gutter-y:0;
+        display:flex;
+        flex-wrap:wrap;
+        margin-top: calc(-1 * var(--bs-gutter-y));
+        margin-right: calc(-.5 * var(--bs-gutter-x));
+        margin-left: calc(-.5 * var(--bs-gutter-x))
     }
 }
 
