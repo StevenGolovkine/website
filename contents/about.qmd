@@ -1,6 +1,15 @@
 ## About
 
+I am a Postdoctoral Researcher at the University of Limerick, Ireland, working on the Functional data Analysis for Sensor Technologies (FAST, [link](https://www.insight-centre.org/harnessing-the-data-deluge-dr-norma-bargary-awarded-sfi-frontiers-for-the-future-grant/)) project. The aim of the project is to develop novel, computationally efficient statistical models and algorithms for the modeling of multivariate sensor data, while allowing for novel, individualised prediction and adaptive reference ranges. Examples of application include functional magnetic resonance imaging (fMRI), accelerometer data in sports science, electrocardiogram (ECG) monitors in cardiology and IoT for e-health. This work is supervised by Norma Bargary (UL, [link](https://www.ul.ie/research/dr-norma-bargary)) and Andrew Simpkin (UG, [link](https://www.nuigalway.ie/our-research/people/andrewsimpkin/)).
 
+My research interests include:
+
+* functional data analysis;
+* non-parametric statistics;
+* unsupervised classification;
+* machine learning.
+
+<br>
 ```{r}
 #| echo: false
 #| warning: false
