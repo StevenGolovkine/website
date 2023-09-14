@@ -1,3 +1,23 @@
+---
+knitr:
+  opts_chunk: 
+    collapse: true
+execute: 
+  echo: false
+format: 
+  html: 
+    css: https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css
+---
+
+## Talks
+
+The emojis along the presentations refer to:
+
+`r library(fontawesome); fa("globe")` - link to the conference website.
+
+<i class="ai ai-zotero"></i> - download the bibtex entry for this publication.
+
+<br>
 
 ```{r}
 #| echo: false
