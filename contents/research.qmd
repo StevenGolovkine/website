@@ -9,9 +9,12 @@ format:
     css: https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css
 ---
 
-## Publications
+## Research
 
-My research focuses on the development of methodologies for the analysis of functional data. I am also interested to apply these methodologies to diverse areas, such as sport science and ecology. Here are a list of my publications.
+My research focuses on the development of methodologies for the analysis of functional data. I am also interested to apply these methodologies to diverse areas, such as sport science and ecology. Here are a list of my publications, conference proceedings and thesis.
+
+
+### Publications
 
 The emojis along the publications refer to:
 
@@ -46,3 +49,14 @@ tagList(
   ),
 )
 ```
+
+### Conference proceedings
+
+<br>
+
+### Thesis
+
+I completed a thesis in Statistics, Applied Mathematics, entitled "Statistical methods for multivariate functional data". This work was supervised by Valentin Patilea (CREST, <a href="http://ensai.fr/equipe/valentin-patilea/">link</a>) and Nicolas Klutchnikoff (IRMAR, <a href="https://klutchnikoff.github.io">link</a>) and was realized part at Renault and part at ENSAI.
+
+**Manuscript** = [link](https://tel.archives-ouvertes.fr/tel-03540827)  
+**Defense slides** = [defense.pdf](files/presentation_defense.pdf)
