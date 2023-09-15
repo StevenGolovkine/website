@@ -24,6 +24,8 @@ The emojis along the publications refer to:
 
 <i class="ai ai-zotero"></i> - download the bibtex entry for this publication.
 
+`r library(fontawesome); fa("github")` - link to the Github repository.
+
 <br>
 
 ```{r}
