@@ -45,23 +45,11 @@ box_publication <- function(data, bibtex_file) {
                     fa("globe")
                 ),
                 tags$a(
-                    href = data$arxiv_url[1],
-                    role = "button",
-                    tags$i(class='ai ai-arxiv'),
-                    .noWS = c('after-begin', 'before-end')
-                ),
-                tags$a(
                     href = bibtex_file,
                     role = "button",
                     tags$i(class='ai ai-zotero'),
                     .noWS = c('after-begin', 'before-end')
                 ),
-                tags$a(
-                    href = data$code,
-                    role = "button",
-                    fa("github"),
-                    .noWS = c('after-begin', 'before-end')
-                )
             ),
             div(
                 style="align: right;",
@@ -88,23 +76,11 @@ box_preprint <- function(data, bibtex_file) {
             class = "d-flex justify-content-between",
             div(
                 tags$a(
-                    href = data$arxiv_url,
-                    role = "button",
-                    tags$i(class='ai ai-arxiv'),
-                    .noWS = c('after-begin', 'before-end')
-                ),
-                tags$a(
                     href = bibtex_file,
                     role = "button",
                     tags$i(class='ai ai-zotero'),
                     .noWS = c('after-begin', 'before-end')
                 ),
-                tags$a(
-                    href = data$code,
-                    role = "button",
-                    fa("github"),
-                    .noWS = c('after-begin', 'before-end')
-                )
             ),
             div(
                 style="align: right;",
@@ -132,7 +108,7 @@ selected_year_item <- function(data, selected_year, id, collapse) {
 
         tag <- div(
             id = sprintf(
-                "%s-collapse%s",
+                "%s-collapse%s-proceedings",
                 id,
                 data_year$year[i]
             ),
@@ -141,7 +117,7 @@ selected_year_item <- function(data, selected_year, id, collapse) {
                 collapse
             ),
             "aria-labelledby" = sprintf(
-                "%s-heading%s",
+                "%s-heading%s-proceedings",
                 id,
                 data_year$year[i]
             ),
@@ -157,7 +133,7 @@ selected_year_item <- function(data, selected_year, id, collapse) {
 
 # Accordion function
 accordeon_mult_code <- function(data, id, show = TRUE) {
-    data <- data |> filter(bibtype == 'article')
+    data <- data |> filter(bibtype == 'proceedings')
     if (show) {
         collapse <- "show"
         button_collapse <- ""
@@ -180,7 +156,9 @@ accordeon_mult_code <- function(data, id, show = TRUE) {
                 div(
                     class = "accordion-item",
                     div(
-                        id = sprintf("%s-heading%s", id, selected_year),
+                        id = sprintf(
+                            "%s-heading%s-proceedings", id, selected_year
+                        ),
                         tags$button(
                             class = sprintf(
                                 "accordion-button bg-white text-primary p-2 %s",
@@ -189,11 +167,11 @@ accordeon_mult_code <- function(data, id, show = TRUE) {
                             type = "button",
                             "data-bs-toggle" = "collapse",
                             "data-bs-target" = sprintf(
-                                "#%s-collapse%s", id, selected_year
+                                "#%s-collapse%s-proceedings", id, selected_year
                             ),
                             "aria-expanded" = "true",
                             "aria-controls" = sprintf(
-                                "%s-collapse%s", id, selected_year
+                                "%s-collapse%s-proceedings", id, selected_year
                             ),
                             div(
                                 class = "fw-bold text-primary",

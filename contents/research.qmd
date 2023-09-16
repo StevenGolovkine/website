@@ -54,7 +54,38 @@ tagList(
 
 ### Conference proceedings
 
+The emojis along the proceedings refer to:
+
+`r library(fontawesome); fa("globe")` - link to the proceedings.
+
+<i class="ai ai-zotero"></i> - download the bibtex entry for this publication.
+
+
 <br>
+
+```{r}
+#| echo: false
+#| warning: false
+
+library(htmltools)
+library(fontawesome)
+
+source("../code/functions_proceedings.R")
+
+# bibliography loading
+bibliography <- read.csv("../data/bibliography.csv")
+
+tagList(
+  div(
+    class = "grid",
+    accordeon_mult_code(
+       data = bibliography,
+       id = "accordeon", 
+       show = FALSE
+    )
+  ),
+)
+```
 
 ### Thesis
 
