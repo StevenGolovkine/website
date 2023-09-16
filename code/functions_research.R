@@ -55,6 +55,12 @@ box_publication <- function(data, bibtex_file) {
                     role = "button",
                     tags$i(class='ai ai-zotero'),
                     .noWS = c('after-begin', 'before-end')
+                ),
+                tags$a(
+                    href = data$code,
+                    role = "button",
+                    fa("github"),
+                    .noWS = c('after-begin', 'before-end')
                 )
             ),
             div(
@@ -91,6 +97,12 @@ box_preprint <- function(data, bibtex_file) {
                     href = bibtex_file,
                     role = "button",
                     tags$i(class='ai ai-zotero'),
+                    .noWS = c('after-begin', 'before-end')
+                ),
+                tags$a(
+                    href = data$code,
+                    role = "button",
+                    fa("github"),
                     .noWS = c('after-begin', 'before-end')
                 )
             ),

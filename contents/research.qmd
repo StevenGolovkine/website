@@ -60,5 +60,19 @@ tagList(
 
 I completed a thesis in Statistics, Applied Mathematics, entitled "Statistical methods for multivariate functional data". This work was supervised by Valentin Patilea (CREST, <a href="http://ensai.fr/equipe/valentin-patilea/">link</a>) and Nicolas Klutchnikoff (IRMAR, <a href="https://klutchnikoff.github.io">link</a>) and was realized part at Renault and part at ENSAI.
 
-**Manuscript** = [link](https://tel.archives-ouvertes.fr/tel-03540827)  
-**Defense slides** = [defense.pdf](files/presentation_defense.pdf)
+::: {.grid .text-center}
+
+::: {.g-col-6}
+<div class="card h-100 border-light">
+<a href="https://tel.archives-ouvertes.fr/tel-03540827" class="card-link heading-font">{{< fa book-open >}} Manuscript</a>
+</div>
+:::
+
+::: {.g-col-6}
+<div class="card h-100 border-light">
+<a href="../data/presentation_defense.pdf" class="card-link heading-font">{{< fa person-chalkboard >}} Slides</a>
+</div>
+:::
+
+
+:::
