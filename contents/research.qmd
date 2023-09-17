@@ -16,17 +16,6 @@ My research focuses on the development of methodologies for the analysis of func
 
 ### Publications
 
-The emojis along the publications refer to:
-
-`r library(fontawesome); fa("globe")` - link to the journal publication.
-
-<i class="ai ai-arxiv"></i> - link to the arxiv publication.
-
-<i class="ai ai-zotero"></i> - download the bibtex entry for this publication.
-
-`r library(fontawesome); fa("github")` - link to the Github repository.
-
-<br>
 
 ```{r}
 #| echo: false
@@ -52,16 +41,20 @@ tagList(
 )
 ```
 
-### Conference proceedings
+<br>
+The emojis along the publications refer to:
 
-The emojis along the proceedings refer to:
+`r library(fontawesome); fa("globe")` - link to the journal publication.
 
-`r library(fontawesome); fa("globe")` - link to the proceedings.
+<i class="ai ai-arxiv"></i> - link to the arxiv publication.
 
 <i class="ai ai-zotero"></i> - download the bibtex entry for this publication.
 
+`r library(fontawesome); fa("github")` - link to the Github repository.
 
-<br>
+
+### Conference proceedings
+
 
 ```{r}
 #| echo: false
@@ -87,23 +80,31 @@ tagList(
 )
 ```
 
+<br>
+The emojis along the proceedings refer to:
+
+`r library(fontawesome); fa("globe")` - link to the proceedings.
+
+<i class="ai ai-zotero"></i> - download the bibtex entry for this proceedings.
+
+
+
 ### Thesis
 
 I completed a thesis in Statistics, Applied Mathematics, entitled "Statistical methods for multivariate functional data". This work was supervised by Valentin Patilea (CREST, <a href="http://ensai.fr/equipe/valentin-patilea/">link</a>) and Nicolas Klutchnikoff (IRMAR, <a href="https://klutchnikoff.github.io">link</a>) and was realized part at Renault and part at ENSAI.
 
 ::: {.grid .text-center}
 
-::: {.g-col-6}
+::: {.g-col-12 .g-col-sm-6}
 <div class="card h-100 border-light">
 <a href="https://tel.archives-ouvertes.fr/tel-03540827" class="card-link heading-font">{{< fa book-open >}} Manuscript</a>
 </div>
 :::
 
-::: {.g-col-6}
+::: {.g-col-12 .g-col-sm-6}
 <div class="card h-100 border-light">
 <a href="../data/presentation_defense.pdf" class="card-link heading-font">{{< fa person-chalkboard >}} Slides</a>
 </div>
 :::
-
 
 :::
