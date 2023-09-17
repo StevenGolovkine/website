@@ -8,23 +8,23 @@ format:
 
 You can drop me an e-mail or find me on elsewhere online:
 
-::: {.grid}
+::: {.grid .text-center}
 
-::: {.g-col-12 .g-col-md-3}
+::: {.g-col-12 .g-col-sm-4}
 <div class="card h-100 border-light">
 <a href="mailto:steven.golovkine@ul.ie" class="card-link heading-font">{{< fa envelope-square >}} E-Mail</a>
 </div>
 
 :::
 
-::: {.g-col-12 .g-col-md-3}
+::: {.g-col-12 .g-col-sm-4}
 <div class="card h-100 border-light">
 <a href="https://github.com/StevenGolovkine" class="card-link heading-font"><i class="fa-brands fa-github-square"></i> Github</a>
 </div>
 
 :::
 
-::: {.g-col-12 .g-col-md-3}
+::: {.g-col-12 .g-col-sm-4}
 <div class="card h-100 border-light">
 <a href="https://www.linkedin.com/in/steven-golovkine/" class="card-link heading-font"><i class="fa-brands fa-linkedin"></i> Linkedin</a>
 </div>
