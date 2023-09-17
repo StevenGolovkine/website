@@ -11,12 +11,6 @@ format:
 
 ## Talks
 
-The emojis along the presentations refer to:
-
-`r library(fontawesome); fa("globe")` - link to the conference website.
-
-<i class="ai ai-zotero"></i> - download the bibtex entry for this publication.
-
 <br>
 
 ```{r}
@@ -42,3 +36,11 @@ tagList(
   ),
 )
 ```
+
+<br>
+
+The emojis along the presentations refer to:
+
+`r library(fontawesome); fa("globe")` - link to the conference website.
+
+<i class="ai ai-zotero"></i> - download the bibtex entry for this publication.
