@@ -21,6 +21,15 @@ format_author <- function(authors) {
 
 # Box function
 box_publication <- function(data) {
+    slides <- NULL
+    if (data$presentation[1] != "") {
+        slides <- tags$a(
+            href = paste0('../data/talks/', data$presentation[1]),
+            role = "button",
+            fa("person-chalkboard")
+        )
+    }
+
     tagList(
         tags$span(
             class = "text-primary",
@@ -43,7 +52,8 @@ box_publication <- function(data) {
                     href = data$url[1],
                     role = "button",
                     fa("globe")
-                )
+                ),
+                slides
             ),
             div(
                 style="align: right;",

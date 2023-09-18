@@ -23,7 +23,7 @@ library(fontawesome)
 source("../code/functions_talks.R")
 
 # bibliography loading
-bibliography <- read.csv("../data/talks.csv")
+bibliography <- read.csv("../data/csv/talks.csv")
 
 tagList(
   div(
@@ -43,3 +43,4 @@ The emojis along the presentations refer to:
 
 `r library(fontawesome); fa("globe")` - link to the conference website.
 
+`r library(fontawesome); fa("person-chalkboard")` - link to the presentation slides.
