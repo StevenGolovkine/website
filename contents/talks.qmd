@@ -44,3 +44,5 @@ The emojis along the presentations refer to:
 `r library(fontawesome); fa("globe")` - link to the conference website.
 
 `r library(fontawesome); fa("person-chalkboard")` - link to the presentation slides.
+
+`r library(fontawesome); fa("note-sticky")` - link to the presentation paper/abstract.

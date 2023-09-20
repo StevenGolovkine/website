@@ -30,6 +30,15 @@ box_publication <- function(data) {
         )
     }
 
+    papers <- NULL
+    if (data$papers[1] != "") {
+        papers <- tags$a(
+            href = paste0('../data/talks_paper/', data$papers[1]),
+            role = "button",
+            fa("note-sticky")
+        )
+    }
+
     tagList(
         tags$span(
             class = "text-primary",
@@ -53,7 +62,8 @@ box_publication <- function(data) {
                     role = "button",
                     fa("globe")
                 ),
-                slides
+                slides,
+                papers
             ),
             div(
                 style="align: right;",
