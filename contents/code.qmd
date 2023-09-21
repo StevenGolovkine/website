@@ -1,1 +1,19 @@
-# Code
+---
+#title: "Packages"
+listing:
+  contents: "../packages/*/*.qmd"
+  sort: "date desc"
+  type: grid
+  categories: false
+  sort-ui: false
+  filter-ui: false
+  image-height: 416px
+title-block-banner: false
+knitr:
+  opts_chunk: 
+    collapse: true
+execute: 
+  echo: false
+---
+
+## Packages

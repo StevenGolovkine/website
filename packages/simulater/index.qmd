@@ -1,0 +1,30 @@
+---
+title: simulater
+description: Decription
+author: 
+  - name: Steven Golovkine
+    #url: httep://twitter.com/ellakaye
+site-url: https://stevengolovkine.github.io/denoisr/
+image: .
+# N.B. Don't use "" in image-alt
+image-alt: Alt image
+#categories:
+#  - TAG_1
+#  - TAG_2
+open-graph: true
+twitter-card: true
+# will inherit title, description, image
+# to change ANYTHING about card, need to fill in EVERYTHING below
+#  title: |
+#  description: |
+#  image: |
+#  image-alt: |
+#  defaults to 500 x 500 summary: uncomment lines below for large card
+#  image-width: 600 
+#  image-height: 314
+#  card-style: summary_large_image 
+#  image-width: 500
+#  image-height: 500
+#  card-style: summary 
+draft: false
+---
