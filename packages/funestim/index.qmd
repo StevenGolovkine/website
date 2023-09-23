@@ -1,30 +1,63 @@
 ---
 title: funestim
-description: Decription
+description: |
+  {funestim} is a package that allows users to estimate the mean and the covariance of a functional dataset using an estimation of the regularity of the curves.
+format: 
+  html: 
+    css: https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css
+#date: UPDATE # initial commit date? Publish date? No date?
 author: 
   - name: Steven Golovkine
-    #url: httep://twitter.com/ellakaye
-site-url: https://stevengolovkine.github.io/denoisr/
-image: .
+site-url: https://stevengolovkine.github.io/funestim/
 # N.B. Don't use "" in image-alt
-image-alt: Alt image
+#image-alt: |
 #categories:
 #  - TAG_1
 #  - TAG_2
-open-graph: true
-twitter-card: true
-# will inherit title, description, image
-# to change ANYTHING about card, need to fill in EVERYTHING below
+#twitter-card: 
+# uncomment lines below for different title and description to post
 #  title: |
 #  description: |
+# uncomment for different image to post
 #  image: |
 #  image-alt: |
 #  defaults to 500 x 500 summary: uncomment lines below for large card
 #  image-width: 600 
 #  image-height: 314
-#  card-style: summary_large_image 
-#  image-width: 500
-#  image-height: 500
-#  card-style: summary 
+#  card-style: "summary_large_image" 
 draft: false
 ---
+
+## Main resources
+
+::: {.grid .text-center}
+
+
+::: {.g-col-12 .g-col-sm-6}
+<div class="card h-100 border-light">
+<a href="https://github.com/StevenGolovkine/funestim" class="card-link heading-font"><i class="fa-brands fa-github-square"></i> source</a>
+</div>
+
+:::
+
+::: {.g-col-12 .g-col-sm-6}
+<div class="card h-100 border-light">
+<a href="https://stevengolovkine.github.io/funestim/" class="card-link heading-font">{{< fa book >}} documentation</a>
+</div>
+
+:::
+
+:::
+
+
+## Overview
+
+### Installation
+
+```{r}
+#| eval: false
+#| echo: true
+
+# install.packages("devtools")
+devtools::install_github("StevenGolovkine/funestim")
+```

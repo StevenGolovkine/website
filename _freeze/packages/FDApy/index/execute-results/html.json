@@ -1,0 +1,14 @@
+{
+  "hash": "e15784f47f4f710010195b650debca90",
+  "result": {
+    "markdown": "---\ntitle: FDApy\ndescription: |\n  {FDApy} is a Python for functional data analysis.\nformat: \n  html: \n    css: https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css\n#date: UPDATE # initial commit date? Publish date? No date?\nauthor: \n  - name: Steven Golovkine\nsite-url: https://fdapy.readthedocs.io/en/latest/\n# N.B. Don't use \"\" in image-alt\n#image-alt: |\n#categories:\n#  - TAG_1\n#  - TAG_2\n#twitter-card: \n# uncomment lines below for different title and description to post\n#  title: |\n#  description: |\n# uncomment for different image to post\n#  image: |\n#  image-alt: |\n#  defaults to 500 x 500 summary: uncomment lines below for large card\n#  image-width: 600 \n#  image-height: 314\n#  card-style: \"summary_large_image\" \ndraft: false\nengine: knitr\n---\n\n\n## Main resources\n\n::: {.grid .text-center}\n\n\n::: {.g-col-12 .g-col-sm-6}\n<div class=\"card h-100 border-light\">\n<a href=\"https://github.com/StevenGolovkine/FDApy\" class=\"card-link heading-font\"><i class=\"fa-brands fa-github-square\"></i> source</a>\n</div>\n\n:::\n\n::: {.g-col-12 .g-col-sm-6}\n<div class=\"card h-100 border-light\">\n<a href=\"https://fdapy.readthedocs.io/en/latest/\" class=\"card-link heading-font\">{{< fa book >}} documentation</a>\n</div>\n\n:::\n\n:::\n\n\n## Overview\n\n### Installation\n\n\n::: {.cell}\n\n```{.bash .cell-code}\npip install FDApy\n```\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
