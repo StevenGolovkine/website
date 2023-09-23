@@ -1,7 +1,7 @@
 {
-  "hash": "ca42ffaca8e27cefe5e0a0dcb3567c12",
+  "hash": "c817e24c0e2809ecc168c487c22359f9",
   "result": {
-    "markdown": "---\n#title: \"Packages\"\nlisting:\n  contents: \"../packages/*/*.qmd\"\n  sort: \"date desc\"\n  type: grid\n  categories: false\n  sort-ui: false\n  filter-ui: false\n  image-height: 416px\ntitle-block-banner: false\nknitr:\n  opts_chunk: \n    collapse: true\nexecute: \n  echo: false\n---\n\n\n## Packages",
+    "markdown": "---\n#title: \"Packages\"\nlisting:\n  contents: \"../packages/*/*.qmd\"\n  sort: \"date desc\"\n  type: grid\n  categories: false\n  sort-ui: false\n  filter-ui: false\n  image-height: 80px\ntitle-block-banner: false\nknitr:\n  opts_chunk: \n    collapse: true\nexecute: \n  echo: false\n---\n\n\n## Packages",
     "supporting": [],
     "filters": [
       "rmarkdown/pagebreak.lua"

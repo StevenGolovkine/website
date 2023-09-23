@@ -9,6 +9,7 @@ format:
 author: 
   - name: Steven Golovkine
 site-url: https://stevengolovkine.github.io/simulater/
+image: ../../images/simulater_logo.png
 # N.B. Don't use "" in image-alt
 #image-alt: |
 #categories:

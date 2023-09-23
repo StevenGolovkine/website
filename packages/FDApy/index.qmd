@@ -9,6 +9,7 @@ format:
 author: 
   - name: Steven Golovkine
 site-url: https://fdapy.readthedocs.io/en/latest/
+image: ../../images/fdapy_logo.png
 # N.B. Don't use "" in image-alt
 #image-alt: |
 #categories:

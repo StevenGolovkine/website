@@ -9,6 +9,7 @@ format:
 author: 
   - name: Steven Golovkine
 site-url: https://stevengolovkine.github.io/denoisr/
+image: ../../images/denoisr_logo.png
 # N.B. Don't use "" in image-alt
 #image-alt: |
 #categories:
