@@ -53,6 +53,11 @@ draft: false
 
 ## Overview
 
+`denoisr` is a package which permits to smooth (remove the noise from) functional data by, first, estimate the Hurst coefficient of the underlying generating process. 
+
+Functional data to smooth should be defined on a univariate compact, but can be irregularly sampled. `denoisr` can also be used only for Hurst parameter estimation.
+
+
 ### Installation
 
 ```{r}

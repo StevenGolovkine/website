@@ -53,6 +53,11 @@ draft: false
 
 ## Overview
 
+`funestim` is a package that allows users to estimate the mean and
+the covariance of a functional dataset using an estimation of the
+regularity of the curves. The curves can be irregularly sampled.
+
+
 ### Installation
 
 ```{r}

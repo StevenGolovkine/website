@@ -54,6 +54,9 @@ engine: knitr
 
 ## Overview
 
+`FDApy` is an implementation of functional data as Python package. This package provide modules for the analysis of such data. It includes classes for different dimensional data as well as irregularly sampled functional data. Moreover, a simulation toolbox is provided. It might be used to simulate different clusters of functional data. Some methodologies to handle these data are implemented, such as dimension reduction and clustering ones. New methods can easily be added. The package is publicly available on the Python Package Index and Github.
+
+
 ### Installation
 
 ```{bash}

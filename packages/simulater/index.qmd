@@ -53,6 +53,9 @@ draft: false
 
 ## Overview
 
+`simulater` is a package that allows users to generated realistic functional dataset. The simulated data can be irregularly sampled. It is based on an estimation of the mean, covariance and noise functions of the real data.
+
+
 ### Installation
 
 ```{r}
