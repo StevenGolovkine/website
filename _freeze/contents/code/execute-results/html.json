@@ -1,7 +1,7 @@
 {
-  "hash": "c817e24c0e2809ecc168c487c22359f9",
+  "hash": "eee7dce02592ca735df6f4d485f32941",
   "result": {
-    "markdown": "---\n#title: \"Packages\"\nlisting:\n  contents: \"../packages/*/*.qmd\"\n  sort: \"date desc\"\n  type: grid\n  categories: false\n  sort-ui: false\n  filter-ui: false\n  image-height: 80px\ntitle-block-banner: false\nknitr:\n  opts_chunk: \n    collapse: true\nexecute: \n  echo: false\n---\n\n\n## Packages",
+    "markdown": "---\n#title: \"Packages\"\nlisting:\n  contents: \"../packages/*/*.qmd\"\n  sort: \"date desc\"\n  type: grid\n  categories: false\n  sort-ui: false\n  filter-ui: false\n  image-height: 80px\ntitle-block-banner: false\nknitr:\n  opts_chunk: \n    collapse: true\nexecute: \n  echo: false\n---\n\n\n## Packages\n\nI maintain and develop several packages in both Python and R. My current focus is on `FDApy`, where I am working on implementing functional data analysis in Python. During my PhD, I created the R packages `denoisr`, `funestim`, and `simulater` to support various research findings.\n\n<br>",
     "supporting": [],
     "filters": [
       "rmarkdown/pagebreak.lua"
