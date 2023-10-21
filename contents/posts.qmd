@@ -1,1 +1,19 @@
-# Posts
+---
+#title: "Code"
+listing:
+  contents: "../posts/*/*.qmd"
+  sort: "date desc"
+  type: default
+  categories: true
+  sort-ui: false
+  filter-ui: false
+  image-height: 80px
+title-block-banner: false
+knitr:
+  opts_chunk: 
+    collapse: true
+execute: 
+  echo: false
+---
+
+## Posts
