@@ -1,7 +1,7 @@
 {
-  "hash": "a347947dc625b79acb66fed8d8d011b0",
+  "hash": "0e72efd6465d2a407bb4bb6b3e6aca29",
   "result": {
-    "markdown": "---\n#title: \"Code\"\nlisting:\n  contents: \"../posts/*/*.qmd\"\n  sort: \"date desc\"\n  type: default\n  categories: true\n  sort-ui: false\n  filter-ui: false\n  image-height: 80px\ntitle-block-banner: false\nknitr:\n  opts_chunk: \n    collapse: true\nexecute: \n  echo: false\n---\n\n\n## Posts",
+    "markdown": "---\n#title: \"Code\"\nlisting:\n  contents: \"../posts/*/*.qmd\"\n  sort: \"date desc\"\n  type: default\n  categories: true\nknitr:\n  opts_chunk: \n    collapse: true\nexecute: \n  echo: false\n---\n\n\n## Posts\n",
     "supporting": [],
     "filters": [
       "rmarkdown/pagebreak.lua"
