@@ -5,6 +5,11 @@ listing:
   sort: "date desc"
   type: default
   categories: true
+  sort-ui: false
+  filter-ui: false
+  image-height: 150px
+page-layout: full
+title-block-banner: false
 knitr:
   opts_chunk: 
     collapse: true
@@ -15,3 +20,4 @@ execute:
 ## Posts
 
 Here is some writing about what I’m doing and learning, mostly random stuff.
+
