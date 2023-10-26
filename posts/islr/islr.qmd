@@ -10,7 +10,7 @@ image: "../../posts/islr/featured.jpg"
 
 ---
 
-This [book](https://stevengolovkine.github.io/ISLR/) aims to provide my results to the different exercises of *An Introduction to Statistical Learning, with Application in R*, by James, Witten, Hastie and Tibshirani [1]. The applied exercises will be solved using the packages from the [tidyverse](https://www.tidyverse.org) when it is possible.
+This [book](https://stevengolovkine.github.io/ISLR/) (https://stevengolovkine.github.io/ISLR/) aims to provide my results to the different exercises of *An Introduction to Statistical Learning, with Application in R*, by James, Witten, Hastie and Tibshirani [1]. The applied exercises will be solved using the packages from the [tidyverse](https://www.tidyverse.org) and diverse R packages.
 
 This book is compiled using R Markdown and [bookdown](https://github.com/rstudio/bookdown).
 
