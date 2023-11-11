@@ -1,0 +1,120 @@
+---
+title: Sets
+author: Steven Golovkine
+date: '2023-11-11'
+categories: ['Topology']
+  
+description: |
+    A visual introduction to sets.
+image: "../../posts/sets/logo.jpg"
+image-alt: |
+    A square logo of sets created with DALL-E3.
+
+---
+
+This post is an introduction to sets as mathematical objects. It is based on the book *Introduction to Topology* of Menselson [1]. It aims to give a visual introduction to sets theory.
+
+
+Roughly speaking, a set $S$ is an ensemble of objects. Let $x$ be an object. If $x$ belongs to $S$, we will note $x \in S$ and if $x$ does not belong to $S$, we will note $x \notin S$. We will also note $\{x_1, \dots, x_n\}$ the set that contains the objects $x_1, \dots, x_n$. The set that has no member is called to *null* (or *empty*) set and noted $\emptyset$.
+
+::: {#fig-sets fit-align="center"}
+
+![](sets_figure_1.png){width=200}
+
+Sets
+:::
+
+When all objects of a set $A$ also belongs to a set $B$, we say that $A$ is a subset of $B$ and we note $A \subset B$. Note that a set is always contained in itself and the same is true for the empty set $\emptyset$, these are *improper* subsets. Others subsets are called *proper* subsets.
+
+::: {#fig-inclusion fit-align="center"}
+
+![](sets_figure_2.png){width=200}
+
+Sets inclusion
+:::
+
+To compare multiple sets, we compare their elements. To show the equality of sets, it is usually a good idea to prove that each set is contained in each other.
+
+::: {.callout-important appearance="simple"}
+
+**Sets are also objects.** 
+
+:::
+
+
+## Power sets
+
+The power set of $S$, noted $\mathcal{P}(S)$ or $2^S$, is a set that is the collection of all subsets of $S$. For each set $S$, the set $A \in \mathcal{P}(S)$ if and only if $A \subset S$.
+
+::: {#fig-power-sets fit-align="center"}
+
+![](sets_figure_3.png){width=200}
+
+Power sets
+:::
+
+Some comments about sets:
+
+- For each set $S$, $S \in \mathcal{P}(S)$ by definition but $S \not\subset \mathcal{P}(S)$ as the elements of $S$ do not belong to $\mathcal{P}(S)$. However, the set $\{S\} \subset \mathcal{P}(S)$ because all the elements of $\{S\}$, $S$ and $\emptyset$,  are in $\mathcal{P}(S)$.
+
+- For each set $S$, $\emptyset \in \mathcal{P}(S)$ by definition and $\emptyset \subset \mathcal{P}(S)$ as the elements of $\emptyset$ (there are none) are included in $\mathcal{P}(S)$.
+
+- Consider $A, B$ and $C$. If $A \subset B$ and $B \subset C$, then $B \subset C$.
+
+::: {#fig-multiple-inclusion fit-align="center"}
+
+![](sets_figure_4.png){width=200}
+
+Multiple sets inclusion
+:::
+
+## Intersection, Union and Complement
+
+Let $A$ and $B$ be two sets. The set that contains elements that belongs to $A$ **and** to $B$ is the intersection of $A$ and $B$ and is denoted by $A \cap B$. The set that contains elements that belongs to $A$ **or** $B$ is the union of $A$ and $B$ and is denoted by $A \cup B$.
+
+::: {#fig-inter-union layout-ncol=2}
+
+![Intersection](sets_figure_5.png){width=175}
+
+![Union](sets_figure_6.png){width=200}
+
+Intersection and Union
+:::
+
+
+The complement of a set $A \subset S$ is the set of elements that belong to $S$ but not to $A$. It is denoted by $C(A)$. As $C(A)$ is a set, we can take its complement and recover $A$.
+
+::: {#fig-complements fit-align="center"}
+
+![](sets_figure_7.png){width=200}
+
+Complement
+:::
+
+## DeMorgan's laws 
+
+DeMorgan's laws are relations between the complement of the intersection of $A$ and $B$ (or the union) and the union of the complement of $A$ and the complement of $B$ (or the intersection of the complements). Mathematically, this is written, for $A$ and $B$ two sets:
+
+- $C(A \cap B) = C(A) \cup C(B)$
+
+::: {#fig-visual-inter fit-align="center"}
+
+![](sets_figure_8.png){width=400}
+
+Visual proof for the complement of the intersection
+
+:::
+
+- $C(A \cup B) = C(A) \cap C(B)$
+
+::: {#fig-visual-union fit-align="center"}
+
+![](sets_figure_9.png){width=400}
+
+Visual proof for the complement of the union
+:::
+
+References:
+
+[1] Mendelson, B., 2012. Introduction to Topology: Third Edition. Courier Corporation.
+
