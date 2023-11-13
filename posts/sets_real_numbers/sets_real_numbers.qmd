@@ -1,0 +1,56 @@
+---
+title: Sets of real numbers
+author: Steven Golovkine
+date: '2023-11-13'
+categories: ['Topology']
+  
+description: |
+    Intersection and union of sets of real numbers.
+image: "../../posts/family_of_sets/logo.jpg"
+image-alt: |
+    A square logo of family of sets created with DALL-E3.
+
+---
+
+This post concerns sets of real numbers. It is based on the book *Introduction to Topology*, exercise 5, page 9,  of Menselson [1]. It aims to prove some properties of the intersection and union of sets of real numbers.
+
+
+
+Let $S$ be a set. We denote by $\{A_x\}_{x \in S}$ an indexed family of subsets of $S$.
+The union of the subsets is noted $\bigcup_{x \in S} A_x$. It represents the set of all elements in $S$ that belongs to at least one subset $A_x$. The intersection of the subsets is noted $\bigcap_{x \in S} A_x$. It represents the set of all elements in $S$ that belongs to every subset $A_x$. 
+
+Here, we will focus on indexed families of subsets of positive real numbers to manipulate families of sets. The proofs will involve classical techniques: double inclusion and contradiction.
+
+Let $I$ be the set of real numbers that are greater than $0$. Note $\forall x \in I, A_x = (0, x)$ and $B_x = [0, x]$.
+
+1. The intersection of open sets of positive real numbers is empty,
+
+$$\bigcap_{x \in I} A_x = \emptyset.$$
+
+The proof is by contradiction. Assume that $\bigcap_{x \in I} A_x \neq \emptyset$. It exists $y \in I$ such that $y \in \bigcap_{x \in I} A_x$. By definition of $A_y$, $y \notin A_y$. By definition of the intersection of sets, $y \notin \bigcap_{x \in I} A_x$, which contradicts the assumption. So, $\bigcap_{x \in I} A_x = \emptyset$.
+
+2. The union of open sets of positive real numbers is the set of positive real numbers,
+
+$$\bigcup_{x \in I} A_x = I.$$
+
+The proof is by double inclusion. Let $y \in \bigcup_{x \in I} A_x$. By definition of the union, it exists $x \in I$ such that $y \in A_x$. As $A_x \subset I$, then $y \in I$. So $\bigcup_{x \in I} A_x \subset I$. For the other way, let $y \in I$. It exists $z \in \mathbb{N}$ such that $z > y$. So, $y \in A_z$. By definition of the union, $y \in \bigcup_{x \in I} A_x$. So $I \subset \bigcup_{x \in I} A_x$. Finally, $\bigcup_{x \in I} A_x = I$.
+
+3. The intersection of closed sets of positive real numbers is the singleton $\{0\}$, 
+
+$$\bigcap_{x \in I} B_x = \{0\}.$$
+
+The proof is by double inclusion. For all $x \in I, 0 \in B_x$. It implies that $0 \in \bigcap_{x \in I} B_x$ and $\{0\} \subset \bigcap_{x \in I} B_x$. For the other way, assume that it exists $y \in I$ such that $y \in \bigcap_{x \in I} B_x$. By definition, $y \notin B_{y / 2}$ and by definition of the intersection, $y \notin \bigcap_{x \in I} B_x$. So, there is no element of $I$ in $\bigcap_{x \in I} B_x$ and $\bigcap_{x \in I} B_x \subset \{0\}$. Finally, $\bigcap_{x \in I} B_x = \{0\}$. 
+
+4. The union of closed sets of positive real numbers is the union of the set of positive real numbers and the singleton $\{0\}$,
+
+$$\bigcup_{x \in I} B_x = I \cup \{0\}.$$
+
+The proof is by double inclusion. Let $y \in \bigcup_{x \in I} B_x$. By definition of the union, it exists $x \in I, y \in B_x \subset I$. By the definition of a subset, $y = 0$ or $y \in I$. And by definition of the union, $\bigcup_{x \in I} B_x \subset I \cup \{0\}$. For the other way, let $y \in I \cup \{0\}$. If $y = 0$, then by definition, $y \in I \cup \{0\}$. It exists $z \in \mathbb{N}$ such that $z > y$. It implies that $y \in B_z$. By definition of the union, $y \in \bigcup_{x \in I} B_x$ and $I \cup \{0\} \subset \bigcup_{x \in I} B_x$. Finally, $\bigcup_{x \in I} B_x = I \cup \{0\}$.
+
+
+
+
+References:
+
+[1] Mendelson, B., 2012. Introduction to Topology: Third Edition. Courier Corporation.
+
