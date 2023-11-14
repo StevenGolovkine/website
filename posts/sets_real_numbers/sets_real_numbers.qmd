@@ -6,7 +6,7 @@ categories: ['Topology']
   
 description: |
     Intersection and union of sets of real numbers.
-image: "../../posts/family_of_sets/logo.jpg"
+image: "../../posts/sets_real_numbers/logo.jpg"
 image-alt: |
     A square logo of family of sets created with DALL-E3.
 
