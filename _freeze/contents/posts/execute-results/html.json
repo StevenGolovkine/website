@@ -1,8 +1,8 @@
 {
-  "hash": "61d87dd2674744ec9b9b90790f24e43b",
+  "hash": "4c5e0f45fbb34960c69c51feff522f5a",
   "result": {
     "engine": "knitr",
-    "markdown": "---\n#title: \"Code\"\nlisting:\n  contents: \"../posts/*/*.qmd\"\n  sort: \"date desc\"\n  type: default\n  categories: true\n  sort-ui: false\n  filter-ui: false\n  image-height: 150px\npage-layout: full\ntitle-block-banner: false\nknitr:\n  opts_chunk: \n    collapse: true\nexecute: \n  echo: false\n---\n\n\n\n\n## Posts\n\nHere is some writing about what I’m doing and learning, mostly random stuff.\n",
+    "markdown": "---\n#title: \"Code\"\nlisting:\n  contents: \"../posts/*/*.qmd\"\n  sort: \"date desc\"\n  type: default\n  categories: true\n  sort-ui: false\n  filter-ui: false\n  image-height: 150px\npage-layout: full\ntitle-block-banner: false\nknitr:\n  opts_chunk: \n    collapse: true\nexecute: \n  echo: false\n---\n\n\n\n\n## Posts\n\nHere is some writing about what I’m doing and learning, mostly random stuff.\n\n",
     "supporting": [],
     "filters": [
       "rmarkdown/pagebreak.lua"

@@ -5,10 +5,10 @@ date: '2024-12-10'
 categories: ['Teaching']
   
 description: |
-    Thoughts on UL-MS6071
+    Thoughts on UL-MS6071.
 image: "../../posts/ul_ms6071/logo.jpg"
 image-alt: |
-    A square logo created with Copilot using the prompt: "R for Statistical Data Science".
+    A square logo created with Copilot using the prompt R for Statistical Data Science.
 
 ---
 
