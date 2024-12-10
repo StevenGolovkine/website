@@ -1,0 +1,23 @@
+---
+title: Thoughts on UL-MS6071
+author: Steven Golovkine
+date: '2024-12-10'
+categories: ['Teaching']
+  
+description: |
+    Thoughts on UL-MS6071
+image: "../../posts/ul_ms6071/logo.jpg"
+image-alt: |
+    A square logo created with Copilot using the prompt: "R for Statistical Data Science".
+
+---
+
+This post concerns the module MS6071, which I taught at the University of Limerick during the winter of 2024. Here are some thoughts about how the module progressed.
+
+The class consisted of around 20 master’s students, most of whom were international students, with only two being Irish. It included two hours of lectures per week over a span of 12 weeks. The main objective was to help students practice the R programming language through a student-defined project. During the first two weeks, I introduced general R commands and the tidyverse package. For the remaining 10 weeks, the students worked on their projects, which could be done individually or in groups of two or three. Most of the projects involved selecting a dataset and performing some form of analysis, such as modeling, data visualization, or dashboard creation. Each group was required to give a presentation on their project mid-semester. The final lecture was reserved for providing feedback on their work.
+
+My intention was to give students practical experience with R while also offering them something useful for their future careers (e.g., projects related to their areas of interest).
+
+Overall, I found it challenging to engage students with the subject matter, even though they had the freedom to choose topics they preferred. Class attendance was sparse; for instance, only two students attended the feedback session. When I requested feedback on the course, two students mentioned that they found the course great but felt there was no real incentive to attend the lectures, so they often chose not to come. One potential improvement might be to divide the large project into smaller tasks (e.g., a graded project every two weeks). However, this approach could limit students' ability to focus on their specific areas of interest.
+
+Despite these challenges, some students completed very interesting projects, such as an expense tracker, customer segmentation, and survival analysis. These projects demonstrated a good understanding of the course objectives and the practical application of R.
