@@ -48,7 +48,7 @@ body_pro <- tagList(
         title = "Postdoctoral Researcher", 
         subtitle = "> University of Limerick",
         place = "Limerick, Ireland", 
-        date = "Feb. 2022 - Present"
+        date = "Feb. 2022 - Dec. 2024"
     ),
     resume_code(
         title = "Data Scientist", 
