@@ -70,7 +70,7 @@ body_teaching <- tagList(
     title = "R for Statistical Data Science", 
     subtitle = "> MS6071",
     place = "University of Limerick", 
-    date = "Sep. 2023 - Dec. 2023"
+    date = "Sep. 2023/24 - Dec. 2023/24"
   ),
   resume_code(
     title = "Engineering maths 5", 
