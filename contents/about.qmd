@@ -39,6 +39,12 @@ body_education <- tagList(
         subtitle = "> M.S. in Statistics (Diplôme d'ingénieur)",
         place = "Rennes, France", 
         date = "Sep. 2014 - Oct. 2017"
+    ),
+    resume_code(
+        title = "Aarhus University", 
+        subtitle = "> Statistics of random processes",
+        place = "Aarhus, Denmark", 
+        date = "Jan. 2016 - Jun. 2016"
     )
 )
 
@@ -61,6 +67,12 @@ body_pro <- tagList(
         subtitle = "> Groupe Renault",
         place = "Guyancourt, France", 
         date = "Jan. 2018 - Mar. 2021"
+    ),
+    resume_code(
+        title = "Research Assistant", 
+        subtitle = "> Colorado State University",
+        place = "Fort Collins, USA", 
+        date = "Jun. 2016 - Aug. 2016"
     )
 )
 
