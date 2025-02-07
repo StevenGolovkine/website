@@ -7,7 +7,7 @@ listing:
   categories: false
   sort-ui: false
   filter-ui: false
-  image-height: 80px
+  image-height: 256px
 title-block-banner: false
 knitr:
   opts_chunk: 
