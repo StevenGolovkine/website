@@ -17,8 +17,8 @@ format:
 <div class="card-body d-flex flex-column">
 <h5 class="card-title">Hello, I'm Steven Golovkine.</h5>
 <p class="card-text">
-  I am a Postdoctoral Researcher at the University of Limerick, Ireland, working on Functional Data Analysis.<br><br>
-<a href="mailto:steven.golovkine@ul.ie">{{< fa envelope-square size=2x >}}</a>
+  I am an Assistant Professor at the Université Laval, Quebec, Canada. Previously, I was a Postdoctoral Researcher at the University of Limerick, Ireland, working on Functional Data Analysis.<br><br>
+<a href="mailto:steven.golovkine@mat.ulaval.ca">{{< fa envelope-square size=2x >}}</a>
 <a href="https://github.com/StevenGolovkine"><i class="fa-brands fa-github-square ai-2x"></i></a>
 <a href="https://www.linkedin.com/in/steven-golovkine/"><i class="fa-brands fa-linkedin ai-2x"></i></a>
 <a href="https://scholar.google.com/citations?user=-SgLpb8AAAAJ"><i class="ai ai-google-scholar-square ai-2x"></i></a>
