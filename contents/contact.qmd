@@ -12,7 +12,7 @@ You can drop me an e-mail or find me on elsewhere online:
 
 ::: {.g-col-12 .g-col-sm-4}
 <div class="card h-100 border-light">
-<a href="mailto:steven.golovkine@ul.ie" class="card-link heading-font">{{< fa envelope-square >}} E-Mail</a>
+<a href="mailto:steven.golovkine@mat.ulaval.ca" class="card-link heading-font">{{< fa envelope-square >}} E-Mail</a>
 </div>
 
 :::
