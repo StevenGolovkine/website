@@ -18,6 +18,6 @@ execute:
 
 ## Packages
 
-I maintain and develop several packages in both Python and R. My current focus is on `FDApy`, where I am working on implementing functional data analysis in Python. During my PhD, I created the R packages `denoisr`, `funestim`, and `simulater` to support various research findings.
+I maintain and develop several packages in both Python and R. My current focus is on `FDApy`, where I am working on implementing functional data analysis in Python. I also develop `pyspline`, an implementation of P-splines smoothing. During my PhD, I created the R packages `denoisr`, `funestim`, and `simulater` to support various research findings.
 
 <br>

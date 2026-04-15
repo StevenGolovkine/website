@@ -1,0 +1,58 @@
+---
+title: pyspline
+description: |
+  {pyspline} is a Python library for P-splines smoothing.
+format: 
+  html: 
+    css: https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css
+#date: UPDATE # initial commit date? Publish date? No date?
+author: 
+  - name: Steven Golovkine
+site-url: https://github.com/StevenGolovkine/pyspline
+image: ../../images/pyspline_logo.png
+# N.B. Don't use "" in image-alt
+#image-alt: |
+#categories:
+#  - TAG_1
+#  - TAG_2
+#twitter-card: 
+# uncomment lines below for different title and description to post
+#  title: |
+#  description: |
+# uncomment for different image to post
+#  image: |
+#  image-alt: |
+#  defaults to 500 x 500 summary: uncomment lines below for large card
+#  image-width: 600 
+#  image-height: 314
+#  card-style: "summary_large_image" 
+draft: false
+engine: knitr
+---
+
+## Main resources
+
+::: {.grid .text-center}
+
+
+::: {.g-col-12 .g-col-sm-6}
+<div class="card h-100 border-light">
+<a href="https://github.com/StevenGolovkine/pyspline" class="card-link heading-font"><i class="fa-brands fa-github-square"></i> source</a>
+</div>
+
+:::
+
+::: {.g-col-12 .g-col-sm-6}
+<div class="card h-100 border-light">
+<a href="https://pyspline.readthedocs.io/en/latest/" class="card-link heading-font">{{< fa book >}} documentation</a>
+</div>
+
+:::
+
+:::
+
+
+## Overview
+
+`pyspline` is an implementation of P-splines smoothing as Python package. 
+

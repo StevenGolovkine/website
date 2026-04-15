@@ -1,7 +1,7 @@
 ---
 title: FDApy
 description: |
-  {FDApy} is a Python for functional data analysis.
+  {FDApy} is a Python library for functional data analysis.
 format: 
   html: 
     css: https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css

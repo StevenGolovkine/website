@@ -1,0 +1,15 @@
+{
+  "hash": "36765864e8acbe19ceb6164492176ad1",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: pyspline\ndescription: |\n  {pyspline} is a Python library for P-splines smoothing.\nformat: \n  html: \n    css: https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css\n#date: UPDATE # initial commit date? Publish date? No date?\nauthor: \n  - name: Steven Golovkine\nsite-url: https://github.com/StevenGolovkine/pyspline\nimage: ../../images/pyspline_logo.png\n# N.B. Don't use \"\" in image-alt\n#image-alt: |\n#categories:\n#  - TAG_1\n#  - TAG_2\n#twitter-card: \n# uncomment lines below for different title and description to post\n#  title: |\n#  description: |\n# uncomment for different image to post\n#  image: |\n#  image-alt: |\n#  defaults to 500 x 500 summary: uncomment lines below for large card\n#  image-width: 600 \n#  image-height: 314\n#  card-style: \"summary_large_image\" \ndraft: false\nengine: knitr\n---\n\n## Main resources\n\n::: {.grid .text-center}\n\n\n::: {.g-col-12 .g-col-sm-6}\n<div class=\"card h-100 border-light\">\n<a href=\"https://github.com/StevenGolovkine/pyspline\" class=\"card-link heading-font\"><i class=\"fa-brands fa-github-square\"></i> source</a>\n</div>\n\n:::\n\n::: {.g-col-12 .g-col-sm-6}\n<div class=\"card h-100 border-light\">\n<a href=\"https://pyspline.readthedocs.io/en/latest/\" class=\"card-link heading-font\">{{< fa book >}} documentation</a>\n</div>\n\n:::\n\n:::\n\n\n## Overview\n\n`pyspline` is an implementation of P-splines smoothing as Python package. \n\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
