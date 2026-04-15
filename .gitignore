@@ -24,3 +24,4 @@ Thumbs.db
 
 # Folder
 /old/
+**/*.quarto_ipynb
