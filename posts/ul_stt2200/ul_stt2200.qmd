@@ -1,0 +1,24 @@
+---
+title: Thoughts on UL-STT2200
+author: Steven Golovkine
+date: '2026-04-10'
+categories: ['Teaching']
+  
+description: |
+    Thoughts on UL-STT2200.
+image: "../../posts/ul_stt2200/logo.png"
+image-alt: |
+    A square logo created with Copilot using the prompt R for Statistical Data Science.
+
+---
+
+This post concerns the module STT-2200, which I taught at the Université Laval during the autumn of 2025. Here are some thoughts about how the module progressed.
+
+The class consisted of around 30 bachelor's students, with diverse background, statistics, maths, computer science, ... It included two hours of lectures and one hour of lab per week over a span of 15 weeks. The main objective was to give students an overview of the different methods to analyse data: dimension reduction, classification and clustering. The evaluation consisted of two written exams and a presentation of a poster. Overall, the students seemed to enjoy the class (mean of 2.52 / 3 on the questionnaire regarding the appreciation of the teaching).
+
+My intention was to give students the basics of data analysis, both from a theoretical and a practical point of view. I think that the practical side of it is a success, while the theoretical could have been better. A comment from the students was that sometimes the explanations were unclear. The main satisfactions of the students concern the recording of the class and my availability to answer questions. Some students also like the possibility to choose their project. The main dissatisfaction concern the exercises : overall, students want more exercises and their corrections. One student suggests the possibility of presenting fewer methods, but exploring the subjects in greater depth.
+
+
+Overall, I found it challenging to deal with students with different backgrounds. A math student has different needs than a computer science one or a finance one. Class attendance was OK and probably really dependent on the time.
+
+For the next time, I should give exercise solutions along the class and give more detailled explanations for the project. I can also reduce the number of methods seen in class, e.g. remove most of the factorial analysis and only focus on PCA.
